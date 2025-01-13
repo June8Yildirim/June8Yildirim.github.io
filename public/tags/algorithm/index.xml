@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on Cuneyt Yildirim Site</title>
+    <link>//localhost:1313/tags/algorithm/</link>
+    <description>Recent content in Algorithm on Cuneyt Yildirim Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Jan 2025 15:50:48 -0500</lastBuildDate><atom:link href="//localhost:1313/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sorting Algorithms</title>
+      <link>//localhost:1313/posts/algorithms/sorting/</link>
+      <pubDate>Sun, 12 Jan 2025 15:50:48 -0500</pubDate>
+      
+      <guid>//localhost:1313/posts/algorithms/sorting/</guid>
+      <description>&lt;h1 id=&#34;sorting-algorithms&#34;&gt;Sorting Algorithms&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@agustin.ignacio.rossi/coding-interviews-preparation-sorting-algorithms-fdc1dc51e4a1%3E%27&#34;&gt;Based on Agustin Ignacio Rossi article&lt;/a&gt;&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;sorting-algorithms&#34;&gt;Sorting Algorithms&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@agustin.ignacio.rossi/coding-interviews-preparation-sorting-algorithms-fdc1dc51e4a1%3E%27&#34;&gt;Based on Agustin Ignacio Rossi article&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/algorithms/bubblesort/&#34;&gt;Bubble Sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/algorithms/selectionsort/&#34;&gt;Selection Sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/algorithms/insertionsort/&#34;&gt;Insertion Sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/algorithms/mergesort/&#34;&gt;Merge Sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/algorithms/quicksort/&#34;&gt;Quick Sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/algorithms/radixsort/&#34;&gt;Radix Sort&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/posts/algorithms/recursivebubblesort/&#34;&gt;Recursive Bubble Sort&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content>
+    </item>
+    
+  </channel>
+</rss>
