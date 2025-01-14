@@ -23,7 +23,8 @@ color = "" #color from the theme settings
 - Returns a slice of the wanted elements for convenience
 - Efficient mainly because it never performs a full sort.
 
-- The only guarantees are that:
+ The only guarantees are that:
+
 - - The `k`th element is in its final sort index (if the array were to be sorted)
 - - All elements before index `k` are smaller than the `k`th element
 - [Reference](http://en.wikipedia.org/wiki/Quickselect)

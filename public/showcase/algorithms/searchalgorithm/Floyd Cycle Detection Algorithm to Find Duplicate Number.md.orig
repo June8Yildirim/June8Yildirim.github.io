@@ -1,5 +1,9 @@
 +++
+<<<<<<< HEAD:content/showcase/algorithms/SearchAlgorithm/Floyd Cycle Detection Algorithm to Find Duplicate Number.md
 title = "Floyd Cycle Detection"
+=======
+title = "Floyd Cycle Detection Algorithm"
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37:content/posts/algorithms/SearchAlgorithm/Floyd Cycle Detection Algorithm to Find Duplicate Number.md
 date = "2024-12-12T15:50:48-05:00"
 author = ""
 authorTwitter = "" #do not include @
@@ -14,11 +18,16 @@ hideComments = false
 color = "" #color from the theme settings
 +++
 
+<<<<<<< HEAD:content/showcase/algorithms/SearchAlgorithm/Floyd Cycle Detection Algorithm to Find Duplicate Number.md
 ## Floyd Cycle Detection Algorithm
 
 Floyd Cycle Detection Algorithm to find duplicate number in an array
 
 <!--more-->
+=======
+
+# Floyd Cycle Detection Algorithm to find duplicate number in an array
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37:content/posts/algorithms/SearchAlgorithm/Floyd Cycle Detection Algorithm to Find Duplicate Number.md
 
 ## Problem Statement
 

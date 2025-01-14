@@ -426,10 +426,10 @@ in top down manner.
     
     <item>
       <title>Fibonacci Algorithm</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/fibonaccisearch_js_/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/fibonaccisearch/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/fibonaccisearch_js_/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/fibonaccisearch/</guid>
       <description>&lt;h3 id=&#34;fibonacci-search-javascript-implementation&#34;&gt;Fibonacci Search JavaScript Implementation&lt;/h3&gt;
 &lt;p&gt;This implementation is based on Generalizing the Fibonacci search we define the Fibonacci search of degree K. Like the Fibonacci search, which it reduces to for K = 2, the Fibonacci search of degree K * involves only addition and subtraction.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fibonacciSearch&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt;) =&amp;gt; {
@@ -551,43 +551,6 @@ in top down manner.
     </item>
     
     <item>
-      <title>Floyd Cycle Detection</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/</link>
-      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
-      
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/</guid>
-      <description>&lt;h2 id=&#34;floyd-cycle-detection-algorithm&#34;&gt;Floyd Cycle Detection Algorithm&lt;/h2&gt;
-&lt;p&gt;Floyd Cycle Detection Algorithm to find duplicate number in an array&lt;/p&gt;</description>
-      <content>&lt;h2 id=&#34;floyd-cycle-detection-algorithm&#34;&gt;Floyd Cycle Detection Algorithm&lt;/h2&gt;
-&lt;p&gt;Floyd Cycle Detection Algorithm to find duplicate number in an array&lt;/p&gt;
-&lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h2&gt;
-&lt;p&gt;Given an array of integers containing &lt;code&gt;n + 1&lt;/code&gt; integers, where each integer is in the range &lt;code&gt;[1, n]&lt;/code&gt; inclusive. If there is only one duplicate number in the input array, this algorithm returns the duplicate number without modifying the original array, otherwise, it returns -1.&lt;/p&gt;
-&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Use the function &lt;code&gt;f(x) = arr[x]&lt;/code&gt; to construct the sequence:
-&lt;code&gt;arr[0]&lt;/code&gt;, &lt;code&gt;arr[arr[0]]&lt;/code&gt;, &lt;code&gt;arr[arr[arr[0]]]&lt;/code&gt;, &lt;code&gt;arr[arr[arr[arr[0]]]]&lt;/code&gt;, etc&amp;hellip;.&lt;/li&gt;
-&lt;li&gt;Each new element in the sequence is an element in &lt;code&gt;arr[]&lt;/code&gt; at the index of the previous element.&lt;/li&gt;
-&lt;li&gt;Starting from &lt;code&gt;x = arr[0]&lt;/code&gt;, it will produce a linked list with a cycle.&lt;/li&gt;
-&lt;li&gt;The cycle appears because &lt;code&gt;arr[]&lt;/code&gt; contains duplicate elements(at least one). The duplicate value is an entrance to the cycle.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h2&gt;
-&lt;p&gt;O(n)&lt;/p&gt;
-&lt;h2 id=&#34;space-complexity&#34;&gt;Space Complexity&lt;/h2&gt;
-&lt;p&gt;O(1)&lt;/p&gt;
-&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;arr = [3, 4, 8, 5, 9, 1, 2, 6, 7, 4]
-
-return value = 4
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;code-implementation-links&#34;&gt;Code Implementation Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/floyd_cycle_detection_algo.cpp&#34;&gt;C++&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/C/blob/master/searching/floyd_cycle_detection_algorithm.c&#34;&gt;C&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;video-explanation&#34;&gt;Video Explanation&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=B6smdk7pZ14&#34;&gt;YouTube video explaining the Floyd Cycle Detection algorithm&lt;/a&gt;&lt;/p&gt;</content>
-    </item>
-    
-    <item>
       <title>InsertionSort</title>
       <link>//localhost:1313/showcase/algorithms/insertionsort/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
@@ -659,10 +622,10 @@ and elements from 11 to 13 will move one position ahead of their current positio
     
     <item>
       <title>Interpolation Search</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/interpolationsearch_js_/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/interpolationsearch/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/interpolationsearch_js_/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/interpolationsearch/</guid>
       <description>&lt;h2 id=&#34;interpolation-search&#34;&gt;Interpolation Search&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;interpolation-search&#34;&gt;Interpolation Search&lt;/h2&gt;
 &lt;ul&gt;
@@ -711,10 +674,10 @@ and elements from 11 to 13 will move one position ahead of their current positio
     
     <item>
       <title>Jump Search Implementation</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/jumpsearch_js_/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/jumpsearch/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/jumpsearch_js_/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/jumpsearch/</guid>
       <description>&lt;h2 id=&#34;jump-search-implementation&#34;&gt;Jump Search Implementation&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;jump-search-implementation&#34;&gt;Jump Search Implementation&lt;/h2&gt;
 &lt;p&gt;The Jump Search algorithm allows to combine a linear search with a speed optimization.&lt;/p&gt;
@@ -925,28 +888,20 @@ At the next stack level [1, 2, 5, 9] and [3, 4, 6, 7] will be merged and we will
     
     <item>
       <title>Quick Select</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/quickselectsearch_js_/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/quickselectsearch/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/quickselectsearch_js_/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/quickselectsearch/</guid>
       <description>&lt;h2 id=&#34;quickselect&#34;&gt;Quickselect&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;quickselect&#34;&gt;Quickselect&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Places the &lt;code&gt;k&lt;/code&gt; smallest elements in &lt;code&gt;array&lt;/code&gt; in the first &lt;code&gt;k&lt;/code&gt; indices: &lt;code&gt;[0..k-1]&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Modifies the passed in array &lt;em&gt;in place&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Returns a slice of the wanted elements for convenience&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Efficient mainly because it never performs a full sort.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The only guarantees are that:&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Places the &lt;code&gt;k&lt;/code&gt; smallest elements in &lt;code&gt;array&lt;/code&gt; in the first &lt;code&gt;k&lt;/code&gt; indices: &lt;code&gt;[0..k-1]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Modifies the passed in array &lt;em&gt;in place&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Returns a slice of the wanted elements for convenience&lt;/li&gt;
+&lt;li&gt;Efficient mainly because it never performs a full sort.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; The only guarantees are that:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;code&gt;k&lt;/code&gt;th element is in its final sort index (if the array were to be sorted)&lt;/li&gt;
@@ -957,9 +912,7 @@ At the next stack level [1, 2, 5, 9] and [3, 4, 6, 7] will be merged and we will
 &lt;li&gt;All elements before index &lt;code&gt;k&lt;/code&gt; are smaller than the &lt;code&gt;k&lt;/code&gt;th element&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Quickselect&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Quickselect&#34;&gt;Reference&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;quickSelectSearch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;k&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;k&lt;/span&gt;) {
@@ -1291,10 +1244,10 @@ The array is now sorted.
     
     <item>
       <title>Sliding Window</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/slidingwindow_js_/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/slidingwindow/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/slidingwindow_js_/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/slidingwindow/</guid>
       <description>&lt;h2 id=&#34;sliding-window&#34;&gt;Sliding Window&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;sliding-window&#34;&gt;Sliding Window&lt;/h2&gt;
 &lt;ul&gt;
@@ -1342,13 +1295,14 @@ The array is now sorted.
     
     <item>
       <title>String Search</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch_js_/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch_js_/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch/</guid>
       <description>&lt;h2 id=&#34;string-search&#34;&gt;String Search&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;string-search&#34;&gt;String Search&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;makeTable&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;) {
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;makeTable&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cda1b2432e6c961b2b802096c14605623f89e37&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;posts&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;algorithms&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;SearchAlgorithm&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;StringSearch_js_&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;md&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// create a table of size equal to the length of `str`
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// table[i] will store the prefix of the longest prefix of the substring str[0..i]
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;table&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Array(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;);
@@ -1432,10 +1386,10 @@ The array is now sorted.
     
     <item>
       <title>Ternary Search</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/ternarysearch_js_/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/ternarysearch/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/ternarysearch_js_/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/ternarysearch/</guid>
       <description>&lt;h2 id=&#34;ternary-search&#34;&gt;Ternary Search&lt;/h2&gt;
 &lt;p&gt;Ternary search is similar to binary search but it divide the sorted array into three parts and determine which part the key lies in. The array will be divided into three intervals by using two middle points, mid1 and mid2.&lt;/p&gt;</description>
       <content>&lt;h2 id=&#34;ternary-search&#34;&gt;Ternary Search&lt;/h2&gt;
@@ -1521,10 +1475,10 @@ The array is now sorted.
     
     <item>
       <title>Union Find</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/unionfind_js_/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/unionfind/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/unionfind_js_/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/unionfind/</guid>
       <description>&lt;h2 id=&#34;union-find-data-structure-for-javascript&#34;&gt;Union find data structure for javascript&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;union-find-data-structure-for-javascript&#34;&gt;Union find data structure for javascript&lt;/h2&gt;
 &lt;ul&gt;
@@ -1608,421 +1562,6 @@ The array is now sorted.
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;UnionFind&lt;/span&gt; };
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/binarysearch.test_js_/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/binarysearch.test_js_/</guid>
-      <description>&lt;p&gt;import { binarySearchIterative, binarySearchRecursive } from &amp;lsquo;../BinarySearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const stringArr = [
-&amp;lsquo;Alpha&amp;rsquo;,
-&amp;lsquo;Bravo&amp;rsquo;,
-&amp;lsquo;Charlie&amp;rsquo;,
-&amp;lsquo;Delta&amp;rsquo;,
-&amp;lsquo;Echo&amp;rsquo;,
-&amp;lsquo;Foxtrot&amp;rsquo;,
-&amp;lsquo;Golf&amp;rsquo;,
-&amp;lsquo;Hotel&amp;rsquo;,
-&amp;lsquo;India&amp;rsquo;,
-&amp;lsquo;Juliet&amp;rsquo;,
-&amp;lsquo;Kilo&amp;rsquo;,
-&amp;lsquo;Lima&amp;rsquo;,
-&amp;lsquo;Mike&amp;rsquo;,
-&amp;lsquo;November&amp;rsquo;,
-&amp;lsquo;Oscar&amp;rsquo;,
-&amp;lsquo;Papa&amp;rsquo;,
-&amp;lsquo;Quebec&amp;rsquo;,
-&amp;lsquo;Romeo&amp;rsquo;,
-&amp;lsquo;Sierra&amp;rsquo;,
-&amp;lsquo;Tango&amp;rsquo;,
-&amp;lsquo;Uniform&amp;rsquo;,
-&amp;lsquo;Victor&amp;rsquo;,
-&amp;lsquo;Whiskey&amp;rsquo;,
-&amp;lsquo;X-Ray&amp;rsquo;,
-&amp;lsquo;Yankee&amp;rsquo;,
-&amp;lsquo;Zulu&amp;rsquo;
-]&lt;/p&gt;
-&lt;p&gt;describe(&amp;lsquo;Binary Search&amp;rsquo;, () =&amp;gt; {
-const funcs = [binarySearchIterative, binarySearchRecursive]
-for (const func of funcs) {
-test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {
-expect(func(arr, 3)).toBe(2)
-})
-test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {
-expect(func(arr, 11)).toBe(-1)
-})
-test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {
-expect(func(stringArr, &amp;lsquo;Charlie&amp;rsquo;)).toBe(2)
-})
-test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {
-expect(func(stringArr, &amp;lsquo;Zoft&amp;rsquo;)).toBe(-1)
-})
-}
-})&lt;/p&gt;</description>
-      <content>&lt;p&gt;import { binarySearchIterative, binarySearchRecursive } from &amp;lsquo;../BinarySearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const stringArr = [
-&amp;lsquo;Alpha&amp;rsquo;,
-&amp;lsquo;Bravo&amp;rsquo;,
-&amp;lsquo;Charlie&amp;rsquo;,
-&amp;lsquo;Delta&amp;rsquo;,
-&amp;lsquo;Echo&amp;rsquo;,
-&amp;lsquo;Foxtrot&amp;rsquo;,
-&amp;lsquo;Golf&amp;rsquo;,
-&amp;lsquo;Hotel&amp;rsquo;,
-&amp;lsquo;India&amp;rsquo;,
-&amp;lsquo;Juliet&amp;rsquo;,
-&amp;lsquo;Kilo&amp;rsquo;,
-&amp;lsquo;Lima&amp;rsquo;,
-&amp;lsquo;Mike&amp;rsquo;,
-&amp;lsquo;November&amp;rsquo;,
-&amp;lsquo;Oscar&amp;rsquo;,
-&amp;lsquo;Papa&amp;rsquo;,
-&amp;lsquo;Quebec&amp;rsquo;,
-&amp;lsquo;Romeo&amp;rsquo;,
-&amp;lsquo;Sierra&amp;rsquo;,
-&amp;lsquo;Tango&amp;rsquo;,
-&amp;lsquo;Uniform&amp;rsquo;,
-&amp;lsquo;Victor&amp;rsquo;,
-&amp;lsquo;Whiskey&amp;rsquo;,
-&amp;lsquo;X-Ray&amp;rsquo;,
-&amp;lsquo;Yankee&amp;rsquo;,
-&amp;lsquo;Zulu&amp;rsquo;
-]&lt;/p&gt;
-&lt;p&gt;describe(&amp;lsquo;Binary Search&amp;rsquo;, () =&amp;gt; {
-const funcs = [binarySearchIterative, binarySearchRecursive]
-for (const func of funcs) {
-test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {
-expect(func(arr, 3)).toBe(2)
-})
-test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {
-expect(func(arr, 11)).toBe(-1)
-})
-test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {
-expect(func(stringArr, &amp;lsquo;Charlie&amp;rsquo;)).toBe(2)
-})
-test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {
-expect(func(stringArr, &amp;lsquo;Zoft&amp;rsquo;)).toBe(-1)
-})
-}
-})&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/exponentialsearch.test_js_/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/exponentialsearch.test_js_/</guid>
-      <description>&lt;p&gt;import { exponentialSearch } from &amp;lsquo;../ExponentialSearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is 6 where the value = 78&amp;rsquo;, () =&amp;gt; {
-const arr = [2, 3, 4, 10, 40, 65, 78, 100]
-const value = 78
-const result = exponentialSearch(arr, arr.length, value)
-expect(result).toEqual(6)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is -1 where the value = 178&amp;rsquo;, () =&amp;gt; {
-const arr = [2, 3, 4, 10, 40, 65, 78, 100]
-const value = 178
-const result = exponentialSearch(arr, arr.length, value)
-expect(result).toEqual(-1)
-})&lt;/p&gt;</description>
-      <content>&lt;p&gt;import { exponentialSearch } from &amp;lsquo;../ExponentialSearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is 6 where the value = 78&amp;rsquo;, () =&amp;gt; {
-const arr = [2, 3, 4, 10, 40, 65, 78, 100]
-const value = 78
-const result = exponentialSearch(arr, arr.length, value)
-expect(result).toEqual(6)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is -1 where the value = 178&amp;rsquo;, () =&amp;gt; {
-const arr = [2, 3, 4, 10, 40, 65, 78, 100]
-const value = 178
-const result = exponentialSearch(arr, arr.length, value)
-expect(result).toEqual(-1)
-})&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/</guid>
-      <description>&lt;p&gt;import { fibonacciSearch } from &amp;lsquo;../FibonacciSearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;fibonacciSearch([10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100], 90, arr.length) =&amp;gt; 9&amp;rsquo;, () =&amp;gt; {
-const arr = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100]
-const target = 90
-const res = fibonacciSearch(arr, target, arr.length)
-expect(res).toEqual(9)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;fibonacciSearch([1, 11, 55, 56, 78, 82, 104], 104, arr.length) =&amp;gt; 6&amp;rsquo;, () =&amp;gt; {
-const arr = [1, 11, 55, 56, 78, 82, 104]
-const target = 104
-const res = fibonacciSearch(arr, target, arr.length)
-expect(res).toEqual(6)
-})&lt;/p&gt;</description>
-      <content>&lt;p&gt;import { fibonacciSearch } from &amp;lsquo;../FibonacciSearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;fibonacciSearch([10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100], 90, arr.length) =&amp;gt; 9&amp;rsquo;, () =&amp;gt; {
-const arr = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100]
-const target = 90
-const res = fibonacciSearch(arr, target, arr.length)
-expect(res).toEqual(9)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;fibonacciSearch([1, 11, 55, 56, 78, 82, 104], 104, arr.length) =&amp;gt; 6&amp;rsquo;, () =&amp;gt; {
-const arr = [1, 11, 55, 56, 78, 82, 104]
-const target = 104
-const res = fibonacciSearch(arr, target, arr.length)
-expect(res).toEqual(6)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;fibonacciSearch([40, 45, 50, 80, 82, 85, 90, 100]. 190, arr.length) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
-const arr = [40, 45, 50, 80, 82, 85, 90, 100]
-const target = 190
-const res = fibonacciSearch(arr, target, arr.length)
-expect(res).toEqual(-1)
-})&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/interpolationsearch.test_js_/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/interpolationsearch.test_js_/</guid>
-      <description>&lt;p&gt;import { interpolationSearch } from &amp;lsquo;../InterpolationSearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 144) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
-const array = [2, 6, 8, 14, 122, 169]
-const key = 144
-const res = interpolationSearch(array, key)
-expect(res).toEqual(-1)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 122) =&amp;gt; 4&amp;rsquo;, () =&amp;gt; {
-const array = [2, 6, 8, 14, 122, 169]
-const key = 122
-const res = interpolationSearch(array, key)
-expect(res).toEqual(4)
-})&lt;/p&gt;</description>
-      <content>&lt;p&gt;import { interpolationSearch } from &amp;lsquo;../InterpolationSearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 144) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
-const array = [2, 6, 8, 14, 122, 169]
-const key = 144
-const res = interpolationSearch(array, key)
-expect(res).toEqual(-1)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 122) =&amp;gt; 4&amp;rsquo;, () =&amp;gt; {
-const array = [2, 6, 8, 14, 122, 169]
-const key = 122
-const res = interpolationSearch(array, key)
-expect(res).toEqual(4)
-})&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/jumpsearch.test_js_/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/jumpsearch.test_js_/</guid>
-      <description>&lt;p&gt;import { jumpSearch } from &amp;lsquo;../JumpSearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;jumpSearch([0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90], 77) =&amp;gt; 10&amp;rsquo;, () =&amp;gt; {
-const arr = [0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90]
-const res = jumpSearch(arr, 77)
-expect(res).toEqual(10)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 4) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
-const arr = [11, 12, 15, 65, 78, 90]
-const res = jumpSearch(arr, 4)
-expect(res).toEqual(-1)
-})&lt;/p&gt;</description>
-      <content>&lt;p&gt;import { jumpSearch } from &amp;lsquo;../JumpSearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;jumpSearch([0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90], 77) =&amp;gt; 10&amp;rsquo;, () =&amp;gt; {
-const arr = [0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90]
-const res = jumpSearch(arr, 77)
-expect(res).toEqual(10)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 4) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
-const arr = [11, 12, 15, 65, 78, 90]
-const res = jumpSearch(arr, 4)
-expect(res).toEqual(-1)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 11) =&amp;gt; 0&amp;rsquo;, () =&amp;gt; {
-const arr = [11, 12, 15, 65, 78, 90]
-const res = jumpSearch(arr, 11)
-expect(res).toEqual(0)
-})&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/slidingwindow.test_js_/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/slidingwindow.test_js_/</guid>
-      <description>&lt;p&gt;import { slidingWindow } from &amp;lsquo;../SlidingWindow&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {
-const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 2)
-expect(sum).toBe(10)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {
-const sum = slidingWindow([5, 2, 6, 9], 3)
-expect(sum).toBe(17)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;rsquo;expect to return null when the sequence size is larger then the array length&amp;rsquo;, () =&amp;gt; {
-const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 15)
-expect(sum).toBe(null)
-})&lt;/p&gt;</description>
-      <content>&lt;p&gt;import { slidingWindow } from &amp;lsquo;../SlidingWindow&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {
-const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 2)
-expect(sum).toBe(10)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {
-const sum = slidingWindow([5, 2, 6, 9], 3)
-expect(sum).toBe(17)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;rsquo;expect to return null when the sequence size is larger then the array length&amp;rsquo;, () =&amp;gt; {
-const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 15)
-expect(sum).toBe(null)
-})&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/ternarysearch.test_js_/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/ternarysearch.test_js_/</guid>
-      <description>&lt;p&gt;import { ternarySearchRecursive, ternarySearchIterative } from &amp;lsquo;../TernarySearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)
-expect(indexNumber).toBe(2)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchIterative([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8)
-expect(indexNumber).toBe(7)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0)
-expect(indexNumber).toBe(-1)
-})&lt;/p&gt;</description>
-      <content>&lt;p&gt;import { ternarySearchRecursive, ternarySearchIterative } from &amp;lsquo;../TernarySearch&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)
-expect(indexNumber).toBe(2)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchIterative([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8)
-expect(indexNumber).toBe(7)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0)
-expect(indexNumber).toBe(-1)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchIterative([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 12)
-expect(indexNumber).toBe(-1)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a string in an array of strings:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchRecursive([&amp;lsquo;Ali&amp;rsquo;, &amp;lsquo;Cathrynli&amp;rsquo;, &amp;lsquo;Josuke&amp;rsquo;, &amp;lsquo;Thomas&amp;rsquo;], &amp;lsquo;Cathrynli&amp;rsquo;)
-expect(indexNumber).toBe(1)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a string in an array of strings:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchRecursive([&amp;lsquo;Ali&amp;rsquo;, &amp;lsquo;Cathrynli&amp;rsquo;, &amp;lsquo;Josuke&amp;rsquo;, &amp;lsquo;Thomas&amp;rsquo;], &amp;lsquo;Josuke&amp;rsquo;)
-expect(indexNumber).toBe(2)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should return the index of a string in an array of strings:&amp;rsquo;, () =&amp;gt; {
-const indexNumber = ternarySearchRecursive([&amp;lsquo;Ali&amp;rsquo;, &amp;lsquo;Cathrynli&amp;rsquo;, &amp;lsquo;Josuke&amp;rsquo;, &amp;lsquo;Thomas&amp;rsquo;], &amp;lsquo;Angela&amp;rsquo;)
-expect(indexNumber).toBe(-1)
-})&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/unionfind.test_js_/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/unionfind.test_js_/</guid>
-      <description>&lt;p&gt;import { UnionFind } from &amp;lsquo;../UnionFind&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;const uf = new UnionFind(5)&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should expose .size():&amp;rsquo;, () =&amp;gt; {
-const size = uf.size()
-expect(size).toBe(5)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should do .union(num1, num2):&amp;rsquo;, () =&amp;gt; {
-uf.union(1, 2)
-uf.union(3, 4)
-uf.union(0, 4)
-expect(uf.connected(1, 2)).toBe(true)
-expect(uf.connected(1, 2)).toBe(true)&lt;/p&gt;
-&lt;p&gt;expect(uf.connected(3, 4)).toBe(true)
-expect(uf.connected(3, 0)).toBe(true)
-expect(uf.connected(4, 0)).toBe(true)&lt;/p&gt;
-&lt;p&gt;expect(uf.connected(1, 3)).toBe(false)
-expect(uf.connected(1, 4)).toBe(false)
-expect(uf.connected(1, 0)).toBe(false)
-expect(uf.connected(2, 3)).toBe(false)
-expect(uf.connected(2, 4)).toBe(false)
-expect(uf.connected(2, 0)).toBe(false)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;rsquo;.count(), should return the number of disparate groups:&amp;rsquo;, () =&amp;gt; {
-expect(uf.count()).toBe(2)
-})&lt;/p&gt;</description>
-      <content>&lt;p&gt;import { UnionFind } from &amp;lsquo;../UnionFind&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;const uf = new UnionFind(5)&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should expose .size():&amp;rsquo;, () =&amp;gt; {
-const size = uf.size()
-expect(size).toBe(5)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should do .union(num1, num2):&amp;rsquo;, () =&amp;gt; {
-uf.union(1, 2)
-uf.union(3, 4)
-uf.union(0, 4)
-expect(uf.connected(1, 2)).toBe(true)
-expect(uf.connected(1, 2)).toBe(true)&lt;/p&gt;
-&lt;p&gt;expect(uf.connected(3, 4)).toBe(true)
-expect(uf.connected(3, 0)).toBe(true)
-expect(uf.connected(4, 0)).toBe(true)&lt;/p&gt;
-&lt;p&gt;expect(uf.connected(1, 3)).toBe(false)
-expect(uf.connected(1, 4)).toBe(false)
-expect(uf.connected(1, 0)).toBe(false)
-expect(uf.connected(2, 3)).toBe(false)
-expect(uf.connected(2, 4)).toBe(false)
-expect(uf.connected(2, 0)).toBe(false)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;rsquo;.count(), should return the number of disparate groups:&amp;rsquo;, () =&amp;gt; {
-expect(uf.count()).toBe(2)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should check if two components are connected, .connected(num1, num2):&amp;rsquo;, () =&amp;gt; {
-expect(uf.connected(1, 2)).toBe(true)
-expect(uf.connected(1, 3)).toBe(false)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should find the root of the tree in which the given element lives, .find(num):&amp;rsquo;, () =&amp;gt; {
-expect(uf.find(1)).toBe(1)
-expect(uf.find(2)).toBe(1)
-expect(uf.find(3)).toBe(3)
-expect(uf.find(4)).toBe(3)
-expect(uf.find(0)).toBe(3)
-})&lt;/p&gt;
-&lt;p&gt;test(&amp;lsquo;should always change the id of the smaller tree and preserve the id of the larger one&amp;rsquo;, () =&amp;gt; {
-uf.union(2, 3)
-expect(uf.count()).toBe(1)
-expect(uf.find(0)).toBe(3)
-expect(uf.find(1)).toBe(3)
-expect(uf.find(2)).toBe(3)
-expect(uf.find(3)).toBe(3)
-expect(uf.find(4)).toBe(3)
-})&lt;/p&gt;
-</content>
     </item>
     
   </channel>

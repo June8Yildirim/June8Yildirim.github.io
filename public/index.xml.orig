@@ -4,13 +4,15 @@
     <title>Cuneyt Yildirim Site</title>
     <link>//localhost:1313/</link>
     <description>Recent content on Cuneyt Yildirim Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Jan 2025 15:50:48 -0500</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jan 2025 15:50:48 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sorting Algorithms</title>
       <link>//localhost:1313/showcase/algorithms/sorting/</link>
       <pubDate>Sun, 12 Jan 2025 15:50:48 -0500</pubDate>
+<<<<<<< HEAD
       
       <guid>//localhost:1313/showcase/algorithms/sorting/</guid>
       <description>&lt;h1 id=&#34;sorting-algorithms&#34;&gt;Sorting Algorithms&lt;/h1&gt;
@@ -26,32 +28,47 @@
 &lt;li&gt;&lt;a href=&#34;//localhost:1313/showcase/algorithms/radixsort/&#34;&gt;Radix Sort&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;//localhost:1313/showcase/algorithms/recursivebubblesort/&#34;&gt;Recursive Bubble Sort&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/sorting/</guid>
+      <description>&lt;h1 id=&#34;sorting-algorithms&#34;&gt;Sorting Algorithms&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://medium.com/@agustin.ignacio.rossi/coding-interviews-preparation-sorting-algorithms-fdc1dc51e4a1%3E%27&#34;&gt;Based on Agustin Ignacio Rossi article&lt;/a&gt;&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
     </item>
-    
     <item>
       <title>Initial</title>
       <link>//localhost:1313/posts/initial/</link>
       <pubDate>Sun, 12 Jan 2025 02:38:44 -0500</pubDate>
-      
       <guid>//localhost:1313/posts/initial/</guid>
       <description></description>
-      <content></content>
     </item>
-    
     <item>
+<<<<<<< HEAD
+=======
+      <title>Initial</title>
+      <link>//localhost:1313/showcase/initial/</link>
+      <pubDate>Sun, 12 Jan 2025 02:38:44 -0500</pubDate>
+      <guid>//localhost:1313/showcase/initial/</guid>
+      <description></description>
+    </item>
+    <item>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
       <title>Typescript</title>
       <link>//localhost:1313/showcase/languages/typescript/initial/</link>
       <pubDate>Sun, 12 Jan 2025 02:38:44 -0500</pubDate>
-      
       <guid>//localhost:1313/showcase/languages/typescript/initial/</guid>
       <description></description>
-      <content></content>
     </item>
-    
+    <item>
+      <title>Binary Search</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/binarysearch_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/binarysearch_js_/</guid>
+      <description>&lt;h2 id=&#34;binary-search-implementation&#34;&gt;Binary Search implementation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;binary-search-httpsenwikipediaorgwikibinary_search_algorithm&#34;&gt;Binary Search: &lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_search_algorithm&#34;&gt;https://en.wikipedia.org/wiki/Binary_search_algorithm&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Search a sorted array by repeatedly dividing the search interval&lt;/li&gt;&#xA;&lt;li&gt;in half. Begin with an interval covering the whole array. If the value of the&lt;/li&gt;&#xA;&lt;li&gt;search key is less than the item in the middle of the interval, narrow the interval&lt;/li&gt;&#xA;&lt;li&gt;to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the&lt;/li&gt;&#xA;&lt;li&gt;value is found or the interval is empty.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearchRecursive&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Math.&lt;span style=&#34;color:#a6e22e&#34;&gt;floor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// item found =&amp;gt; return its index&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt;]) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// arr[mid] is an upper bound for x, so if x is in arr =&amp;gt; low &amp;lt;= x &amp;lt; mid&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearchRecursive&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// arr[mid] is a lower bound for x, so if x is in arr =&amp;gt; mid &amp;lt; x &amp;lt;= high&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearchRecursive&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// if low &amp;gt; high =&amp;gt; we have searched the whole array without finding the item&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearchIterative&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Math.&lt;span style=&#34;color:#a6e22e&#34;&gt;floor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// item found =&amp;gt; return its index&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt;]) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// arr[mid] is an upper bound for x, so if x is in arr =&amp;gt; low &amp;lt;= x &amp;lt; mid&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// arr[mid] is a lower bound for x, so if x is in arr =&amp;gt; mid &amp;lt; x &amp;lt;= high&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// if low &amp;gt; high =&amp;gt; we have searched the whole array without finding the item&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearchIterative&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearchRecursive&lt;/span&gt; }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
     <item>
       <title>Binary Search</title>
       <link>//localhost:1313/showcase/algorithms/searchalgorithm/binary-search/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+<<<<<<< HEAD
       
       <guid>//localhost:1313/showcase/algorithms/searchalgorithm/binary-search/</guid>
       <description>&lt;h1 id=&#34;binary-search-a-divide-and-conquer-algorithm&#34;&gt;Binary Search (A divide and conquer algorithm)&lt;/h1&gt;
@@ -157,109 +174,16 @@ A simple Binary Search implementation may return -1 as 9 is not present in the a
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
       <guid>//localhost:1313/showcase/algorithms/bubblesort/</guid>
+=======
+      <guid>//localhost:1313/posts/algorithms/bubblesort/</guid>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
       <description>&lt;h2 id=&#34;bubble-sort&#34;&gt;Bubble Sort&lt;/h2&gt;</description>
-      <content>&lt;h2 id=&#34;bubble-sort&#34;&gt;Bubble Sort&lt;/h2&gt;
-&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;select the first element of the array&lt;/li&gt;
-&lt;li&gt;compare it with its next element&lt;/li&gt;
-&lt;li&gt;if it is larger than the next element then swap them&lt;/li&gt;
-&lt;li&gt;else do nothing&lt;/li&gt;
-&lt;li&gt;keep doing this for every index of the array&lt;/li&gt;
-&lt;li&gt;repeat the above process n times.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;BubbleSort&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;bubbleSort&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; array) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; array.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;boolean&lt;/span&gt; swapped;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1; i&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            swapped &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0; j &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1; j&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#75715e&#34;&gt;// Swap elements&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; temp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;j &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; temp;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    swapped &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;swapped) &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;// Optimized - stop if no swaps&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;complexity&#34;&gt;Complexity&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Best case: O(n) (already sorted)&lt;/li&gt;
-&lt;li&gt;Worst case: O(n2)&lt;/li&gt;
-&lt;li&gt;Space complexity: O(1) (in-place sorting)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;arr[] = {10, 80, 40, 30}
-Indexes: 0   1   2   3
-
-1. Index = 0, Number = 10
-2. 10 &amp;lt; 80, do nothing and continue
-
-3. Index = 1, Number = 80
-4. 80 &amp;gt; 40, swap 80 and 40
-5. The array now is {10, 40, 80, 30}
-
-6. Index = 2, Number = 80
-7. 80 &amp;gt; 30, swap 80 and 30
-8. The array now is {10, 40, 30, 80}
-
-Repeat the Above Steps again
-
-arr[] = {10, 40, 30, 80}
-Indexes: 0   1   2   3
-
-1. Index = 0, Number = 10
-2. 10 &amp;lt; 40, do nothing and continue
-
-3. Index = 1, Number = 40
-4. 40 &amp;gt; 30, swap 40 and 30
-5. The array now is {10, 30, 40, 80}
-
-6. Index = 2, Number = 40
-7. 40 &amp;lt; 80, do nothing
-8. The array now is {10, 30, 40, 80}
-
-Repeat the Above Steps again
-
-arr[] = {10, 30, 40, 80}
-Indexes: 0   1   2   3
-
-1. Index = 0, Number = 10
-2. 10 &amp;lt; 30, do nothing and continue
-
-3. Index = 1, Number = 30
-4. 30 &amp;lt; 40, do nothing and continue
-
-5. Index = 2, Number = 40
-6. 40 &amp;lt; 80, do nothing
-
-Since there are no swaps in above steps, it means the array is sorted and we can stop here.
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;code-implementation-links&#34;&gt;Code Implementation Links&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/Python/blob/master/sorts/bubble_sort.py&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/C-Sharp/blob/master/Algorithms/Sorters/Comparison/BubbleSorter.cs&#34;&gt;C-Sharp&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/Go/blob/master/sorts/bubblesort.go&#34;&gt;Go&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/Javascript/blob/master/Sorts/BubbleSort.js&#34;&gt;Javascript&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;video-explanation&#34;&gt;Video Explanation&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Jdtq5uKz-w4&#34;&gt;A video explaining the Bubble Sort Algorithm&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;others&#34;&gt;Others&lt;/h4&gt;
-&lt;p&gt;Bubble sort is also known as Sinking sort.&lt;/p&gt;
-&lt;h4 id=&#34;animation-explanation&#34;&gt;Animation Explanation&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://boardhub.github.io/tute/?wd=bubbleSortAlgo2&#34;&gt;Tute Board&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
     </item>
-    
     <item>
       <title>BubbleSort</title>
       <link>//localhost:1313/showcase/algorithms/heapsort/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+<<<<<<< HEAD
       
       <guid>//localhost:1313/showcase/algorithms/heapsort/</guid>
       <description>&lt;h1 id=&#34;heap-sort&#34;&gt;Heap Sort&lt;/h1&gt;
@@ -327,12 +251,51 @@ in top down manner.
 &lt;h4 id=&#34;video-explanation&#34;&gt;Video Explanation&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MtQL_ll5KhQ&#34;&gt;A video explaining the Heap Sort Algorithm&lt;/a&gt;&lt;/p&gt;
 </content>
+=======
+      <guid>//localhost:1313/posts/algorithms/heapsort/</guid>
+      <description>&lt;h1 id=&#34;heap-sort&#34;&gt;Heap Sort&lt;/h1&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an unsorted array of n elements, write a function to sort the array&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build a max heap from the input data.&lt;/li&gt;&#xA;&lt;li&gt;At this point, the largest item is stored at the root of the heap. Replace it with the last item of the heap followed by reducing the size of heap by 1. Finally, heapify the root of tree.&lt;/li&gt;&#xA;&lt;li&gt;Repeat above steps while size of heap is greater than 1.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;code&gt;O(n log n)&lt;/code&gt; Worst case performance&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>BubbleSort</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/binary-search/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/binary-search/</guid>
+      <description>&lt;h1 id=&#34;binary-search-a-divide-and-conquer-algorithm&#34;&gt;Binary Search (A divide and conquer algorithm)&lt;/h1&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given a sorted  array of n elements, write a function to search for the index of a given element (target)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exponential Search</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/exponential-search/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/exponential-search/</guid>
+      <description>&lt;h1 id=&#34;exponential-search&#34;&gt;Exponential Search&lt;/h1&gt;&#xA;&lt;h4 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/faridevnz/Algorithms-Explanation/blob/master/en/Search%20Algorithms/Binary%20Search.md&#34;&gt;Binary Search algorithm&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given a sorted array of &lt;em&gt;n&lt;/em&gt; elements, write a function to search for the index of a given element (target)&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Search for the &lt;strong&gt;range&lt;/strong&gt; within which the target is included increasing &lt;em&gt;index&lt;/em&gt; by powers of 2&lt;/li&gt;&#xA;&lt;li&gt;If this range exists in array apply the Binary Search algorithm over it&lt;/li&gt;&#xA;&lt;li&gt;Else return -1&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;arr = [1, 2, 3, 4, 5, 6, 7, ... 998, 999, 1_000]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;target = 998&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;index = 0&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;1.&lt;/span&gt; SEARCHING FOR THE RANGE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;index = 1, 2, 4, 8, 16, 32, 64, ..., 512, ..., 1_024&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;after 10 iteration we have the index at 1_024 and outside of the array &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;2.&lt;/span&gt; BINARY SEARCH&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Now we can apply the binary search on the subarray from 512 and 1_000.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;&lt;/em&gt;: we apply the Binary Search from 512 to 1_000 because at &lt;code&gt;i = 2^10 = 1_024&lt;/code&gt; the array is finisced and the target number is less than the latest index of the array ( 1_000 ).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exponential Search Implementation</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/exponentialsearch_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/exponentialsearch_js_/</guid>
+      <description>&lt;h2 id=&#34;exponential-search&#34;&gt;Exponential Search&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The algorithm consists of two stages. The first stage determines a&lt;/li&gt;&#xA;&lt;li&gt;range in which the search key would reside if it were in the list.&lt;/li&gt;&#xA;&lt;li&gt;In the second stage, a binary search is performed on this range.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearch&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;floor&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ceiling&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// Middle index&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Math.&lt;span style=&#34;color:#a6e22e&#34;&gt;floor&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;floor&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ceiling&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// If value is at the mid position return this position&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;floor&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ceiling&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// If the middle element is great than the value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// search the left part of the array&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;floor&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// If the middle element is lower than the value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// search the right part of the array&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;mid&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ceiling&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;exponentialSearch&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// If value is the first element of the array return this position&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// Find range for binary search&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// Call binary search for the range found above&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, Math.&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;binarySearch&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;exponentialSearch&lt;/span&gt; }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const arr = [2, 3, 4, 10, 40, 65, 78, 100]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const value = 78&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const result = exponentialSearch(arr, arr.length, value)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Fibonacci Implementation</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/fibonaccisearch_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/fibonaccisearch_js_/</guid>
+      <description>&lt;h2 id=&#34;fibonacci-search-javascript-implementation&#34;&gt;Fibonacci Search JavaScript Implementation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This implementation is based on Generalizing the Fibonacci search wedefine the Fibonacci search of degree K. Like the Fibonacci search, which it reduces to for K = 2, the Fibonacci search of degree   involves only addition and subtraction.&lt;/li&gt;&#xA;&lt;li&gt;Capocelli R.M. (1991) A Generalization of the Fibonacci Search. In:&lt;/li&gt;&#xA;&lt;li&gt;Bergum G.E., Philippou A.N., Horadam A.F. (eds) Applications of Fibonacci&lt;/li&gt;&#xA;&lt;li&gt;Numbers. Springer, Dordrecht. &lt;a href=&#34;https://doi.org/10.1007/978-94-011-3586-3_9&#34;&gt;https://doi.org/10.1007/978-94-011-3586-3_9&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;This snippet is free. Feel free to improve on it&lt;/li&gt;&#xA;&lt;li&gt;We define a function fibonacciSearch() that takes an array of numbers the item (number) to be searched for and the length of the items in the array&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fibonacciSearch&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt;) =&amp;gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// (K-2)&amp;#39;th Fibonacci Number&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// (K-1)&amp;#39;th Fibonacci Number.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fibK&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// Kth Fibonacci&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;/* We want to store the smallest fibonacci number smaller such that&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    number is greater than or equal to n, we use fibK for this */&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;fibK&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fibK&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;fibK&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//  This marks the eliminated range from front&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;offset&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;/* while there are elements to be checked. We compare arr[fib2] with x.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    When fibM becomes 1, fib2 becomes 0 */&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;fibK&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Check if fibK is a valid location&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Math.&lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;offset&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;/*  If x is greater than the value at&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;      index fib2, Partition the subarray array&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;      from offset to i */&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;fibK&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fibK&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;offset&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;/* If x is greater than the value at&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            index fib2, cut the subarray array&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;            from offset to i */&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;fibK&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;fib2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fibK&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//  return index for found element&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//    comparing the last element with x */&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;fib1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;offset&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;offset&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//    element not found. return -1&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Example&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const myArray = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const n = myArray.length&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const x = 90&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const fibFinder = fibonacciSearch(myArray, x, n)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Floyd Cycle Detection Algorithm</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/</guid>
+      <description>&lt;h1 id=&#34;floyd-cycle-detection-algorithm-to-find-duplicate-number-in-an-array&#34;&gt;Floyd Cycle Detection Algorithm to find duplicate number in an array&lt;/h1&gt;&#xA;&lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h2&gt;&#xA;&lt;p&gt;Given an array of integers containing &lt;code&gt;n + 1&lt;/code&gt; integers, where each integer is in the range &lt;code&gt;[1, n]&lt;/code&gt; inclusive. If there is only one duplicate number in the input array, this algorithm returns the duplicate number without modifying the original array, otherwise, it returns -1.&lt;/p&gt;&#xA;&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use the function &lt;code&gt;f(x) = arr[x]&lt;/code&gt; to construct the sequence:&#xA;&lt;code&gt;arr[0]&lt;/code&gt;, &lt;code&gt;arr[arr[0]]&lt;/code&gt;, &lt;code&gt;arr[arr[arr[0]]]&lt;/code&gt;, &lt;code&gt;arr[arr[arr[arr[0]]]]&lt;/code&gt;, etc&amp;hellip;.&lt;/li&gt;&#xA;&lt;li&gt;Each new element in the sequence is an element in &lt;code&gt;arr[]&lt;/code&gt; at the index of the previous element.&lt;/li&gt;&#xA;&lt;li&gt;Starting from &lt;code&gt;x = arr[0]&lt;/code&gt;, it will produce a linked list with a cycle.&lt;/li&gt;&#xA;&lt;li&gt;The cycle appears because &lt;code&gt;arr[]&lt;/code&gt; contains duplicate elements(at least one). The duplicate value is an entrance to the cycle.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h2&gt;&#xA;&lt;p&gt;O(n)&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
     <item>
       <title>Exponential Search</title>
       <link>//localhost:1313/showcase/algorithms/searchalgorithm/exponential-search/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+<<<<<<< HEAD
       
       <guid>//localhost:1313/showcase/algorithms/searchalgorithm/exponential-search/</guid>
       <description>&lt;h1 id=&#34;exponential-search&#34;&gt;Exponential Search&lt;/h1&gt;</description>
@@ -436,10 +399,10 @@ in top down manner.
     
     <item>
       <title>Fibonacci Algorithm</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/fibonaccisearch/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/fibonaccisearch_js_/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/fibonaccisearch/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/fibonaccisearch_js_/</guid>
       <description>&lt;h3 id=&#34;fibonacci-search-javascript-implementation&#34;&gt;Fibonacci Search JavaScript Implementation&lt;/h3&gt;
 &lt;p&gt;This implementation is based on Generalizing the Fibonacci search we define the Fibonacci search of degree K. Like the Fibonacci search, which it reduces to for K = 2, the Fibonacci search of degree K * involves only addition and subtraction.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fibonacciSearch&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt;) =&amp;gt; {
@@ -561,6 +524,43 @@ in top down manner.
     </item>
     
     <item>
+      <title>Floyd Cycle Detection</title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/</guid>
+      <description>&lt;h2 id=&#34;floyd-cycle-detection-algorithm&#34;&gt;Floyd Cycle Detection Algorithm&lt;/h2&gt;
+&lt;p&gt;Floyd Cycle Detection Algorithm to find duplicate number in an array&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;floyd-cycle-detection-algorithm&#34;&gt;Floyd Cycle Detection Algorithm&lt;/h2&gt;
+&lt;p&gt;Floyd Cycle Detection Algorithm to find duplicate number in an array&lt;/p&gt;
+&lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h2&gt;
+&lt;p&gt;Given an array of integers containing &lt;code&gt;n + 1&lt;/code&gt; integers, where each integer is in the range &lt;code&gt;[1, n]&lt;/code&gt; inclusive. If there is only one duplicate number in the input array, this algorithm returns the duplicate number without modifying the original array, otherwise, it returns -1.&lt;/p&gt;
+&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the function &lt;code&gt;f(x) = arr[x]&lt;/code&gt; to construct the sequence:
+&lt;code&gt;arr[0]&lt;/code&gt;, &lt;code&gt;arr[arr[0]]&lt;/code&gt;, &lt;code&gt;arr[arr[arr[0]]]&lt;/code&gt;, &lt;code&gt;arr[arr[arr[arr[0]]]]&lt;/code&gt;, etc&amp;hellip;.&lt;/li&gt;
+&lt;li&gt;Each new element in the sequence is an element in &lt;code&gt;arr[]&lt;/code&gt; at the index of the previous element.&lt;/li&gt;
+&lt;li&gt;Starting from &lt;code&gt;x = arr[0]&lt;/code&gt;, it will produce a linked list with a cycle.&lt;/li&gt;
+&lt;li&gt;The cycle appears because &lt;code&gt;arr[]&lt;/code&gt; contains duplicate elements(at least one). The duplicate value is an entrance to the cycle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h2&gt;
+&lt;p&gt;O(n)&lt;/p&gt;
+&lt;h2 id=&#34;space-complexity&#34;&gt;Space Complexity&lt;/h2&gt;
+&lt;p&gt;O(1)&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;arr = [3, 4, 8, 5, 9, 1, 2, 6, 7, 4]
+
+return value = 4
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;code-implementation-links&#34;&gt;Code Implementation Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/search/floyd_cycle_detection_algo.cpp&#34;&gt;C++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/C/blob/master/searching/floyd_cycle_detection_algorithm.c&#34;&gt;C&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;video-explanation&#34;&gt;Video Explanation&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=B6smdk7pZ14&#34;&gt;YouTube video explaining the Floyd Cycle Detection algorithm&lt;/a&gt;&lt;/p&gt;</content>
+    </item>
+    
+    <item>
       <title>InsertionSort</title>
       <link>//localhost:1313/showcase/algorithms/insertionsort/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
@@ -628,14 +628,46 @@ and elements from 11 to 13 will move one position ahead of their current positio
 &lt;/ul&gt;
 &lt;h4 id=&#34;video-explanation&#34;&gt;Video Explanation&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=DFG-XuyPYUQ&#34;&gt;A CS50 video explaining the Insertion Search Algorithm&lt;/a&gt;&lt;/p&gt;</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/insertionsort/</guid>
+      <description>&lt;h2 id=&#34;insertion-sort&#34;&gt;Insertion Sort&lt;/h2&gt;&#xA;&lt;p&gt;Insertion Sort builds the sorted array one element at a time by repeatedly picking the next element and inserting it into the correct position in the sorted portion.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Interpolation Search</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/interpolationsearch/</link>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/interpolationsearch_js_/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/interpolationsearch_js_/</guid>
+      <description>&lt;h2 id=&#34;interpolation-search&#34;&gt;Interpolation Search&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Time Complexity:&lt;/li&gt;&#xA;&lt;li&gt;-Best case: O(1)&lt;/li&gt;&#xA;&lt;li&gt;-Worst case: O(n)&lt;/li&gt;&#xA;&lt;li&gt;-O((log(log(n))) If the data are uniformly distributed&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;interpolationSearch&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;delta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// Because the array is sorted the key must be between low and high&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt;]) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;delta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt;]) &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt;])&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; Math.&lt;span style=&#34;color:#a6e22e&#34;&gt;floor&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;delta&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Target found return its position&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// If the key is larger then it is in the upper part of the array&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;low&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// If the key is smaller then it is in the lower part of the array&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;high&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const arr = [2, 6, 8, 10, 12, 14, 16, 18, 20, 22, 26, 34, 39]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// interpolationSearch(arr, 2)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// interpolationSearch(arr, 12)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// interpolationSearch(arr, 1000)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// interpolationSearch(arr, 39)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Jump Search</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/jumpsearch_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/jumpsearch_js_/</guid>
+      <description>&lt;h2 id=&#34;jump-search&#34;&gt;Jump Search&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Linear Search</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/linear-search/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/linear-search/</guid>
+      <description>&lt;h1 id=&#34;linear-search&#34;&gt;Linear Search&lt;/h1&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an array of n elements, write a function to search for the index of a given element (target)&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Start iterating with the first element in the array.&lt;/li&gt;&#xA;&lt;li&gt;Compare it with the target element&lt;/li&gt;&#xA;&lt;li&gt;If it is equal to the target element then return the index&lt;/li&gt;&#xA;&lt;li&gt;Else continue iterating&lt;/li&gt;&#xA;&lt;li&gt;Return -1 if target element is not found in the array&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;p&gt;O(n) Worse Case  &lt;br&gt;&#xA;O(1) Best Case (If first element of array is the target element)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linear Search</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/linearsearch_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/linearsearch_js_/</guid>
+      <description>&lt;h1 id=&#34;linear-search-implementation&#34;&gt;Linear Search Implementation&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Linear search or sequential search is a method for finding a target&lt;/li&gt;&#xA;&lt;li&gt;value within a list. It sequentially checks each element of the list&lt;/li&gt;&#xA;&lt;li&gt;for the target value until a match is found or until all the elements&lt;/li&gt;&#xA;&lt;li&gt;have been searched.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;SearchArray&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;searchNum&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ar&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;output&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt;)) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Search&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ar&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;searchNum&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!==&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;output&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The element was found at &amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;position&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;output&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The element not found&amp;#39;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Search “theArray” for the specified “key” value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Search&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;theArray&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;theArray&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;theArray&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;) { &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt; }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;SearchArray&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;Search&lt;/span&gt; }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const ar = [1, 2, 3, 4, 5, 6, 7, 8, 9]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// SearchArray(3, ar)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// SearchArray(4, ar)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// SearchArray(11, ar)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
+    <item>
+      <title>Interpolation Search</title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/interpolationsearch_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+<<<<<<< HEAD
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/interpolationsearch/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/interpolationsearch_js_/</guid>
       <description>&lt;h2 id=&#34;interpolation-search&#34;&gt;Interpolation Search&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;interpolation-search&#34;&gt;Interpolation Search&lt;/h2&gt;
 &lt;ul&gt;
@@ -684,10 +716,10 @@ and elements from 11 to 13 will move one position ahead of their current positio
     
     <item>
       <title>Jump Search Implementation</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/jumpsearch/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/jumpsearch_js_/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/jumpsearch/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/jumpsearch_js_/</guid>
       <description>&lt;h2 id=&#34;jump-search-implementation&#34;&gt;Jump Search Implementation&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;jump-search-implementation&#34;&gt;Jump Search Implementation&lt;/h2&gt;
 &lt;p&gt;The Jump Search algorithm allows to combine a linear search with a speed optimization.&lt;/p&gt;
@@ -894,24 +926,50 @@ At the next stack level [1, 2, 5, 9] and [3, 4, 6, 7] will be merged and we will
 &lt;/ul&gt;
 &lt;h4 id=&#34;video-explanation&#34;&gt;Video Explanation&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=EeQ8pwjQxTM&#34;&gt;A CS50 video explaining the Merge Sort Algorithm&lt;/a&gt;&lt;/p&gt;</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/mergesort/</guid>
+      <description>&lt;h2 id=&#34;merge-sort&#34;&gt;Merge Sort&lt;/h2&gt;&#xA;&lt;p&gt;Merge Sort is a divide-and-conquer algorithm that splits the array into halves, recursively sorts each half, and then merges the sorted halves.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Quick Sort Implementation</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/quickselectsearch_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/quickselectsearch_js_/</guid>
+      <description>&lt;h2 id=&#34;quick-search-implementation&#34;&gt;Quick Search Implementation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Places the &lt;code&gt;k&lt;/code&gt; smallest elements in &lt;code&gt;array&lt;/code&gt; in the first &lt;code&gt;k&lt;/code&gt; indices: &lt;code&gt;[0..k-1]&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Modifies the passed in array &lt;em&gt;in place&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Returns a slice of the wanted elements for convenience&lt;/li&gt;&#xA;&lt;li&gt;Efficient mainly because it never performs a full sort.&lt;/li&gt;&#xA;&lt;li&gt;The only guarantees are that:&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The &lt;code&gt;k&lt;/code&gt;th element is in its final sort index (if the array were to be sorted)&lt;/li&gt;&#xA;&lt;li&gt;All elements before index &lt;code&gt;k&lt;/code&gt; are smaller than the &lt;code&gt;k&lt;/code&gt;th element&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Quickselect&#34;&gt;Reference&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;quickSelectSearch&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;k&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;k&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;throw&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Error(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Invalid arguments&amp;#39;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pivot&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;[Math.&lt;span style=&#34;color:#a6e22e&#34;&gt;ceil&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;)]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pivot&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tmp&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tmp&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;right&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pivot&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;k&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/* ---------------------------------- Test ---------------------------------- */&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// const arr = [1121111, 21, 333, 41, 5, 66, 7777, 28, 19, 11110]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// quickSelectSearch(arr, 5) // [ 19, 21, 28, 41, 5, 66, 333, 11110, 1121111, 7777 ]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// quickSelectSearch(arr, 2) // [ 19, 5, 21, 41, 28, 333, 11110, 1121111, 7777, 66 ]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// quickSelectSearch(arr, 7) // [ 19, 5, 21, 41, 28, 66, 333, 7777, 11110, 1121111 ]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Quick Sort Implementation</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/slidingwindow_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/slidingwindow_js_/</guid>
+      <description>&lt;h2 id=&#34;sliding-window&#34;&gt;Sliding Window:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This pattern involve creating a window which can either be&lt;/li&gt;&#xA;&lt;li&gt;an array or numbers from one position to another.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
     <item>
       <title>Quick Select</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/quickselectsearch/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/quickselectsearch_js_/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+<<<<<<< HEAD
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/quickselectsearch/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/quickselectsearch_js_/</guid>
       <description>&lt;h2 id=&#34;quickselect&#34;&gt;Quickselect&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;quickselect&#34;&gt;Quickselect&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Places the &lt;code&gt;k&lt;/code&gt; smallest elements in &lt;code&gt;array&lt;/code&gt; in the first &lt;code&gt;k&lt;/code&gt; indices: &lt;code&gt;[0..k-1]&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Modifies the passed in array &lt;em&gt;in place&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Returns a slice of the wanted elements for convenience&lt;/li&gt;
-&lt;li&gt;Efficient mainly because it never performs a full sort.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; The only guarantees are that:&lt;/p&gt;
-&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Places the &lt;code&gt;k&lt;/code&gt; smallest elements in &lt;code&gt;array&lt;/code&gt; in the first &lt;code&gt;k&lt;/code&gt; indices: &lt;code&gt;[0..k-1]&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modifies the passed in array &lt;em&gt;in place&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Returns a slice of the wanted elements for convenience&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Efficient mainly because it never performs a full sort.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The only guarantees are that:&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;code&gt;k&lt;/code&gt;th element is in its final sort index (if the array were to be sorted)&lt;/li&gt;
@@ -922,7 +980,9 @@ At the next stack level [1, 2, 5, 9] and [3, 4, 6, 7] will be merged and we will
 &lt;li&gt;All elements before index &lt;code&gt;k&lt;/code&gt; are smaller than the &lt;code&gt;k&lt;/code&gt;th element&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Quickselect&#34;&gt;Reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Quickselect&#34;&gt;Reference&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;quickSelectSearch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;k&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;k&lt;/span&gt;) {
@@ -1063,12 +1123,16 @@ it.
 &lt;/ul&gt;
 &lt;h4 id=&#34;video-explanation&#34;&gt;Video Explanation&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=COk73cpQbFQ&#34;&gt;A video explaining the Quick Sort Algorithm&lt;/a&gt;&lt;/p&gt;</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/quicksort/</guid>
+      <description>&lt;h2 id=&#34;quick-sort&#34;&gt;Quick Sort&lt;/h2&gt;&#xA;&lt;p&gt;Quick Sort selects a “pivot” element and partitions the array so that all elements smaller than the pivot are on one side, and all larger elements are on the other. It then recursively sorts the subarrays.&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
     </item>
-    
     <item>
       <title>Radix Sort</title>
       <link>//localhost:1313/showcase/algorithms/radixsort/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+<<<<<<< HEAD
       
       <guid>//localhost:1313/showcase/algorithms/radixsort/</guid>
       <description>&lt;h1 id=&#34;radix-sort&#34;&gt;Radix Sort&lt;/h1&gt;
@@ -1103,12 +1167,16 @@ time complexity of comparison-based sorting algorithms for a large k. Let us fir
 asymptotic notation are higher for Radix Sort and Quick-Sort uses hardware caches more effectively. Also, Radix sort uses counting sort as a subroutine and counting sort
 takes extra space to sort numbers.&lt;/p&gt;
 &lt;p&gt;Video reference: &lt;a href=&#34;https://youtu.be/nu4gDuFabIM&#34;&gt;https://youtu.be/nu4gDuFabIM&lt;/a&gt;&lt;/p&gt;</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/radixsort/</guid>
+      <description>&lt;h1 id=&#34;radix-sort&#34;&gt;Radix Sort&lt;/h1&gt;&#xA;&lt;p&gt;The lower bound for Comparison based sorting algorithm (Merge Sort, Heap Sort, Quick-Sort .. etc) is &lt;code&gt;Ω(nlogn)&lt;/code&gt;, i.e., they cannot do better than &lt;code&gt;nlogn&lt;/code&gt;.&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
     </item>
-    
     <item>
       <title>Recursive Bubble Sort</title>
       <link>//localhost:1313/showcase/algorithms/recursivebubblesort/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+<<<<<<< HEAD
       
       <guid>//localhost:1313/showcase/algorithms/recursivebubblesort/</guid>
       <description>&lt;h1 id=&#34;recursive-bubble-sort&#34;&gt;Recursive Bubble Sort&lt;/h1&gt;
@@ -1174,12 +1242,16 @@ takes extra space to sort numbers.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;video-explanation&#34;&gt;Video Explanation&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gDMDVLBfCI0&#34;&gt;A video explaining iterative as well as recursive bubble sort&lt;/a&gt;&lt;/p&gt;</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/recursivebubblesort/</guid>
+      <description>&lt;h1 id=&#34;recursive-bubble-sort&#34;&gt;Recursive Bubble Sort&lt;/h1&gt;&#xA;&lt;p&gt;Bubble Sort is one of the simplest sorting algorithms that compares two elements at a time and swaps them if they are in the wrong order. This process is repeated until the entire sequence is in order.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Time Complexity: &lt;code&gt;O(n ^ 2)&lt;/code&gt; for average case; &lt;code&gt;O(n)&lt;/code&gt; for best case.&lt;/li&gt;&#xA;&lt;li&gt;Space Complexity: &lt;code&gt;O(n)&lt;/code&gt;; note that iterative bubble sort has space complexity as &lt;code&gt;O(1)&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;p&gt;Base case: If the size of the array is 1, return.&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
     </item>
-    
     <item>
       <title>SelectionSort</title>
       <link>//localhost:1313/showcase/algorithms/selectionsort/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+<<<<<<< HEAD
       
       <guid>//localhost:1313/showcase/algorithms/selectionsort/</guid>
       <description>&lt;h2 id=&#34;selection-sort&#34;&gt;Selection Sort&lt;/h2&gt;
@@ -1250,14 +1322,18 @@ The array is now sorted.
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://boardhub.github.io/tute/?wd=selectSortAlgo2&#34;&gt;Tute Board&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/selectionsort/</guid>
+      <description>&lt;h2 id=&#34;selection-sort&#34;&gt;Selection Sort&lt;/h2&gt;&#xA;&lt;p&gt;Selection Sort divides the array into sorted and unsorted parts. It repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the sorted part.&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
     </item>
-    
     <item>
+<<<<<<< HEAD
       <title>Sliding Window</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/slidingwindow/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/slidingwindow_js_/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/slidingwindow/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/slidingwindow_js_/</guid>
       <description>&lt;h2 id=&#34;sliding-window&#34;&gt;Sliding Window&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;sliding-window&#34;&gt;Sliding Window&lt;/h2&gt;
 &lt;ul&gt;
@@ -1305,14 +1381,13 @@ The array is now sorted.
     
     <item>
       <title>String Search</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch_js_/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch_js_/</guid>
       <description>&lt;h2 id=&#34;string-search&#34;&gt;String Search&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;string-search&#34;&gt;String Search&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;makeTable&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cda1b2432e6c961b2b802096c14605623f89e37&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;posts&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;algorithms&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;SearchAlgorithm&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;StringSearch_js_&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;md&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;makeTable&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// create a table of size equal to the length of `str`
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// table[i] will store the prefix of the longest prefix of the substring str[0..i]
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;table&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Array(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;);
@@ -1396,10 +1471,10 @@ The array is now sorted.
     
     <item>
       <title>Ternary Search</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/ternarysearch/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/ternarysearch_js_/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/ternarysearch/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/ternarysearch_js_/</guid>
       <description>&lt;h2 id=&#34;ternary-search&#34;&gt;Ternary Search&lt;/h2&gt;
 &lt;p&gt;Ternary search is similar to binary search but it divide the sorted array into three parts and determine which part the key lies in. The array will be divided into three intervals by using two middle points, mid1 and mid2.&lt;/p&gt;</description>
       <content>&lt;h2 id=&#34;ternary-search&#34;&gt;Ternary Search&lt;/h2&gt;
@@ -1485,10 +1560,10 @@ The array is now sorted.
     
     <item>
       <title>Union Find</title>
-      <link>//localhost:1313/showcase/algorithms/searchalgorithm/unionfind/</link>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/unionfind_js_/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/unionfind/</guid>
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/unionfind_js_/</guid>
       <description>&lt;h2 id=&#34;union-find-data-structure-for-javascript&#34;&gt;Union find data structure for javascript&lt;/h2&gt;</description>
       <content>&lt;h2 id=&#34;union-find-data-structure-for-javascript&#34;&gt;Union find data structure for javascript&lt;/h2&gt;
 &lt;ul&gt;
@@ -1574,5 +1649,477 @@ The array is now sorted.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
+    <item>
+      <title></title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/binarysearch.test_js_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/binarysearch.test_js_/</guid>
+      <description>&lt;p&gt;import { binarySearchIterative, binarySearchRecursive } from &amp;lsquo;../BinarySearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const stringArr = [
+&amp;lsquo;Alpha&amp;rsquo;,
+&amp;lsquo;Bravo&amp;rsquo;,
+&amp;lsquo;Charlie&amp;rsquo;,
+&amp;lsquo;Delta&amp;rsquo;,
+&amp;lsquo;Echo&amp;rsquo;,
+&amp;lsquo;Foxtrot&amp;rsquo;,
+&amp;lsquo;Golf&amp;rsquo;,
+&amp;lsquo;Hotel&amp;rsquo;,
+&amp;lsquo;India&amp;rsquo;,
+&amp;lsquo;Juliet&amp;rsquo;,
+&amp;lsquo;Kilo&amp;rsquo;,
+&amp;lsquo;Lima&amp;rsquo;,
+&amp;lsquo;Mike&amp;rsquo;,
+&amp;lsquo;November&amp;rsquo;,
+&amp;lsquo;Oscar&amp;rsquo;,
+&amp;lsquo;Papa&amp;rsquo;,
+&amp;lsquo;Quebec&amp;rsquo;,
+&amp;lsquo;Romeo&amp;rsquo;,
+&amp;lsquo;Sierra&amp;rsquo;,
+&amp;lsquo;Tango&amp;rsquo;,
+&amp;lsquo;Uniform&amp;rsquo;,
+&amp;lsquo;Victor&amp;rsquo;,
+&amp;lsquo;Whiskey&amp;rsquo;,
+&amp;lsquo;X-Ray&amp;rsquo;,
+&amp;lsquo;Yankee&amp;rsquo;,
+&amp;lsquo;Zulu&amp;rsquo;
+]&lt;/p&gt;
+&lt;p&gt;describe(&amp;lsquo;Binary Search&amp;rsquo;, () =&amp;gt; {
+const funcs = [binarySearchIterative, binarySearchRecursive]
+for (const func of funcs) {
+test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {
+expect(func(arr, 3)).toBe(2)
+})
+test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {
+expect(func(arr, 11)).toBe(-1)
+})
+test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {
+expect(func(stringArr, &amp;lsquo;Charlie&amp;rsquo;)).toBe(2)
+})
+test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {
+expect(func(stringArr, &amp;lsquo;Zoft&amp;rsquo;)).toBe(-1)
+})
+}
+})&lt;/p&gt;</description>
+      <content>&lt;p&gt;import { binarySearchIterative, binarySearchRecursive } from &amp;lsquo;../BinarySearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const stringArr = [
+&amp;lsquo;Alpha&amp;rsquo;,
+&amp;lsquo;Bravo&amp;rsquo;,
+&amp;lsquo;Charlie&amp;rsquo;,
+&amp;lsquo;Delta&amp;rsquo;,
+&amp;lsquo;Echo&amp;rsquo;,
+&amp;lsquo;Foxtrot&amp;rsquo;,
+&amp;lsquo;Golf&amp;rsquo;,
+&amp;lsquo;Hotel&amp;rsquo;,
+&amp;lsquo;India&amp;rsquo;,
+&amp;lsquo;Juliet&amp;rsquo;,
+&amp;lsquo;Kilo&amp;rsquo;,
+&amp;lsquo;Lima&amp;rsquo;,
+&amp;lsquo;Mike&amp;rsquo;,
+&amp;lsquo;November&amp;rsquo;,
+&amp;lsquo;Oscar&amp;rsquo;,
+&amp;lsquo;Papa&amp;rsquo;,
+&amp;lsquo;Quebec&amp;rsquo;,
+&amp;lsquo;Romeo&amp;rsquo;,
+&amp;lsquo;Sierra&amp;rsquo;,
+&amp;lsquo;Tango&amp;rsquo;,
+&amp;lsquo;Uniform&amp;rsquo;,
+&amp;lsquo;Victor&amp;rsquo;,
+&amp;lsquo;Whiskey&amp;rsquo;,
+&amp;lsquo;X-Ray&amp;rsquo;,
+&amp;lsquo;Yankee&amp;rsquo;,
+&amp;lsquo;Zulu&amp;rsquo;
+]&lt;/p&gt;
+&lt;p&gt;describe(&amp;lsquo;Binary Search&amp;rsquo;, () =&amp;gt; {
+const funcs = [binarySearchIterative, binarySearchRecursive]
+for (const func of funcs) {
+test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {
+expect(func(arr, 3)).toBe(2)
+})
+test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {
+expect(func(arr, 11)).toBe(-1)
+})
+test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {
+expect(func(stringArr, &amp;lsquo;Charlie&amp;rsquo;)).toBe(2)
+})
+test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {
+expect(func(stringArr, &amp;lsquo;Zoft&amp;rsquo;)).toBe(-1)
+})
+}
+})&lt;/p&gt;
+</content>
+=======
+      <title>String Search</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/stringsearch_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/stringsearch_js_/</guid>
+      <description>&lt;h2 id=&#34;string-search&#34;&gt;String Search&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;makeTable&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// create a table of size equal to the length of `str`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// table[i] will store the prefix of the longest prefix of the substring str[0..i]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;table&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Array(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;maxPrefix&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// the longest prefix of the substring str[0] has length&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;table&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// for the substrings the following substrings, we have two cases&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// case 1. the current character doesn&amp;#39;t match the last character of the longest prefix&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;maxPrefix&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;charAt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;!==&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;charAt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;maxPrefix&lt;/span&gt;)) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// if that is the case, we have to backtrack, and try find a character  that will be equal to the current character&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// if we reach 0, then we couldn&amp;#39;t find a character&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;maxPrefix&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;table&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;maxPrefix&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// case 2. The last character of the longest prefix matches the current character in `str`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;charAt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;maxPrefix&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;charAt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;)) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// if that is the case, we know that the longest prefix at position i has one more character.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// for example consider `.` be any character not contained in the set [a.c]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// str = abc....abc&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// consider `i` to be the last character `c` in `str`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// maxPrefix = will be 2 (the first `c` in `str`)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// maxPrefix now will be 3&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;maxPrefix&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// so the max prefix for table[9] is 3&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;table&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;maxPrefix&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;table&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Find all the words that matches in a given string `str`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;stringSearch&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;word&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// find the prefix table in O(n)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prefixes&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;makeTable&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;word&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;matches&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// `j` is the index in `P`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// `i` is the index in `S`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Case 1.  S[i] == P[j] so we move to the next index in `S` and `P`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;charAt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;word&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;charAt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt;)) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Case 2.  `j` is equal to the length of `P`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// that means that we reached the end of `P` and thus we found a match&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Next we have to update `j` because we want to save some time&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// instead of updating to j = 0 , we can jump to the last character of the longest prefix well known so far.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// j-1 means the last character of `P` because j is actually `P.length`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// e.g.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// S =  a b a b d e&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// P = `a b`a b&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// we will jump to `a b` and we will compare d and a in the next iteration&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// a b a b `d` e&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//     a b `a` b&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;word&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;matches&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prefixes&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// Case 3.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// S[i] != P[j] There&amp;#39;s a mismatch!&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;charAt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;!==&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;word&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;charAt&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt;)) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;// if we  found at least a character in common, do the same thing as in case 2&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prefixes&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;j&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      } &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;// else j = 0, and we can move to the next character S[i+1]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;matches&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// stringSearch(&amp;#39;Hello search the position of me&amp;#39;, &amp;#39;pos&amp;#39;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Ternary Search</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/ternarysearch_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/ternarysearch_js_/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Union Search</title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/unionfind_js_/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/unionfind_js_/</guid>
+      <description>&lt;p&gt;#Union Search&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/algorithms/searchalgorithm/test/binarysearch.test_js_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/test/binarysearch.test_js_/</guid>
+      <description>&lt;p&gt;import { binarySearchIterative, binarySearchRecursive } from &amp;lsquo;../BinarySearch&amp;rsquo;&lt;/p&gt;&#xA;&lt;p&gt;const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]&#xA;const stringArr = [&#xA;&amp;lsquo;Alpha&amp;rsquo;,&#xA;&amp;lsquo;Bravo&amp;rsquo;,&#xA;&amp;lsquo;Charlie&amp;rsquo;,&#xA;&amp;lsquo;Delta&amp;rsquo;,&#xA;&amp;lsquo;Echo&amp;rsquo;,&#xA;&amp;lsquo;Foxtrot&amp;rsquo;,&#xA;&amp;lsquo;Golf&amp;rsquo;,&#xA;&amp;lsquo;Hotel&amp;rsquo;,&#xA;&amp;lsquo;India&amp;rsquo;,&#xA;&amp;lsquo;Juliet&amp;rsquo;,&#xA;&amp;lsquo;Kilo&amp;rsquo;,&#xA;&amp;lsquo;Lima&amp;rsquo;,&#xA;&amp;lsquo;Mike&amp;rsquo;,&#xA;&amp;lsquo;November&amp;rsquo;,&#xA;&amp;lsquo;Oscar&amp;rsquo;,&#xA;&amp;lsquo;Papa&amp;rsquo;,&#xA;&amp;lsquo;Quebec&amp;rsquo;,&#xA;&amp;lsquo;Romeo&amp;rsquo;,&#xA;&amp;lsquo;Sierra&amp;rsquo;,&#xA;&amp;lsquo;Tango&amp;rsquo;,&#xA;&amp;lsquo;Uniform&amp;rsquo;,&#xA;&amp;lsquo;Victor&amp;rsquo;,&#xA;&amp;lsquo;Whiskey&amp;rsquo;,&#xA;&amp;lsquo;X-Ray&amp;rsquo;,&#xA;&amp;lsquo;Yankee&amp;rsquo;,&#xA;&amp;lsquo;Zulu&amp;rsquo;&#xA;]&lt;/p&gt;&#xA;&lt;p&gt;describe(&amp;lsquo;Binary Search&amp;rsquo;, () =&amp;gt; {&#xA;const funcs = [binarySearchIterative, binarySearchRecursive]&#xA;for (const func of funcs) {&#xA;test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {&#xA;expect(func(arr, 3)).toBe(2)&#xA;})&#xA;test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {&#xA;expect(func(arr, 11)).toBe(-1)&#xA;})&#xA;test(&amp;rsquo;expect to return the index of the item in the array&amp;rsquo;, () =&amp;gt; {&#xA;expect(func(stringArr, &amp;lsquo;Charlie&amp;rsquo;)).toBe(2)&#xA;})&#xA;test(&amp;rsquo;expect to return -1 if not in array&amp;rsquo;, () =&amp;gt; {&#xA;expect(func(stringArr, &amp;lsquo;Zoft&amp;rsquo;)).toBe(-1)&#xA;})&#xA;}&#xA;})&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/exponentialsearch.test_js_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
+      
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/exponentialsearch.test_js_/</guid>
+      <description>&lt;p&gt;import { exponentialSearch } from &amp;lsquo;../ExponentialSearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is 6 where the value = 78&amp;rsquo;, () =&amp;gt; {
+const arr = [2, 3, 4, 10, 40, 65, 78, 100]
+const value = 78
+const result = exponentialSearch(arr, arr.length, value)
+expect(result).toEqual(6)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is -1 where the value = 178&amp;rsquo;, () =&amp;gt; {
+const arr = [2, 3, 4, 10, 40, 65, 78, 100]
+const value = 178
+const result = exponentialSearch(arr, arr.length, value)
+expect(result).toEqual(-1)
+})&lt;/p&gt;</description>
+      <content>&lt;p&gt;import { exponentialSearch } from &amp;lsquo;../ExponentialSearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is 6 where the value = 78&amp;rsquo;, () =&amp;gt; {
+const arr = [2, 3, 4, 10, 40, 65, 78, 100]
+const value = 78
+const result = exponentialSearch(arr, arr.length, value)
+expect(result).toEqual(6)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is -1 where the value = 178&amp;rsquo;, () =&amp;gt; {
+const arr = [2, 3, 4, 10, 40, 65, 78, 100]
+const value = 178
+const result = exponentialSearch(arr, arr.length, value)
+expect(result).toEqual(-1)
+})&lt;/p&gt;
+</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/test/exponentialsearch.test_js_/</guid>
+      <description>&lt;p&gt;import { exponentialSearch } from &amp;lsquo;../ExponentialSearch&amp;rsquo;&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is 6 where the value = 78&amp;rsquo;, () =&amp;gt; {&#xA;const arr = [2, 3, 4, 10, 40, 65, 78, 100]&#xA;const value = 78&#xA;const result = exponentialSearch(arr, arr.length, value)&#xA;expect(result).toEqual(6)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is -1 where the value = 178&amp;rsquo;, () =&amp;gt; {&#xA;const arr = [2, 3, 4, 10, 40, 65, 78, 100]&#xA;const value = 178&#xA;const result = exponentialSearch(arr, arr.length, value)&#xA;expect(result).toEqual(-1)&#xA;})&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
+      
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/</guid>
+      <description>&lt;p&gt;import { fibonacciSearch } from &amp;lsquo;../FibonacciSearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;fibonacciSearch([10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100], 90, arr.length) =&amp;gt; 9&amp;rsquo;, () =&amp;gt; {
+const arr = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100]
+const target = 90
+const res = fibonacciSearch(arr, target, arr.length)
+expect(res).toEqual(9)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;fibonacciSearch([1, 11, 55, 56, 78, 82, 104], 104, arr.length) =&amp;gt; 6&amp;rsquo;, () =&amp;gt; {
+const arr = [1, 11, 55, 56, 78, 82, 104]
+const target = 104
+const res = fibonacciSearch(arr, target, arr.length)
+expect(res).toEqual(6)
+})&lt;/p&gt;</description>
+      <content>&lt;p&gt;import { fibonacciSearch } from &amp;lsquo;../FibonacciSearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;fibonacciSearch([10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100], 90, arr.length) =&amp;gt; 9&amp;rsquo;, () =&amp;gt; {
+const arr = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100]
+const target = 90
+const res = fibonacciSearch(arr, target, arr.length)
+expect(res).toEqual(9)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;fibonacciSearch([1, 11, 55, 56, 78, 82, 104], 104, arr.length) =&amp;gt; 6&amp;rsquo;, () =&amp;gt; {
+const arr = [1, 11, 55, 56, 78, 82, 104]
+const target = 104
+const res = fibonacciSearch(arr, target, arr.length)
+expect(res).toEqual(6)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;fibonacciSearch([40, 45, 50, 80, 82, 85, 90, 100]. 190, arr.length) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
+const arr = [40, 45, 50, 80, 82, 85, 90, 100]
+const target = 190
+const res = fibonacciSearch(arr, target, arr.length)
+expect(res).toEqual(-1)
+})&lt;/p&gt;
+</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/</guid>
+      <description>&lt;p&gt;import { fibonacciSearch } from &amp;lsquo;../FibonacciSearch&amp;rsquo;&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;fibonacciSearch([10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100], 90, arr.length) =&amp;gt; 9&amp;rsquo;, () =&amp;gt; {&#xA;const arr = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100]&#xA;const target = 90&#xA;const res = fibonacciSearch(arr, target, arr.length)&#xA;expect(res).toEqual(9)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;fibonacciSearch([1, 11, 55, 56, 78, 82, 104], 104, arr.length) =&amp;gt; 6&amp;rsquo;, () =&amp;gt; {&#xA;const arr = [1, 11, 55, 56, 78, 82, 104]&#xA;const target = 104&#xA;const res = fibonacciSearch(arr, target, arr.length)&#xA;expect(res).toEqual(6)&#xA;})&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/interpolationsearch.test_js_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
+      
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/interpolationsearch.test_js_/</guid>
+      <description>&lt;p&gt;import { interpolationSearch } from &amp;lsquo;../InterpolationSearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 144) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
+const array = [2, 6, 8, 14, 122, 169]
+const key = 144
+const res = interpolationSearch(array, key)
+expect(res).toEqual(-1)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 122) =&amp;gt; 4&amp;rsquo;, () =&amp;gt; {
+const array = [2, 6, 8, 14, 122, 169]
+const key = 122
+const res = interpolationSearch(array, key)
+expect(res).toEqual(4)
+})&lt;/p&gt;</description>
+      <content>&lt;p&gt;import { interpolationSearch } from &amp;lsquo;../InterpolationSearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 144) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
+const array = [2, 6, 8, 14, 122, 169]
+const key = 144
+const res = interpolationSearch(array, key)
+expect(res).toEqual(-1)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 122) =&amp;gt; 4&amp;rsquo;, () =&amp;gt; {
+const array = [2, 6, 8, 14, 122, 169]
+const key = 122
+const res = interpolationSearch(array, key)
+expect(res).toEqual(4)
+})&lt;/p&gt;
+</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/test/interpolationsearch.test_js_/</guid>
+      <description>&lt;p&gt;import { interpolationSearch } from &amp;lsquo;../InterpolationSearch&amp;rsquo;&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 144) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {&#xA;const array = [2, 6, 8, 14, 122, 169]&#xA;const key = 144&#xA;const res = interpolationSearch(array, key)&#xA;expect(res).toEqual(-1)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 122) =&amp;gt; 4&amp;rsquo;, () =&amp;gt; {&#xA;const array = [2, 6, 8, 14, 122, 169]&#xA;const key = 122&#xA;const res = interpolationSearch(array, key)&#xA;expect(res).toEqual(4)&#xA;})&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/jumpsearch.test_js_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
+      
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/jumpsearch.test_js_/</guid>
+      <description>&lt;p&gt;import { jumpSearch } from &amp;lsquo;../JumpSearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;jumpSearch([0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90], 77) =&amp;gt; 10&amp;rsquo;, () =&amp;gt; {
+const arr = [0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90]
+const res = jumpSearch(arr, 77)
+expect(res).toEqual(10)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 4) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
+const arr = [11, 12, 15, 65, 78, 90]
+const res = jumpSearch(arr, 4)
+expect(res).toEqual(-1)
+})&lt;/p&gt;</description>
+      <content>&lt;p&gt;import { jumpSearch } from &amp;lsquo;../JumpSearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;jumpSearch([0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90], 77) =&amp;gt; 10&amp;rsquo;, () =&amp;gt; {
+const arr = [0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90]
+const res = jumpSearch(arr, 77)
+expect(res).toEqual(10)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 4) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {
+const arr = [11, 12, 15, 65, 78, 90]
+const res = jumpSearch(arr, 4)
+expect(res).toEqual(-1)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 11) =&amp;gt; 0&amp;rsquo;, () =&amp;gt; {
+const arr = [11, 12, 15, 65, 78, 90]
+const res = jumpSearch(arr, 11)
+expect(res).toEqual(0)
+})&lt;/p&gt;
+</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/test/jumpsearch.test_js_/</guid>
+      <description>&lt;p&gt;import { jumpSearch } from &amp;lsquo;../JumpSearch&amp;rsquo;&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;jumpSearch([0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90], 77) =&amp;gt; 10&amp;rsquo;, () =&amp;gt; {&#xA;const arr = [0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90]&#xA;const res = jumpSearch(arr, 77)&#xA;expect(res).toEqual(10)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 4) =&amp;gt; -1&amp;rsquo;, () =&amp;gt; {&#xA;const arr = [11, 12, 15, 65, 78, 90]&#xA;const res = jumpSearch(arr, 4)&#xA;expect(res).toEqual(-1)&#xA;})&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/slidingwindow.test_js_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
+      
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/slidingwindow.test_js_/</guid>
+      <description>&lt;p&gt;import { slidingWindow } from &amp;lsquo;../SlidingWindow&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {
+const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 2)
+expect(sum).toBe(10)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {
+const sum = slidingWindow([5, 2, 6, 9], 3)
+expect(sum).toBe(17)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;rsquo;expect to return null when the sequence size is larger then the array length&amp;rsquo;, () =&amp;gt; {
+const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 15)
+expect(sum).toBe(null)
+})&lt;/p&gt;</description>
+      <content>&lt;p&gt;import { slidingWindow } from &amp;lsquo;../SlidingWindow&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {
+const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 2)
+expect(sum).toBe(10)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {
+const sum = slidingWindow([5, 2, 6, 9], 3)
+expect(sum).toBe(17)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;rsquo;expect to return null when the sequence size is larger then the array length&amp;rsquo;, () =&amp;gt; {
+const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 15)
+expect(sum).toBe(null)
+})&lt;/p&gt;
+</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/test/slidingwindow.test_js_/</guid>
+      <description>&lt;p&gt;import { slidingWindow } from &amp;lsquo;../SlidingWindow&amp;rsquo;&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {&#xA;const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 2)&#xA;expect(sum).toBe(10)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;rsquo;expect to return the largest sum of sequence in the array&amp;rsquo;, () =&amp;gt; {&#xA;const sum = slidingWindow([5, 2, 6, 9], 3)&#xA;expect(sum).toBe(17)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;rsquo;expect to return null when the sequence size is larger then the array length&amp;rsquo;, () =&amp;gt; {&#xA;const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 15)&#xA;expect(sum).toBe(null)&#xA;})&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/ternarysearch.test_js_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
+      
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/ternarysearch.test_js_/</guid>
+      <description>&lt;p&gt;import { ternarySearchRecursive, ternarySearchIterative } from &amp;lsquo;../TernarySearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)
+expect(indexNumber).toBe(2)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchIterative([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8)
+expect(indexNumber).toBe(7)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0)
+expect(indexNumber).toBe(-1)
+})&lt;/p&gt;</description>
+      <content>&lt;p&gt;import { ternarySearchRecursive, ternarySearchIterative } from &amp;lsquo;../TernarySearch&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)
+expect(indexNumber).toBe(2)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchIterative([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8)
+expect(indexNumber).toBe(7)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0)
+expect(indexNumber).toBe(-1)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchIterative([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 12)
+expect(indexNumber).toBe(-1)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a string in an array of strings:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchRecursive([&amp;lsquo;Ali&amp;rsquo;, &amp;lsquo;Cathrynli&amp;rsquo;, &amp;lsquo;Josuke&amp;rsquo;, &amp;lsquo;Thomas&amp;rsquo;], &amp;lsquo;Cathrynli&amp;rsquo;)
+expect(indexNumber).toBe(1)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a string in an array of strings:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchRecursive([&amp;lsquo;Ali&amp;rsquo;, &amp;lsquo;Cathrynli&amp;rsquo;, &amp;lsquo;Josuke&amp;rsquo;, &amp;lsquo;Thomas&amp;rsquo;], &amp;lsquo;Josuke&amp;rsquo;)
+expect(indexNumber).toBe(2)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should return the index of a string in an array of strings:&amp;rsquo;, () =&amp;gt; {
+const indexNumber = ternarySearchRecursive([&amp;lsquo;Ali&amp;rsquo;, &amp;lsquo;Cathrynli&amp;rsquo;, &amp;lsquo;Josuke&amp;rsquo;, &amp;lsquo;Thomas&amp;rsquo;], &amp;lsquo;Angela&amp;rsquo;)
+expect(indexNumber).toBe(-1)
+})&lt;/p&gt;
+</content>
+=======
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/test/ternarysearch.test_js_/</guid>
+      <description>&lt;p&gt;import { ternarySearchRecursive, ternarySearchIterative } from &amp;lsquo;../TernarySearch&amp;rsquo;&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {&#xA;const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)&#xA;expect(indexNumber).toBe(2)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {&#xA;const indexNumber = ternarySearchIterative([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8)&#xA;expect(indexNumber).toBe(7)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;should return the index of a number in an array of numbers:&amp;rsquo;, () =&amp;gt; {&#xA;const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0)&#xA;expect(indexNumber).toBe(-1)&#xA;})&lt;/p&gt;</description>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/showcase/algorithms/searchalgorithm/test/unionfind.test_js_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
+      
+      <guid>//localhost:1313/showcase/algorithms/searchalgorithm/test/unionfind.test_js_/</guid>
+      <description>&lt;p&gt;import { UnionFind } from &amp;lsquo;../UnionFind&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;const uf = new UnionFind(5)&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should expose .size():&amp;rsquo;, () =&amp;gt; {
+const size = uf.size()
+expect(size).toBe(5)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should do .union(num1, num2):&amp;rsquo;, () =&amp;gt; {
+uf.union(1, 2)
+uf.union(3, 4)
+uf.union(0, 4)
+expect(uf.connected(1, 2)).toBe(true)
+expect(uf.connected(1, 2)).toBe(true)&lt;/p&gt;
+&lt;p&gt;expect(uf.connected(3, 4)).toBe(true)
+expect(uf.connected(3, 0)).toBe(true)
+expect(uf.connected(4, 0)).toBe(true)&lt;/p&gt;
+&lt;p&gt;expect(uf.connected(1, 3)).toBe(false)
+expect(uf.connected(1, 4)).toBe(false)
+expect(uf.connected(1, 0)).toBe(false)
+expect(uf.connected(2, 3)).toBe(false)
+expect(uf.connected(2, 4)).toBe(false)
+expect(uf.connected(2, 0)).toBe(false)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;rsquo;.count(), should return the number of disparate groups:&amp;rsquo;, () =&amp;gt; {
+expect(uf.count()).toBe(2)
+})&lt;/p&gt;</description>
+      <content>&lt;p&gt;import { UnionFind } from &amp;lsquo;../UnionFind&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;const uf = new UnionFind(5)&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should expose .size():&amp;rsquo;, () =&amp;gt; {
+const size = uf.size()
+expect(size).toBe(5)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should do .union(num1, num2):&amp;rsquo;, () =&amp;gt; {
+uf.union(1, 2)
+uf.union(3, 4)
+uf.union(0, 4)
+expect(uf.connected(1, 2)).toBe(true)
+expect(uf.connected(1, 2)).toBe(true)&lt;/p&gt;
+&lt;p&gt;expect(uf.connected(3, 4)).toBe(true)
+expect(uf.connected(3, 0)).toBe(true)
+expect(uf.connected(4, 0)).toBe(true)&lt;/p&gt;
+&lt;p&gt;expect(uf.connected(1, 3)).toBe(false)
+expect(uf.connected(1, 4)).toBe(false)
+expect(uf.connected(1, 0)).toBe(false)
+expect(uf.connected(2, 3)).toBe(false)
+expect(uf.connected(2, 4)).toBe(false)
+expect(uf.connected(2, 0)).toBe(false)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;rsquo;.count(), should return the number of disparate groups:&amp;rsquo;, () =&amp;gt; {
+expect(uf.count()).toBe(2)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should check if two components are connected, .connected(num1, num2):&amp;rsquo;, () =&amp;gt; {
+expect(uf.connected(1, 2)).toBe(true)
+expect(uf.connected(1, 3)).toBe(false)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should find the root of the tree in which the given element lives, .find(num):&amp;rsquo;, () =&amp;gt; {
+expect(uf.find(1)).toBe(1)
+expect(uf.find(2)).toBe(1)
+expect(uf.find(3)).toBe(3)
+expect(uf.find(4)).toBe(3)
+expect(uf.find(0)).toBe(3)
+})&lt;/p&gt;
+&lt;p&gt;test(&amp;lsquo;should always change the id of the smaller tree and preserve the id of the larger one&amp;rsquo;, () =&amp;gt; {
+uf.union(2, 3)
+expect(uf.count()).toBe(1)
+expect(uf.find(0)).toBe(3)
+expect(uf.find(1)).toBe(3)
+expect(uf.find(2)).toBe(3)
+expect(uf.find(3)).toBe(3)
+expect(uf.find(4)).toBe(3)
+})&lt;/p&gt;
+</content>
+    </item>
+    
+=======
+      <guid>//localhost:1313/posts/algorithms/searchalgorithm/test/unionfind.test_js_/</guid>
+      <description>&lt;p&gt;import { UnionFind } from &amp;lsquo;../UnionFind&amp;rsquo;&lt;/p&gt;&#xA;&lt;p&gt;const uf = new UnionFind(5)&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;should expose .size():&amp;rsquo;, () =&amp;gt; {&#xA;const size = uf.size()&#xA;expect(size).toBe(5)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;lsquo;should do .union(num1, num2):&amp;rsquo;, () =&amp;gt; {&#xA;uf.union(1, 2)&#xA;uf.union(3, 4)&#xA;uf.union(0, 4)&#xA;expect(uf.connected(1, 2)).toBe(true)&#xA;expect(uf.connected(1, 2)).toBe(true)&lt;/p&gt;&#xA;&lt;p&gt;expect(uf.connected(3, 4)).toBe(true)&#xA;expect(uf.connected(3, 0)).toBe(true)&#xA;expect(uf.connected(4, 0)).toBe(true)&lt;/p&gt;&#xA;&lt;p&gt;expect(uf.connected(1, 3)).toBe(false)&#xA;expect(uf.connected(1, 4)).toBe(false)&#xA;expect(uf.connected(1, 0)).toBe(false)&#xA;expect(uf.connected(2, 3)).toBe(false)&#xA;expect(uf.connected(2, 4)).toBe(false)&#xA;expect(uf.connected(2, 0)).toBe(false)&#xA;})&lt;/p&gt;&#xA;&lt;p&gt;test(&amp;rsquo;.count(), should return the number of disparate groups:&amp;rsquo;, () =&amp;gt; {&#xA;expect(uf.count()).toBe(2)&#xA;})&lt;/p&gt;</description>
+    </item>
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37
   </channel>
 </rss>

@@ -19,7 +19,8 @@ color = "" #color from the theme settings
 <!--more-->
 
 ```javascript
-function makeTable(str) {
+function makeTable (str) {
+>>>>>>> 5cda1b2432e6c961b2b802096c14605623f89e37:content/posts/algorithms/SearchAlgorithm/StringSearch_js_.md
   // create a table of size equal to the length of `str`
   // table[i] will store the prefix of the longest prefix of the substring str[0..i]
   const table = new Array(str.length);

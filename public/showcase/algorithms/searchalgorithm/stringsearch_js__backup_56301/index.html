@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>String Search :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="&laquo;&laquo;&laquo;&lt; HEAD:content/showcase/algorithms/SearchAlgorithm/StringSearch_js_.md
+String Search" />
+<meta name="keywords" content=", " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch_js__backup_56301/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="String Search">
+<meta property="og:description" content="&laquo;&laquo;&laquo;&lt; HEAD:content/showcase/algorithms/SearchAlgorithm/StringSearch_js_.md
+String Search" />
+<meta property="og:url" content="//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch_js__backup_56301/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+  
+  <meta property="og:image" content="//localhost:1313/">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-12-12 15:50:48 -0500 EST" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch_js__backup_56301/">String Search</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-12-12</time>
+    
+</div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/tags/"></a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/"></a>&nbsp;
+      
+    </span>
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>&laquo;&laquo;&laquo;&lt; HEAD:content/showcase/algorithms/SearchAlgorithm/StringSearch_js_.md</p>
+<h2 id="string-search">String Search<a href="#string-search" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">makeTable</span>(<span style="color:#a6e22e">str</span>) {
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=======</span>
+</span></span><span style="display:flex;"><span> <span style="color:#960050;background-color:#1e0010">##</span>  String <span style="color:#a6e22e">Search</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">```javascript
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">function makeTable (str) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&gt;&gt;&gt;&gt;&gt;&gt;&gt; 5cda1b2432e6c961b2b802096c14605623f89e37:content/posts/algorithms/SearchAlgorithm/StringSearch_js_.md
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  // create a table of size equal to the length of `</span><span style="color:#a6e22e">str</span><span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  // table[i] will store the prefix of the longest prefix of the substring str[0..i]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  const table = new Array(str.length);
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  let maxPrefix = 0;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  // the longest prefix of the substring str[0] has length
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  table[0] = 0;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  // for the substrings the following substrings, we have two cases
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  for (let i = 1; i &lt; str.length; i++) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // case 1. the current character doesn&#39;t match the last character of the longest prefix
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    while (maxPrefix &gt; 0 &amp;&amp; str.charAt(i) !== str.charAt(maxPrefix)) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // if that is the case, we have to backtrack, and try find a character  that will be equal to the current character
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // if we reach 0, then we couldn&#39;t find a character
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      maxPrefix = table[maxPrefix - 1];
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // case 2. The last character of the longest prefix matches the current character in `</span><span style="color:#a6e22e">str</span><span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    if (str.charAt(maxPrefix) === str.charAt(i)) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // if that is the case, we know that the longest prefix at position i has one more character.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // for example consider `</span>.<span style="color:#e6db74">` be any character not contained in the set [a.c]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // str = abc....abc
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // consider `</span><span style="color:#a6e22e">i</span><span style="color:#e6db74">` to be the last character `</span><span style="color:#a6e22e">c</span><span style="color:#e6db74">` in `</span><span style="color:#a6e22e">str</span><span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // maxPrefix = will be 2 (the first `</span><span style="color:#a6e22e">c</span><span style="color:#e6db74">` in `</span><span style="color:#a6e22e">str</span><span style="color:#e6db74">`)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // maxPrefix now will be 3
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      maxPrefix++;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // so the max prefix for table[9] is 3
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    table[i] = maxPrefix;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  return table;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">// Find all the words that matches in a given string `</span><span style="color:#a6e22e">str</span><span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">export function stringSearch(str, word) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  // find the prefix table in O(n)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  const prefixes = makeTable(word);
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  const matches = [];
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  // `</span><span style="color:#a6e22e">j</span><span style="color:#e6db74">` is the index in `</span><span style="color:#a6e22e">P</span><span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  let j = 0;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  // `</span><span style="color:#a6e22e">i</span><span style="color:#e6db74">` is the index in `</span><span style="color:#a6e22e">S</span><span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  let i = 0;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  while (i &lt; str.length) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // Case 1.  S[i] == P[j] so we move to the next index in `</span><span style="color:#a6e22e">S</span><span style="color:#e6db74">` and `</span><span style="color:#a6e22e">P</span><span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    if (str.charAt(i) === word.charAt(j)) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      i++;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      j++;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // Case 2.  `</span><span style="color:#a6e22e">j</span><span style="color:#e6db74">` is equal to the length of `</span><span style="color:#a6e22e">P</span><span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // that means that we reached the end of `</span><span style="color:#a6e22e">P</span><span style="color:#e6db74">` and thus we found a match
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // Next we have to update `</span><span style="color:#a6e22e">j</span><span style="color:#e6db74">` because we want to save some time
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // instead of updating to j = 0 , we can jump to the last character of the longest prefix well known so far.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // j-1 means the last character of `</span><span style="color:#a6e22e">P</span><span style="color:#e6db74">` because j is actually `</span><span style="color:#a6e22e">P</span>.<span style="color:#a6e22e">length</span><span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // e.g.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // S =  a b a b d e
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // P = `</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">b</span><span style="color:#e6db74">`a b
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // we will jump to `</span><span style="color:#a6e22e">a</span> <span style="color:#a6e22e">b</span><span style="color:#e6db74">` and we will compare d and a in the next iteration
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    // a b a b `</span><span style="color:#a6e22e">d</span><span style="color:#e6db74">` e
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    //     a b `</span><span style="color:#a6e22e">a</span><span style="color:#e6db74">` b
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    if (j === word.length) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      matches.push(i - j);
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      j = prefixes[j - 1];
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // Case 3.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // S[i] != P[j] There&#39;s a mismatch!
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    } else if (str.charAt(i) !== word.charAt(j)) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      // if we  found at least a character in common, do the same thing as in case 2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      if (j !== 0) {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        j = prefixes[j - 1];
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      } else {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        // else j = 0, and we can move to the next character S[i+1]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        i++;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  return matches;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">// stringSearch(&#39;Hello search the position of me&#39;, &#39;pos&#39;)
+</span></span></span></code></pre></div>
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/mirus-ua/hugo-theme-re-terminal" target="_blank">Theme</a> made by <a href="https://github.com/mirus-ua" target="_blank">Mirus</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
