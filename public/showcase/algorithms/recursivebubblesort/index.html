@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Recursive Bubble Sort :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Recursive Bubble Sort Bubble Sort is one of the simplest sorting algorithms that compares two elements at a time and swaps them if they are in the wrong order. This process is repeated until the entire sequence is in order.
+" />
+<meta name="keywords" content=", " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/showcase/algorithms/recursivebubblesort/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Recursive Bubble Sort">
+<meta property="og:description" content="Recursive Bubble Sort Bubble Sort is one of the simplest sorting algorithms that compares two elements at a time and swaps them if they are in the wrong order. This process is repeated until the entire sequence is in order.
+" />
+<meta property="og:url" content="//localhost:1313/showcase/algorithms/recursivebubblesort/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+  
+  <meta property="og:image" content="//localhost:1313/">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-12-12 15:50:48 -0500 EST" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/showcase/algorithms/recursivebubblesort/">Recursive Bubble Sort</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-12-12</time><span class="post-author">Cuneyt Yildirim</span>
+    
+</div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/tags/bubblesort/">BubbleSort</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/sorting-algorithms/">Sorting Algorithms</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="recursive-bubble-sort">Recursive Bubble Sort<a href="#recursive-bubble-sort" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Bubble Sort is one of the simplest sorting algorithms that compares two elements at a time and swaps them if they are in the wrong order. This process is repeated until the entire sequence is in order.</p>
+<ul>
+<li>Time Complexity: <code>O(n ^ 2)</code> for average case; <code>O(n)</code> for best case.</li>
+<li>Space Complexity: <code>O(n)</code>; note that iterative bubble sort has space complexity as <code>O(1)</code>.</li>
+</ul>
+<h2 id="steps">Steps<a href="#steps" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Base case: If the size of the array is 1, return.</p>
+<ul>
+<li>We need to fix the last element of the current sub-array. For this, iterate over the entire array using normal Bubble Sort, and perform swapping.</li>
+<li>Next, call the function on the entire array excluding the last element(which was fixed by the iteration in the above step)</li>
+<li>Repeat until Base Case is reached.</li>
+</ul>
+<h2 id="example">Example<a href="#example" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Let the given array be: <code>{5, 3, 2, 1, 4}</code></p>
+<p><strong>First Iteration:</strong></p>
+<ul>
+<li>{<code>5</code>, <code>3</code>, 2, 1, 4} -&gt; {<code>3</code>, <code>5</code>, 2, 1, 4} Swap since <code>5 &gt; 3</code></li>
+<li>{3, <code>5</code>, <code>2</code>, 1, 4} -&gt; {3, <code>2</code>, <code>5</code>, 1, 4} Swap since <code>5 &gt; 2</code></li>
+<li>{3, 2, <code>5</code>, <code>1</code>, 4} -&gt; {3, 2, <code>1</code>, <code>5</code>, 4} Swap since <code>5 &gt; 1</code></li>
+<li>{3, 2, 1, <code>5</code>, <code>4</code>} -&gt; {3, 2, 1, <code>4</code>, <code>5</code>} Swap since <code>5 &gt; 4</code></li>
+</ul>
+<p>This iteration has fixed the position of 5. Now, we will consider the array up to index 3.</p>
+<p><strong>Second Iteration:</strong></p>
+<ul>
+<li>{<code>3</code>, <code>2</code>, 1, 4, 5} -&gt; {<code>2</code>, <code>3</code>, 1, 4, 5} Swap since <code>3 &gt; 2</code></li>
+<li>{2, <code>3</code>, <code>1</code>, 4, 5} -&gt; {2, <code>1</code>, <code>3</code>, 4, 5} Swap since <code>3 &gt; 1</code></li>
+<li>{2, 1, <code>3</code>, <code>4</code>, 5}; As <code>3 &lt; 4</code>, do not swap</li>
+</ul>
+<p>Note: As we check one less element with every iteration, we do not need elements at index 3 and 4 i.e., <code>4</code> and <code>5</code>, as 5 is already in order. Formally, for an array with <code>n</code> integers, we consider elements only up to index <code>n - i</code>, where <code>i</code> is the iteration number.</p>
+<p><strong>Third Iteration:</strong></p>
+<ul>
+<li>{<code>2</code>, <code>1</code>, 3, 4, 5} -&gt; {<code>1</code>, <code>2</code>, 3, 4, 5} Swap since <code>1 &gt; 2</code></li>
+<li>{1, <code>2</code>, <code>3</code>, 4, 5}; As <code>2 &lt; 3</code>, do not swap</li>
+</ul>
+<p><strong>Fourth Iteration:</strong></p>
+<ul>
+<li>{<code>1</code>, <code>2</code>, 3, 4, 5}; As <code>1 &lt; 2</code>, do not swap</li>
+</ul>
+<p><strong>Fifth Iteration:</strong></p>
+<ul>
+<li>{<code>1</code>, 2, 3, 4, 5}; As the size of the array is 1, return.</li>
+</ul>
+<p>Note: This is the base case.</p>
+<h2 id="pseudo-code">Pseudo Code<a href="#pseudo-code" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<pre tabindex="0"><code>void bubbleSort(arr[], n)
+    if(n==1)
+        return;
+
+    for(i = 0; i&lt;n-1; i++)
+        if(arr[i] &gt; arr[i+1])
+            swap(arr[i], arr[i+1])
+
+    bubbleSort(arr, n-1)
+</code></pre><h2 id="implementations">Implementations<a href="#implementations" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li><a href="https://github.com/TheAlgorithms/Java/blob/master/Sorts/BubbleSortRecursion.java">Java</a></li>
+<li><a href="https://github.com/TheAlgorithms/C/blob/master/sorting/bubble_sort_recursion.c">C</a></li>
+</ul>
+<h2 id="video-explanation">Video Explanation<a href="#video-explanation" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><a href="https://www.youtube.com/watch?v=gDMDVLBfCI0">A video explaining iterative as well as recursive bubble sort</a></p>
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/mirus-ua/hugo-theme-re-terminal" target="_blank">Theme</a> made by <a href="https://github.com/mirus-ua" target="_blank">Mirus</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

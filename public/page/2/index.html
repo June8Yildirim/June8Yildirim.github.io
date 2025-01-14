@@ -161,14 +161,22 @@
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/binary-search/"></a>
+          <a href="//localhost:1313/posts/algorithms/radixsort/">Radix Sort</a>
         </h1>
 
-        <div class="post-meta">
+        <div class="post-meta"><time class="post-date">2024-12-12</time>
           
 
         </div>
 
+        
+          <span class="post-tags">
+            
+            #<a href="//localhost:1313/tags/"></a>&nbsp;
+            
+            #<a href="//localhost:1313/tags/"></a>&nbsp;
+            
+          </span>
         
 
         
@@ -177,28 +185,96 @@
 
         <div class="post-content">
           
-            <h1 id="binary-search-a-divide-and-conquer-algorithm">Binary Search (A divide and conquer algorithm)</h1>
-<h4 id="problem-statement">Problem Statement</h4>
-<p>Given a sorted  array of n elements, write a function to search for the index of a given element (target)</p>
-<h4 id="approach">Approach</h4>
-<ul>
-<li>Search for the array by dividing the array in half repeatedly.</li>
-<li>Initially consider the actual array and pick the element at the middle index</li>
-<li>Keep a lower index i.e. 0 and higher index i.e. length of array</li>
-<li>If it is equal to the target element then return the index</li>
-<li>Else if it is greater than the target element then consider only the left half of array. (lower index = 0, higher = middle - 1)</li>
-<li>Else if it is less than the target element then consider only the right half of array. (lower index = middle + 1, higher = length of array)</li>
-<li>Return -(insertion index + 1) if the target element is not found in the array (If the lower index is greater than or equal to higher index). Some simpler implementations just return -1 if the element is not found. The offset of 1 must be added as the insertion index might be 0 (the searched value might be smaller than all elements in the array). As indexing starts at 0, this must be distinguishable from the case where the target element has the index 0.</li>
-</ul>
-<h4 id="time-complexity">Time Complexity</h4>
-<p>O(log n) Worst Case  <br>
-O(1) Best Case (If middle element of initial array is the target element)</p>
+            <h1 id="radix-sort">Radix Sort</h1>
+<p>The lower bound for Comparison based sorting algorithm (Merge Sort, Heap Sort, Quick-Sort .. etc) is <code>Ω(nlogn)</code>, i.e., they cannot do better than <code>nlogn</code>.</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/binary-search/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithms/radixsort/">Read more →</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="//localhost:1313/posts/algorithms/recursivebubblesort/">Recursive Bubble Sort</a>
+        </h1>
+
+        <div class="post-meta"><time class="post-date">2024-12-12</time>
+          
+
+        </div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="//localhost:1313/tags/"></a>&nbsp;
+            
+            #<a href="//localhost:1313/tags/"></a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+
+        <div class="post-content">
+          
+            <h1 id="recursive-bubble-sort">Recursive Bubble Sort</h1>
+<p>Bubble Sort is one of the simplest sorting algorithms that compares two elements at a time and swaps them if they are in the wrong order. This process is repeated until the entire sequence is in order.</p>
+<ul>
+<li>Time Complexity: <code>O(n ^ 2)</code> for average case; <code>O(n)</code> for best case.</li>
+<li>Space Complexity: <code>O(n)</code>; note that iterative bubble sort has space complexity as <code>O(1)</code>.</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<p>Base case: If the size of the array is 1, return.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/algorithms/recursivebubblesort/">Read more →</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="//localhost:1313/posts/algorithms/selectionsort/">SelectionSort</a>
+        </h1>
+
+        <div class="post-meta"><time class="post-date">2024-12-12</time>
+          
+
+        </div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="//localhost:1313/tags/"></a>&nbsp;
+            
+            #<a href="//localhost:1313/tags/"></a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+
+        <div class="post-content">
+          
+            <h2 id="selection-sort">Selection Sort</h2>
+<p>Selection Sort divides the array into sorted and unsorted parts. It repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the sorted part.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/algorithms/selectionsort/">Read more →</a>
           </div>
         
       </article>
@@ -239,58 +315,6 @@ const mid = Math.floor(low + (high - low) / 2)</p>
         
           <div>
             <a class="read-more button" href="/posts/algorithms/searchalgorithm/binarysearch_js_/">Read more →</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/exponential-search/"></a>
-        </h1>
-
-        <div class="post-meta">
-          
-
-        </div>
-
-        
-
-        
-
-
-
-        <div class="post-content">
-          
-            <h1 id="exponential-search">Exponential Search</h1>
-<h4 id="prerequisites">Prerequisites</h4>
-<ul>
-<li><a href="https://github.com/faridevnz/Algorithms-Explanation/blob/master/en/Search%20Algorithms/Binary%20Search.md">Binary Search algorithm</a></li>
-</ul>
-<h4 id="problem-statement">Problem Statement</h4>
-<p>Given a sorted array of <em>n</em> elements, write a function to search for the index of a given element (target)</p>
-<h4 id="approach">Approach</h4>
-<ul>
-<li>Search for the <strong>range</strong> within which the target is included increasing <em>index</em> by powers of 2</li>
-<li>If this range exists in array apply the Binary Search algorithm over it</li>
-<li>Else return -1</li>
-</ul>
-<h4 id="example">Example</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>arr = [1, 2, 3, 4, 5, 6, 7, ... 998, 999, 1_000]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>target = 998
-</span></span><span style="display:flex;"><span>index = 0
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> SEARCHING FOR THE RANGE
-</span></span><span style="display:flex;"><span>index = 1, 2, 4, 8, 16, 32, 64, ..., 512, ..., 1_024
-</span></span><span style="display:flex;"><span>after 10 iteration we have the index at 1_024 and outside of the array 
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> BINARY SEARCH
-</span></span><span style="display:flex;"><span>Now we can apply the binary search on the subarray from 512 and 1_000.
-</span></span></code></pre></div><p><em><strong>Note</strong></em>: we apply the Binary Search from 512 to 1_000 because at <code>i = 2^10 = 1_024</code> the array is finisced and the target number is less than the latest index of the array ( 1_000 ).</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/exponential-search/">Read more →</a>
           </div>
         
       </article>
@@ -392,47 +416,6 @@ let fibK = fib2 + fib1 // Kth Fibonacci</p>
         
           <div>
             <a class="read-more button" href="/posts/algorithms/searchalgorithm/fibonaccisearch_js_/">Read more →</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/"></a>
-        </h1>
-
-        <div class="post-meta">
-          
-
-        </div>
-
-        
-
-        
-
-
-
-        <div class="post-content">
-          
-            <h1 id="floyd-cycle-detection-algorithm-to-find-duplicate-number-in-an-array">Floyd Cycle Detection Algorithm to find duplicate number in an array</h1>
-<h2 id="problem-statement">Problem Statement</h2>
-<p>Given an array of integers containing <code>n + 1</code> integers, where each integer is in the range <code>[1, n]</code> inclusive. If there is only one duplicate number in the input array, this algorithm returns the duplicate number without modifying the original array, otherwise, it returns -1.</p>
-<h2 id="approach">Approach</h2>
-<ul>
-<li>Use the function <code>f(x) = arr[x]</code> to construct the sequence:
-<code>arr[0]</code>, <code>arr[arr[0]]</code>, <code>arr[arr[arr[0]]]</code>, <code>arr[arr[arr[arr[0]]]]</code>, etc&hellip;.</li>
-<li>Each new element in the sequence is an element in <code>arr[]</code> at the index of the previous element.</li>
-<li>Starting from <code>x = arr[0]</code>, it will produce a linked list with a cycle.</li>
-<li>The cycle appears because <code>arr[]</code> contains duplicate elements(at least one). The duplicate value is an entrance to the cycle.</li>
-</ul>
-<h2 id="time-complexity">Time Complexity</h2>
-<p>O(n)</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/">Read more →</a>
           </div>
         
       </article>

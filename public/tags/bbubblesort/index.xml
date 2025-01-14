@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BbubbleSort on Cuneyt Yildirim Site</title>
+    <link>//localhost:1313/tags/bbubblesort/</link>
+    <description>Recent content in BbubbleSort on Cuneyt Yildirim Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Dec 2024 15:50:48 -0500</lastBuildDate><atom:link href="//localhost:1313/tags/bbubblesort/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recursive Bubble Sort</title>
+      <link>//localhost:1313/showcase/algorithms/recursivebubblesort/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      
+      <guid>//localhost:1313/showcase/algorithms/recursivebubblesort/</guid>
+      <description>&lt;h1 id=&#34;recursive-bubble-sort&#34;&gt;Recursive Bubble Sort&lt;/h1&gt;
+&lt;p&gt;Bubble Sort is one of the simplest sorting algorithms that compares two elements at a time and swaps them if they are in the wrong order. This process is repeated until the entire sequence is in order.&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;recursive-bubble-sort&#34;&gt;Recursive Bubble Sort&lt;/h1&gt;
+&lt;p&gt;Bubble Sort is one of the simplest sorting algorithms that compares two elements at a time and swaps them if they are in the wrong order. This process is repeated until the entire sequence is in order.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Time Complexity: &lt;code&gt;O(n ^ 2)&lt;/code&gt; for average case; &lt;code&gt;O(n)&lt;/code&gt; for best case.&lt;/li&gt;
+&lt;li&gt;Space Complexity: &lt;code&gt;O(n)&lt;/code&gt;; note that iterative bubble sort has space complexity as &lt;code&gt;O(1)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
+&lt;p&gt;Base case: If the size of the array is 1, return.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We need to fix the last element of the current sub-array. For this, iterate over the entire array using normal Bubble Sort, and perform swapping.&lt;/li&gt;
+&lt;li&gt;Next, call the function on the entire array excluding the last element(which was fixed by the iteration in the above step)&lt;/li&gt;
+&lt;li&gt;Repeat until Base Case is reached.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;Let the given array be: &lt;code&gt;{5, 3, 2, 1, 4}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;First Iteration:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;{&lt;code&gt;5&lt;/code&gt;, &lt;code&gt;3&lt;/code&gt;, 2, 1, 4} -&amp;gt; {&lt;code&gt;3&lt;/code&gt;, &lt;code&gt;5&lt;/code&gt;, 2, 1, 4} Swap since &lt;code&gt;5 &amp;gt; 3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;{3, &lt;code&gt;5&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, 1, 4} -&amp;gt; {3, &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;5&lt;/code&gt;, 1, 4} Swap since &lt;code&gt;5 &amp;gt; 2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;{3, 2, &lt;code&gt;5&lt;/code&gt;, &lt;code&gt;1&lt;/code&gt;, 4} -&amp;gt; {3, 2, &lt;code&gt;1&lt;/code&gt;, &lt;code&gt;5&lt;/code&gt;, 4} Swap since &lt;code&gt;5 &amp;gt; 1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;{3, 2, 1, &lt;code&gt;5&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt;} -&amp;gt; {3, 2, 1, &lt;code&gt;4&lt;/code&gt;, &lt;code&gt;5&lt;/code&gt;} Swap since &lt;code&gt;5 &amp;gt; 4&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This iteration has fixed the position of 5. Now, we will consider the array up to index 3.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Second Iteration:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;{&lt;code&gt;3&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, 1, 4, 5} -&amp;gt; {&lt;code&gt;2&lt;/code&gt;, &lt;code&gt;3&lt;/code&gt;, 1, 4, 5} Swap since &lt;code&gt;3 &amp;gt; 2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;{2, &lt;code&gt;3&lt;/code&gt;, &lt;code&gt;1&lt;/code&gt;, 4, 5} -&amp;gt; {2, &lt;code&gt;1&lt;/code&gt;, &lt;code&gt;3&lt;/code&gt;, 4, 5} Swap since &lt;code&gt;3 &amp;gt; 1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;{2, 1, &lt;code&gt;3&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt;, 5}; As &lt;code&gt;3 &amp;lt; 4&lt;/code&gt;, do not swap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: As we check one less element with every iteration, we do not need elements at index 3 and 4 i.e., &lt;code&gt;4&lt;/code&gt; and &lt;code&gt;5&lt;/code&gt;, as 5 is already in order. Formally, for an array with &lt;code&gt;n&lt;/code&gt; integers, we consider elements only up to index &lt;code&gt;n - i&lt;/code&gt;, where &lt;code&gt;i&lt;/code&gt; is the iteration number.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Third Iteration:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;{&lt;code&gt;2&lt;/code&gt;, &lt;code&gt;1&lt;/code&gt;, 3, 4, 5} -&amp;gt; {&lt;code&gt;1&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, 3, 4, 5} Swap since &lt;code&gt;1 &amp;gt; 2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;{1, &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;3&lt;/code&gt;, 4, 5}; As &lt;code&gt;2 &amp;lt; 3&lt;/code&gt;, do not swap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Fourth Iteration:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;{&lt;code&gt;1&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, 3, 4, 5}; As &lt;code&gt;1 &amp;lt; 2&lt;/code&gt;, do not swap&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Fifth Iteration:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;{&lt;code&gt;1&lt;/code&gt;, 2, 3, 4, 5}; As the size of the array is 1, return.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: This is the base case.&lt;/p&gt;
+&lt;h2 id=&#34;pseudo-code&#34;&gt;Pseudo Code&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;void bubbleSort(arr[], n)
+    if(n==1)
+        return;
+
+    for(i = 0; i&amp;lt;n-1; i++)
+        if(arr[i] &amp;gt; arr[i+1])
+            swap(arr[i], arr[i+1])
+
+    bubbleSort(arr, n-1)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;implementations&#34;&gt;Implementations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/Java/blob/master/Sorts/BubbleSortRecursion.java&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/TheAlgorithms/C/blob/master/sorting/bubble_sort_recursion.c&#34;&gt;C&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;video-explanation&#34;&gt;Video Explanation&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gDMDVLBfCI0&#34;&gt;A video explaining iterative as well as recursive bubble sort&lt;/a&gt;&lt;/p&gt;</content>
+    </item>
+    
+  </channel>
+</rss>
