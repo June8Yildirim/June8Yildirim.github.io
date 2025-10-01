@@ -98,6 +98,178 @@
     <ul class="menu__dropdown">
       
         
+          <li><a href="/algorithms">Algorithms</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/algorithms" >Algorithms</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+  
+  <div class="posts">
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/exponential-search/"></a>
+        </h1>
+        <div class="post-meta">
+          
+
+        </div>
+
+        
+
+        
+
+
+
+        <div class="post-content">
+          
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Exponential Search :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Exponential Search Prerequisites Binary Search algorithm Problem Statement Given a sorted array of n elements, write a function to search for the index of a given element (target)
+Approach Search for the range within which the target is included increasing index by powers of 2 If this range exists in array apply the Binary Search algorithm over it Else return -1 Example arr = [1, 2, 3, 4, 5, 6, 7, ... 998, 999, 1_000] target = 998 index = 0 1. SEARCHING FOR THE RANGE index = 1, 2, 4, 8, 16, 32, 64, ..., 512, ..., 1_024 after 10 iteration we have the index at 1_024 and outside of the array 2. BINARY SEARCH Now we can apply the binary search on the subarray from 512 and 1_000. Note: we apply the Binary Search from 512 to 1_000 because at i = 2^10 = 1_024 the array is finisced and the target number is less than the latest index of the array ( 1_000 ).
+" />
+<meta name="keywords" content=", " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/exponential-search/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Exponential Search">
+<meta property="og:description" content="Exponential Search Prerequisites Binary Search algorithm Problem Statement Given a sorted array of n elements, write a function to search for the index of a given element (target)
+Approach Search for the range within which the target is included increasing index by powers of 2 If this range exists in array apply the Binary Search algorithm over it Else return -1 Example arr = [1, 2, 3, 4, 5, 6, 7, ... 998, 999, 1_000] target = 998 index = 0 1. SEARCHING FOR THE RANGE index = 1, 2, 4, 8, 16, 32, 64, ..., 512, ..., 1_024 after 10 iteration we have the index at 1_024 and outside of the array 2. BINARY SEARCH Now we can apply the binary search on the subarray from 512 and 1_000. Note: we apply the Binary Search from 512 to 1_000 because at i = 2^10 = 1_024 the array is finisced and the target number is less than the latest index of the array ( 1_000 ).
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/exponential-search/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+  
+  <meta property="og:image" content="//localhost:1313/">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-12-12 15:50:48 -0500 EST" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
           <li><a href="/about">About</a></li>
         
       
@@ -146,145 +318,50 @@
 
   <div class="content">
     
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/exponential-search/">Exponential Search</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-12-12</time>
+    
+</div>
+
   
-  <div class="posts">
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/binary-search/"></a>
-        </h1>
-        <div class="post-meta">
-          
-
-        </div>
-
-        
-
-        
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/tags/"></a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/"></a>&nbsp;
+      
+    </span>
+  
+  
 
 
 
-        <div class="post-content">
-          
-            <h1 id="binary-search-a-divide-and-conquer-algorithm">Binary Search (A divide and conquer algorithm)</h1>
-<h4 id="problem-statement">Problem Statement</h4>
-<p>Given a sorted  array of n elements, write a function to search for the index of a given element (target)</p>
-<h4 id="approach">Approach</h4>
-<ul>
-<li>Search for the array by dividing the array in half repeatedly.</li>
-<li>Initially consider the actual array and pick the element at the middle index</li>
-<li>Keep a lower index i.e. 0 and higher index i.e. length of array</li>
-<li>If it is equal to the target element then return the index</li>
-<li>Else if it is greater than the target element then consider only the left half of array. (lower index = 0, higher = middle - 1)</li>
-<li>Else if it is less than the target element then consider only the right half of array. (lower index = middle + 1, higher = length of array)</li>
-<li>Return -(insertion index + 1) if the target element is not found in the array (If the lower index is greater than or equal to higher index). Some simpler implementations just return -1 if the element is not found. The offset of 1 must be added as the insertion index might be 0 (the searched value might be smaller than all elements in the array). As indexing starts at 0, this must be distinguishable from the case where the target element has the index 0.</li>
-</ul>
-<h4 id="time-complexity">Time Complexity</h4>
-<p>O(log n) Worst Case  <br>
-O(1) Best Case (If middle element of initial array is the target element)</p>
-          
-        </div>
+  
 
-        
-          <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/binary-search/">Read more →</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/binarysearch_js_/"></a>
-        </h1>
-        <div class="post-meta">
-          
-
-        </div>
-
-        
-
-        
-
-
-
-        <div class="post-content">
-          
-            <p>/* Binary Search: <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">https://en.wikipedia.org/wiki/Binary_search_algorithm</a>
-*</p>
-<ul>
-<li>Search a sorted array by repeatedly dividing the search interval</li>
-<li>in half. Begin with an interval covering the whole array. If the value of the</li>
-<li>search key is less than the item in the middle of the interval, narrow the interval</li>
-<li>to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the</li>
-<li>value is found or the interval is empty.
-*/</li>
-</ul>
-<p>function binarySearchRecursive (arr, x, low = 0, high = arr.length - 1) {
-const mid = Math.floor(low + (high - low) / 2)</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/binarysearch_js_/">Read more →</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/exponential-search/"></a>
-        </h1>
-        <div class="post-meta">
-          
-
-        </div>
-
-        
-
-        
-
-
-
-        <div class="post-content">
-          
-            <h1 id="exponential-search">Exponential Search</h1>
-<h4 id="prerequisites">Prerequisites</h4>
+  <div class="post-content"><div>
+        <h1 id="exponential-search">Exponential Search<a href="#exponential-search" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h4 id="prerequisites">Prerequisites<a href="#prerequisites" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
 <ul>
 <li><a href="https://github.com/faridevnz/Algorithms-Explanation/blob/master/en/Search%20Algorithms/Binary%20Search.md">Binary Search algorithm</a></li>
 </ul>
-<h4 id="problem-statement">Problem Statement</h4>
+<h4 id="problem-statement">Problem Statement<a href="#problem-statement" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
 <p>Given a sorted array of <em>n</em> elements, write a function to search for the index of a given element (target)</p>
-<h4 id="approach">Approach</h4>
-<ul>
-<li>Search for the <strong>range</strong> within which the target is included increasing <em>index</em> by powers of 2</li>
-<li>If this range exists in array apply the Binary Search algorithm over it</li>
-<li>Else return -1</li>
-</ul>
-<h4 id="example">Example</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>arr = [1, 2, 3, 4, 5, 6, 7, ... 998, 999, 1_000]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>target = 998
-</span></span><span style="display:flex;"><span>index = 0
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> SEARCHING FOR THE RANGE
-</span></span><span style="display:flex;"><span>index = 1, 2, 4, 8, 16, 32, 64, ..., 512, ..., 1_024
-</span></span><span style="display:flex;"><span>after 10 iteration we have the index at 1_024 and outside of the array 
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> BINARY SEARCH
-</span></span><span style="display:flex;"><span>Now we can apply the binary search on the subarray from 512 and 1_000.
-</span></span></code></pre></div><p><em><strong>Note</strong></em>: we apply the Binary Search from 512 to 1_000 because at <code>i = 2^10 = 1_024</code> the array is finisced and the target number is less than the latest index of the array ( 1_000 ).</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/exponential-search/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/exponential-search/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/exponentialsearch_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/exponentialsearch_js_/"></a>
         </h1>
         <div class="post-meta">
           
@@ -299,38 +376,190 @@ const mid = Math.floor(low + (high - low) / 2)</p>
 
         <div class="post-content">
           
-            <p>/**</p>
-<ul>
-<li>Exponential Search</li>
-<li></li>
-<li>The algorithm consists of two stages. The first stage determines a</li>
-<li>range in which the search key would reside if it were in the list.</li>
-<li>In the second stage, a binary search is performed on this range.</li>
-<li></li>
-<li></li>
-<li></li>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="/**
+Exponential Search The algorithm consists of two stages. The first stage determines a range in which the search key would reside if it were in the list. In the second stage, a binary search is performed on this range. */
+function binarySearch (arr, value, floor, ceiling) { // Middle index const mid = Math.floor((floor &#43; ceiling) / 2)
+// If value is at the mid position return this position if (arr[mid] === value) { return mid }
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/exponentialsearch_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="/**
+Exponential Search The algorithm consists of two stages. The first stage determines a range in which the search key would reside if it were in the list. In the second stage, a binary search is performed on this range. */
+function binarySearch (arr, value, floor, ceiling) { // Middle index const mid = Math.floor((floor &#43; ceiling) / 2)
+// If value is at the mid position return this position if (arr[mid] === value) { return mid }
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/exponentialsearch_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-<p>*/</p>
-<p>function binarySearch (arr, value, floor, ceiling) {
-// Middle index
-const mid = Math.floor((floor + ceiling) / 2)</p>
-<p>// If value is at the mid position return this position
-if (arr[mid] === value) {
-return mid
-}</p>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/exponentialsearch_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>/**</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/exponentialsearch_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/exponentialsearch_js_/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/fibonaccisearch_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/fibonaccisearch_js_/"></a>
         </h1>
         <div class="post-meta">
           
@@ -345,45 +574,186 @@ return mid
 
         <div class="post-content">
           
-            <p>/****************************************************************************</p>
-<ul>
-<li>Fibonacci Search JavaScript Implementation</li>
-<li>Author   Alhassan Atama Isiaka</li>
-<li>Version v1.0.0</li>
-<li>Copyright 2020</li>
-<li><a href="https://github.com/komputarist">https://github.com/komputarist</a></li>
-<li></li>
-<li>This implementation is based on Generalizing the Fibonacci search we</li>
-<li>define the Fibonacci search of degree K. Like the Fibonacci search,</li>
-<li>which it reduces to for K = 2, the Fibonacci search of degree K</li>
-<li>involves only addition and subtraction.</li>
-<li>Capocelli R.M. (1991) A Generalization of the Fibonacci Search. In:</li>
-<li>Bergum G.E., Philippou A.N., Horadam A.F. (eds) Applications of Fibonacci</li>
-<li>Numbers. Springer, Dordrecht. <a href="https://doi.org/10.1007/978-94-011-3586-3_9">https://doi.org/10.1007/978-94-011-3586-3_9</a></li>
-<li></li>
-<li>This snippet is free. Feel free to improve on it</li>
-<li></li>
-<li>We define a function fibonacciSearch() that takes an array of numbers,</li>
-<li>the item (number) to be searched for and the length of the items in the array
-****************************************************************************/</li>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="/****************************************************************************
+Fibonacci Search JavaScript Implementation Author Alhassan Atama Isiaka Version v1.0.0 Copyright 2020 https://github.com/komputarist This implementation is based on Generalizing the Fibonacci search we define the Fibonacci search of degree K. Like the Fibonacci search, which it reduces to for K = 2, the Fibonacci search of degree K involves only addition and subtraction. Capocelli R.M. (1991) A Generalization of the Fibonacci Search. In: Bergum G.E., Philippou A.N., Horadam A.F. (eds) Applications of Fibonacci Numbers. Springer, Dordrecht. https://doi.org/10.1007/978-94-011-3586-3_9 This snippet is free. Feel free to improve on it We define a function fibonacciSearch() that takes an array of numbers, the item (number) to be searched for and the length of the items in the array ****************************************************************************/ export const fibonacciSearch = (arr, x, n) =&gt; { let fib2 = 0 // (K-2)&rsquo;th Fibonacci Number let fib1 = 1 // (K-1)&rsquo;th Fibonacci Number. let fibK = fib2 &#43; fib1 // Kth Fibonacci
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/fibonaccisearch_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="/****************************************************************************
+Fibonacci Search JavaScript Implementation Author Alhassan Atama Isiaka Version v1.0.0 Copyright 2020 https://github.com/komputarist This implementation is based on Generalizing the Fibonacci search we define the Fibonacci search of degree K. Like the Fibonacci search, which it reduces to for K = 2, the Fibonacci search of degree K involves only addition and subtraction. Capocelli R.M. (1991) A Generalization of the Fibonacci Search. In: Bergum G.E., Philippou A.N., Horadam A.F. (eds) Applications of Fibonacci Numbers. Springer, Dordrecht. https://doi.org/10.1007/978-94-011-3586-3_9 This snippet is free. Feel free to improve on it We define a function fibonacciSearch() that takes an array of numbers, the item (number) to be searched for and the length of the items in the array ****************************************************************************/ export const fibonacciSearch = (arr, x, n) =&gt; { let fib2 = 0 // (K-2)&rsquo;th Fibonacci Number let fib1 = 1 // (K-1)&rsquo;th Fibonacci Number. let fibK = fib2 &#43; fib1 // Kth Fibonacci
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/fibonaccisearch_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-<p>export const fibonacciSearch = (arr, x, n) =&gt; {
-let fib2 = 0 // (K-2)&rsquo;th Fibonacci Number
-let fib1 = 1 // (K-1)&rsquo;th Fibonacci Number.
-let fibK = fib2 + fib1 // Kth Fibonacci</p>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/fibonaccisearch_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>/****************************************************************************</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/fibonaccisearch_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/fibonaccisearch_js_/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/"></a>
         </h1>
         <div class="post-meta">
           
@@ -398,32 +768,198 @@ let fibK = fib2 + fib1 // Kth Fibonacci</p>
 
         <div class="post-content">
           
-            <h1 id="floyd-cycle-detection-algorithm-to-find-duplicate-number-in-an-array">Floyd Cycle Detection Algorithm to find duplicate number in an array</h1>
-<h2 id="problem-statement">Problem Statement</h2>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Floyd Cycle Detection :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Floyd Cycle Detection Algorithm to find duplicate number in an array Problem Statement Given an array of integers containing n &#43; 1 integers, where each integer is in the range [1, n] inclusive. If there is only one duplicate number in the input array, this algorithm returns the duplicate number without modifying the original array, otherwise, it returns -1.
+Approach Use the function f(x) = arr[x] to construct the sequence: arr[0], arr[arr[0]], arr[arr[arr[0]]], arr[arr[arr[arr[0]]]], etc&hellip;. Each new element in the sequence is an element in arr[] at the index of the previous element. Starting from x = arr[0], it will produce a linked list with a cycle. The cycle appears because arr[] contains duplicate elements(at least one). The duplicate value is an entrance to the cycle. Time Complexity O(n)
+" />
+<meta name="keywords" content=", " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Floyd Cycle Detection">
+<meta property="og:description" content="Floyd Cycle Detection Algorithm to find duplicate number in an array Problem Statement Given an array of integers containing n &#43; 1 integers, where each integer is in the range [1, n] inclusive. If there is only one duplicate number in the input array, this algorithm returns the duplicate number without modifying the original array, otherwise, it returns -1.
+Approach Use the function f(x) = arr[x] to construct the sequence: arr[0], arr[arr[0]], arr[arr[arr[0]]], arr[arr[arr[arr[0]]]], etc&hellip;. Each new element in the sequence is an element in arr[] at the index of the previous element. Starting from x = arr[0], it will produce a linked list with a cycle. The cycle appears because arr[] contains duplicate elements(at least one). The duplicate value is an entrance to the cycle. Time Complexity O(n)
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+  
+  <meta property="og:image" content="//localhost:1313/">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-12-12 15:50:48 -0500 EST" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/">Floyd Cycle Detection</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-12-12</time>
+    
+</div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/tags/"></a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/"></a>&nbsp;
+      
+    </span>
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="floyd-cycle-detection-algorithm-to-find-duplicate-number-in-an-array">Floyd Cycle Detection Algorithm to find duplicate number in an array<a href="#floyd-cycle-detection-algorithm-to-find-duplicate-number-in-an-array" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="problem-statement">Problem Statement<a href="#problem-statement" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Given an array of integers containing <code>n + 1</code> integers, where each integer is in the range <code>[1, n]</code> inclusive. If there is only one duplicate number in the input array, this algorithm returns the duplicate number without modifying the original array, otherwise, it returns -1.</p>
-<h2 id="approach">Approach</h2>
-<ul>
-<li>Use the function <code>f(x) = arr[x]</code> to construct the sequence:
-<code>arr[0]</code>, <code>arr[arr[0]]</code>, <code>arr[arr[arr[0]]]</code>, <code>arr[arr[arr[arr[0]]]]</code>, etc&hellip;.</li>
-<li>Each new element in the sequence is an element in <code>arr[]</code> at the index of the previous element.</li>
-<li>Starting from <code>x = arr[0]</code>, it will produce a linked list with a cycle.</li>
-<li>The cycle appears because <code>arr[]</code> contains duplicate elements(at least one). The duplicate value is an entrance to the cycle.</li>
-</ul>
-<h2 id="time-complexity">Time Complexity</h2>
-<p>O(n)</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/interpolationsearch_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/interpolationsearch_js_/"></a>
         </h1>
         <div class="post-meta">
           
@@ -438,41 +974,188 @@ let fibK = fib2 + fib1 // Kth Fibonacci</p>
 
         <div class="post-content">
           
-            <p>/**</p>
-<ul>
-<li>Interpolation Search
-*</li>
-<li>Time Complexity:</li>
-<li>-Best case: O(1)</li>
-<li>-Worst case: O(n)</li>
-<li>-O((log(log(n))) If the data are uniformly distributed
-*
-*
-*/</li>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="/**
+Interpolation Search * Time Complexity: -Best case: O(1) -Worst case: O(n) -O((log(log(n))) If the data are uniformly distributed * * */ export function interpolationSearch (arr, key) { const length = arr.length - 1 let low = 0 let high = length let position = -1 let delta = -1
+// Because the array is sorted the key must be between low and high while (low &lt;= high &amp;&amp; key &gt;= arr[low] &amp;&amp; key &lt;= arr[high]) { delta = (key - arr[low]) / (arr[high] - arr[low]) position = low &#43; Math.floor((high - low) * delta)
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/interpolationsearch_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="/**
+Interpolation Search * Time Complexity: -Best case: O(1) -Worst case: O(n) -O((log(log(n))) If the data are uniformly distributed * * */ export function interpolationSearch (arr, key) { const length = arr.length - 1 let low = 0 let high = length let position = -1 let delta = -1
+// Because the array is sorted the key must be between low and high while (low &lt;= high &amp;&amp; key &gt;= arr[low] &amp;&amp; key &lt;= arr[high]) { delta = (key - arr[low]) / (arr[high] - arr[low]) position = low &#43; Math.floor((high - low) * delta)
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/interpolationsearch_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-<p>export function interpolationSearch (arr, key) {
-const length = arr.length - 1
-let low = 0
-let high = length
-let position = -1
-let delta = -1</p>
-<p>// Because the array is sorted the key must be between low and high
-while (low &lt;= high &amp;&amp; key &gt;= arr[low] &amp;&amp; key &lt;= arr[high]) {
-delta = (key - arr[low]) / (arr[high] - arr[low])
-position = low + Math.floor((high - low) * delta)</p>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/interpolationsearch_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>/**</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/interpolationsearch_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/interpolationsearch_js_/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/jumpsearch_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/jumpsearch_js_/"></a>
         </h1>
         <div class="post-meta">
           
@@ -487,38 +1170,186 @@ position = low + Math.floor((high - low) * delta)</p>
 
         <div class="post-content">
           
-            <p>/* The Jump Search algorithm allows to combine a linear search with a speed optimization.</p>
-<ul>
-<li>This means that instead of going 1 by 1, we will increase the step of √n and increase that</li>
-<li>step of √n which make the step getting bigger and bigger.</li>
-<li>The asymptotic analysis of Jump Search is o(√n). Like the binary search, it needs to be sorted.</li>
-<li>The advantage against binary search is that Jump Search traversed back only once.
-*/</li>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="/* The Jump Search algorithm allows to combine a linear search with a speed optimization.
+This means that instead of going 1 by 1, we will increase the step of √n and increase that step of √n which make the step getting bigger and bigger. The asymptotic analysis of Jump Search is o(√n). Like the binary search, it needs to be sorted. The advantage against binary search is that Jump Search traversed back only once. */ const jumpSearch = (arr, value) =&gt; { const length = arr.length let step = Math.floor(Math.sqrt(length)) let lowerBound = 0 while (arr[Math.min(step, length) - 1] &lt; value) { lowerBound = step step &#43;= step if (lowerBound &gt;= length) { return -1 } }
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/jumpsearch_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="/* The Jump Search algorithm allows to combine a linear search with a speed optimization.
+This means that instead of going 1 by 1, we will increase the step of √n and increase that step of √n which make the step getting bigger and bigger. The asymptotic analysis of Jump Search is o(√n). Like the binary search, it needs to be sorted. The advantage against binary search is that Jump Search traversed back only once. */ const jumpSearch = (arr, value) =&gt; { const length = arr.length let step = Math.floor(Math.sqrt(length)) let lowerBound = 0 while (arr[Math.min(step, length) - 1] &lt; value) { lowerBound = step step &#43;= step if (lowerBound &gt;= length) { return -1 } }
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/jumpsearch_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-<p>const jumpSearch = (arr, value) =&gt; {
-const length = arr.length
-let step = Math.floor(Math.sqrt(length))
-let lowerBound = 0
-while (arr[Math.min(step, length) - 1] &lt; value) {
-lowerBound = step
-step += step
-if (lowerBound &gt;= length) {
-return -1
-}
-}</p>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/jumpsearch_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>/* The Jump Search algorithm allows to combine a linear search with a speed optimization.</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/jumpsearch_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/jumpsearch_js_/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/linear-search/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/linear-search/"></a>
         </h1>
         <div class="post-meta">
           
@@ -533,33 +1364,188 @@ return -1
 
         <div class="post-content">
           
-            <h1 id="linear-search">Linear Search</h1>
-<h4 id="problem-statement">Problem Statement</h4>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Linear Search Problem Statement Given an array of n elements, write a function to search for the index of a given element (target)
+Approach Start iterating with the first element in the array. Compare it with the target element If it is equal to the target element then return the index Else continue iterating Return -1 if target element is not found in the array Time Complexity O(n) Worse Case O(1) Best Case (If first element of array is the target element)
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/linear-search/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="Linear Search Problem Statement Given an array of n elements, write a function to search for the index of a given element (target)
+Approach Start iterating with the first element in the array. Compare it with the target element If it is equal to the target element then return the index Else continue iterating Return -1 if target element is not found in the array Time Complexity O(n) Worse Case O(1) Best Case (If first element of array is the target element)
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/linear-search/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/linear-search/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="linear-search">Linear Search<a href="#linear-search" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h4 id="problem-statement">Problem Statement<a href="#problem-statement" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
 <p>Given an array of n elements, write a function to search for the index of a given element (target)</p>
-<h4 id="approach">Approach</h4>
-<ul>
-<li>Start iterating with the first element in the array.</li>
-<li>Compare it with the target element</li>
-<li>If it is equal to the target element then return the index</li>
-<li>Else continue iterating</li>
-<li>Return -1 if target element is not found in the array</li>
-</ul>
-<h4 id="time-complexity">Time Complexity</h4>
-<p>O(n) Worse Case  <br>
-O(1) Best Case (If first element of array is the target element)</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/linear-search/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/linear-search/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/linearsearch_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/linearsearch_js_/"></a>
         </h1>
         <div class="post-meta">
           
@@ -574,35 +1560,567 @@ O(1) Best Case (If first element of array is the target element)</p>
 
         <div class="post-content">
           
-            <p>/*</p>
-<ul>
-<li>Linear search or sequential search is a method for finding a target</li>
-<li>value within a list. It sequentially checks each element of the list</li>
-<li>for the target value until a match is found or until all the elements</li>
-<li>have been searched.
-*/
-function SearchArray (searchNum, ar, output = v =&gt; console.log(v)) {
-const position = Search(ar, searchNum)
-if (position !== -1) {
-output(&lsquo;The element was found at &rsquo; + (position + 1))
-} else {
-output(&lsquo;The element not found&rsquo;)
-}
-}</li>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="/*
+Linear search or sequential search is a method for finding a target value within a list. It sequentially checks each element of the list for the target value until a match is found or until all the elements have been searched. */ function SearchArray (searchNum, ar, output = v =&gt; console.log(v)) { const position = Search(ar, searchNum) if (position !== -1) { output(&lsquo;The element was found at &rsquo; &#43; (position &#43; 1)) } else { output(&lsquo;The element not found&rsquo;) } } // Search “theArray” for the specified “key” value function Search (theArray, key) { for (let n = 0; n &lt; theArray.length; n&#43;&#43;) { if (theArray[n] === key) { return n } } return -1 }
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/linearsearch_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="/*
+Linear search or sequential search is a method for finding a target value within a list. It sequentially checks each element of the list for the target value until a match is found or until all the elements have been searched. */ function SearchArray (searchNum, ar, output = v =&gt; console.log(v)) { const position = Search(ar, searchNum) if (position !== -1) { output(&lsquo;The element was found at &rsquo; &#43; (position &#43; 1)) } else { output(&lsquo;The element not found&rsquo;) } } // Search “theArray” for the specified “key” value function Search (theArray, key) { for (let n = 0; n &lt; theArray.length; n&#43;&#43;) { if (theArray[n] === key) { return n } } return -1 }
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/linearsearch_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-<p>// Search “theArray” for the specified “key” value
-function Search (theArray, key) {
-for (let n = 0; n &lt; theArray.length; n++) {
-if (theArray[n] === key) { return n }
-}
-return -1
-}</p>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/linearsearch_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>/*</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/linearsearch_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/linearsearch_js_/">Read more →</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/quickselectsearch_js_/"></a>
+        </h1>
+        <div class="post-meta">
+          
+
+        </div>
+
+        
+
+        
+
+
+
+        <div class="post-content">
+          
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="/*
+Places the k smallest elements in array in the first k indices: [0..k-1] Modifies the passed in array in place Returns a slice of the wanted elements for convenience Efficient mainly because it never performs a full sort. * The only guarantees are that: * The kth element is in its final sort index (if the array were to be sorted) All elements before index k are smaller than the kth element * Reference */ export function quickSelectSearch (array, k) { if (!array || array.length &lt;= k) { throw new Error(&lsquo;Invalid arguments&rsquo;) } let from = 0 let to = array.length - 1 while (from &lt; to) { let left = from let right = to const pivot = array[Math.ceil((left &#43; right) * 0.5)]
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/quickselectsearch_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="/*
+Places the k smallest elements in array in the first k indices: [0..k-1] Modifies the passed in array in place Returns a slice of the wanted elements for convenience Efficient mainly because it never performs a full sort. * The only guarantees are that: * The kth element is in its final sort index (if the array were to be sorted) All elements before index k are smaller than the kth element * Reference */ export function quickSelectSearch (array, k) { if (!array || array.length &lt;= k) { throw new Error(&lsquo;Invalid arguments&rsquo;) } let from = 0 let to = array.length - 1 while (from &lt; to) { let left = from let right = to const pivot = array[Math.ceil((left &#43; right) * 0.5)]
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/quickselectsearch_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/quickselectsearch_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>/*</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/quickselectsearch_js_/">Read more →</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/slidingwindow_js_/"></a>
+        </h1>
+        <div class="post-meta">
+          
+
+        </div>
+
+        
+
+        
+
+
+
+        <div class="post-content">
+          
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="/**
+Sliding Window: This pattern involve creating a window which can either be an array or numbers from one position to another. * Depending on a certain condition, the window either increases or closes (and a new window is created). * Very useful for keeping track of a subset of data in an array/string etc. * Time Complexity: Best - O(n); * Examples: maxSubarraySum([1,2,5,2,8,1,5],2) // returns 10 maxSubarraySum([1,2,5,2,8,1,5],15) // returns null maxSubarraySum([5,2,6,9],3) // returns 17 @param {[Int]} arr - An array of integers on which we will perform the test. @param {Int} num - An integer that displays the size of the window you want to check. @returns {Int / Null} - Returns a total of N consecutive numbers or null */ function slidingWindow (arr, num) { // Edge Case: // If the length of the array shorter than the window size (num) return null. if (arr.length &lt; num) return null // The highest amount of consecutive numbers let maxSum = 0 // Temp amount of consecutive numbers - For comparative purposes let tempSum = 0 // loop over the array {num} times and save their total amount in {maxSum} for (let i = 0; i &lt; num; i&#43;&#43;) { maxSum &#43;= arr[i] } // initialize {tempSum} to {maxSum}. tempSum = maxSum // loop over the array n times for (let i = num; i &lt; arr.length; i&#43;&#43;) { // Add the next num in the array and remove the first one tempSum = tempSum - arr[i - num] &#43; arr[i] // save the largest number between {maxNum} and {tempNum} in maxSum. maxSum = Math.max(maxSum, tempSum) } return maxSum }
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/slidingwindow_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="/**
+Sliding Window: This pattern involve creating a window which can either be an array or numbers from one position to another. * Depending on a certain condition, the window either increases or closes (and a new window is created). * Very useful for keeping track of a subset of data in an array/string etc. * Time Complexity: Best - O(n); * Examples: maxSubarraySum([1,2,5,2,8,1,5],2) // returns 10 maxSubarraySum([1,2,5,2,8,1,5],15) // returns null maxSubarraySum([5,2,6,9],3) // returns 17 @param {[Int]} arr - An array of integers on which we will perform the test. @param {Int} num - An integer that displays the size of the window you want to check. @returns {Int / Null} - Returns a total of N consecutive numbers or null */ function slidingWindow (arr, num) { // Edge Case: // If the length of the array shorter than the window size (num) return null. if (arr.length &lt; num) return null // The highest amount of consecutive numbers let maxSum = 0 // Temp amount of consecutive numbers - For comparative purposes let tempSum = 0 // loop over the array {num} times and save their total amount in {maxSum} for (let i = 0; i &lt; num; i&#43;&#43;) { maxSum &#43;= arr[i] } // initialize {tempSum} to {maxSum}. tempSum = maxSum // loop over the array n times for (let i = num; i &lt; arr.length; i&#43;&#43;) { // Add the next num in the array and remove the first one tempSum = tempSum - arr[i - num] &#43; arr[i] // save the largest number between {maxNum} and {tempNum} in maxSum. maxSum = Math.max(maxSum, tempSum) } return maxSum }
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/slidingwindow_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/slidingwindow_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>/**</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/slidingwindow_js_/">Read more →</a>
           </div>
         
       </article>

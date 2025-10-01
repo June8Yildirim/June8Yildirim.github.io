@@ -1,5 +1,5 @@
 +++
-title = "BubbleSort"
+title = "Heap Sort"
 date = "2024-12-12T15:50:48-05:00"
 author = ""
 authorTwitter = "" #do not include @
@@ -19,6 +19,8 @@ color = "" #color from the theme settings
 #### Problem Statement
 
 Given an unsorted array of n elements, write a function to sort the array
+
+<!--more-->
 
 #### Approach
 

@@ -16,6 +16,8 @@ color = "" #color from the theme settings
 
 ### Fibonacci Search JavaScript Implementation
 
+<!--more-->
+
 This implementation is based on Generalizing the Fibonacci search we define the Fibonacci search of degree K. Like the Fibonacci search, which it reduces to for K = 2, the Fibonacci search of degree K \* involves only addition and subtraction.
 
 ```JavaScript

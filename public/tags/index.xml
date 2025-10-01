@@ -27,5 +27,25 @@
       <content></content>
     </item>
     
+    <item>
+      <title>BubbleSort</title>
+      <link>//localhost:1313/tags/bubblesort/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      
+      <guid>//localhost:1313/tags/bubblesort/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms</title>
+      <link>//localhost:1313/tags/sorting-algorithms/</link>
+      <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
+      
+      <guid>//localhost:1313/tags/sorting-algorithms/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
   </channel>
 </rss>

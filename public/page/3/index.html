@@ -99,6 +99,188 @@
     <ul class="menu__dropdown">
       
         
+          <li><a href="/algorithms">Algorithms</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/algorithms" >Algorithms</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+  
+  <div class="posts">
+    
+    
+
+    
+    
+      
+    
+    
+
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/stringsearch_js_/"></a>
+        </h1>
+
+        <div class="post-meta">
+          
+
+        </div>
+
+        
+
+        
+
+
+
+        <div class="post-content">
+          
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="/*
+String Search */ function makeTable (str) { // create a table of size equal to the length of str // table[i] will store the prefix of the longest prefix of the substring str[0..i] const table = new Array(str.length) let maxPrefix = 0 // the longest prefix of the substring str[0] has length table[0] = 0
+// for the substrings the following substrings, we have two cases for (let i = 1; i &lt; str.length; i&#43;&#43;) { // case 1. the current character doesn&rsquo;t match the last character of the longest prefix while (maxPrefix &gt; 0 &amp;&amp; str.charAt(i) !== str.charAt(maxPrefix)) { // if that is the case, we have to backtrack, and try find a character that will be equal to the current character // if we reach 0, then we couldn&rsquo;t find a character maxPrefix = table[maxPrefix - 1] } // case 2. The last character of the longest prefix matches the current character in str if (str.charAt(maxPrefix) === str.charAt(i)) { // if that is the case, we know that the longest prefix at position i has one more character. // for example consider . be any character not contained in the set [a.c] // str = abc&hellip;.abc // consider i to be the last character c in str // maxPrefix = will be 2 (the first c in str) // maxPrefix now will be 3 maxPrefix&#43;&#43; // so the max prefix for table[9] is 3 } table[i] = maxPrefix } return table }
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/stringsearch_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="/*
+String Search */ function makeTable (str) { // create a table of size equal to the length of str // table[i] will store the prefix of the longest prefix of the substring str[0..i] const table = new Array(str.length) let maxPrefix = 0 // the longest prefix of the substring str[0] has length table[0] = 0
+// for the substrings the following substrings, we have two cases for (let i = 1; i &lt; str.length; i&#43;&#43;) { // case 1. the current character doesn&rsquo;t match the last character of the longest prefix while (maxPrefix &gt; 0 &amp;&amp; str.charAt(i) !== str.charAt(maxPrefix)) { // if that is the case, we have to backtrack, and try find a character that will be equal to the current character // if we reach 0, then we couldn&rsquo;t find a character maxPrefix = table[maxPrefix - 1] } // case 2. The last character of the longest prefix matches the current character in str if (str.charAt(maxPrefix) === str.charAt(i)) { // if that is the case, we know that the longest prefix at position i has one more character. // for example consider . be any character not contained in the set [a.c] // str = abc&hellip;.abc // consider i to be the last character c in str // maxPrefix = will be 2 (the first c in str) // maxPrefix now will be 3 maxPrefix&#43;&#43; // so the max prefix for table[9] is 3 } table[i] = maxPrefix } return table }
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/stringsearch_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
           <li><a href="/about">About</a></li>
         
       
@@ -147,21 +329,231 @@
 
   <div class="content">
     
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/stringsearch_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
   
-  <div class="posts">
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>/*</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/stringsearch_js_/">Read more →</a>
+          </div>
+        
+      </article>
     
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/ternarysearch_js_/"></a>
+        </h1>
+
+        <div class="post-meta">
+          
+
+        </div>
+
+        
+
+        
+
+
+
+        <div class="post-content">
+          
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="/* Ternary search is similar to binary search but it divide the sorted array
+into three parts and determine which part the key lies in. The array will be divided into three intervals by using two middle points, mid1 and mid2. The value of the key will first compared with the two mid points, the value will be returned if there is a match. Then, if the value of the key is less than mid1, narrow the interval to the first part. Else, if the value of the key is greater than mid2, narrow the interval to the third part. Otherwise, narrow the interval to the middle part. Repeat the steps until the value is found or the interval is empty(value not found after checking all elements). * Reference: https://www.geeksforgeeks.org/ternary-search/ */ function ternarySearchRecursive (arr, key, low = 0, high = arr.length - 1) { if (high &gt;= low) { // find the mid1 and mid2 const mid1 = Math.floor(low &#43; (high - low) / 3) const mid2 = Math.floor(high - (high - low) / 3)
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/ternarysearch_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="/* Ternary search is similar to binary search but it divide the sorted array
+into three parts and determine which part the key lies in. The array will be divided into three intervals by using two middle points, mid1 and mid2. The value of the key will first compared with the two mid points, the value will be returned if there is a match. Then, if the value of the key is less than mid1, narrow the interval to the first part. Else, if the value of the key is greater than mid2, narrow the interval to the third part. Otherwise, narrow the interval to the middle part. Repeat the steps until the value is found or the interval is empty(value not found after checking all elements). * Reference: https://www.geeksforgeeks.org/ternary-search/ */ function ternarySearchRecursive (arr, key, low = 0, high = arr.length - 1) { if (high &gt;= low) { // find the mid1 and mid2 const mid1 = Math.floor(low &#43; (high - low) / 3) const mid2 = Math.floor(high - (high - low) / 3)
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/ternarysearch_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
     
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
 
     
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
     
       
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
     
-    
+  </ul>
+</nav>
 
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/ternarysearch_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>/* Ternary search is similar to binary search but it divide the sorted array</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/ternarysearch_js_/">Read more →</a>
+          </div>
+        
+      </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/quickselectsearch_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/test/binarysearch.test_js_/"></a>
         </h1>
 
         <div class="post-meta">
@@ -177,52 +569,582 @@
 
         <div class="post-content">
           
-            <p>/*</p>
-<ul>
-<li>Places the <code>k</code> smallest elements in <code>array</code> in the first <code>k</code> indices: <code>[0..k-1]</code></li>
-<li>Modifies the passed in array <em>in place</em></li>
-<li>Returns a slice of the wanted elements for convenience</li>
-<li>Efficient mainly because it never performs a full sort.
-*</li>
-<li>The only guarantees are that:
-*</li>
-<li>
-<ul>
-<li>The <code>k</code>th element is in its final sort index (if the array were to be sorted)</li>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="import { binarySearchIterative, binarySearchRecursive } from &lsquo;../BinarySearch&rsquo;
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] const stringArr = [ &lsquo;Alpha&rsquo;, &lsquo;Bravo&rsquo;, &lsquo;Charlie&rsquo;, &lsquo;Delta&rsquo;, &lsquo;Echo&rsquo;, &lsquo;Foxtrot&rsquo;, &lsquo;Golf&rsquo;, &lsquo;Hotel&rsquo;, &lsquo;India&rsquo;, &lsquo;Juliet&rsquo;, &lsquo;Kilo&rsquo;, &lsquo;Lima&rsquo;, &lsquo;Mike&rsquo;, &lsquo;November&rsquo;, &lsquo;Oscar&rsquo;, &lsquo;Papa&rsquo;, &lsquo;Quebec&rsquo;, &lsquo;Romeo&rsquo;, &lsquo;Sierra&rsquo;, &lsquo;Tango&rsquo;, &lsquo;Uniform&rsquo;, &lsquo;Victor&rsquo;, &lsquo;Whiskey&rsquo;, &lsquo;X-Ray&rsquo;, &lsquo;Yankee&rsquo;, &lsquo;Zulu&rsquo; ]
+describe(&lsquo;Binary Search&rsquo;, () =&gt; { const funcs = [binarySearchIterative, binarySearchRecursive] for (const func of funcs) { test(&rsquo;expect to return the index of the item in the array&rsquo;, () =&gt; { expect(func(arr, 3)).toBe(2) }) test(&rsquo;expect to return -1 if not in array&rsquo;, () =&gt; { expect(func(arr, 11)).toBe(-1) }) test(&rsquo;expect to return the index of the item in the array&rsquo;, () =&gt; { expect(func(stringArr, &lsquo;Charlie&rsquo;)).toBe(2) }) test(&rsquo;expect to return -1 if not in array&rsquo;, () =&gt; { expect(func(stringArr, &lsquo;Zoft&rsquo;)).toBe(-1) }) } })
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/test/binarysearch.test_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="import { binarySearchIterative, binarySearchRecursive } from &lsquo;../BinarySearch&rsquo;
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] const stringArr = [ &lsquo;Alpha&rsquo;, &lsquo;Bravo&rsquo;, &lsquo;Charlie&rsquo;, &lsquo;Delta&rsquo;, &lsquo;Echo&rsquo;, &lsquo;Foxtrot&rsquo;, &lsquo;Golf&rsquo;, &lsquo;Hotel&rsquo;, &lsquo;India&rsquo;, &lsquo;Juliet&rsquo;, &lsquo;Kilo&rsquo;, &lsquo;Lima&rsquo;, &lsquo;Mike&rsquo;, &lsquo;November&rsquo;, &lsquo;Oscar&rsquo;, &lsquo;Papa&rsquo;, &lsquo;Quebec&rsquo;, &lsquo;Romeo&rsquo;, &lsquo;Sierra&rsquo;, &lsquo;Tango&rsquo;, &lsquo;Uniform&rsquo;, &lsquo;Victor&rsquo;, &lsquo;Whiskey&rsquo;, &lsquo;X-Ray&rsquo;, &lsquo;Yankee&rsquo;, &lsquo;Zulu&rsquo; ]
+describe(&lsquo;Binary Search&rsquo;, () =&gt; { const funcs = [binarySearchIterative, binarySearchRecursive] for (const func of funcs) { test(&rsquo;expect to return the index of the item in the array&rsquo;, () =&gt; { expect(func(arr, 3)).toBe(2) }) test(&rsquo;expect to return -1 if not in array&rsquo;, () =&gt; { expect(func(arr, 11)).toBe(-1) }) test(&rsquo;expect to return the index of the item in the array&rsquo;, () =&gt; { expect(func(stringArr, &lsquo;Charlie&rsquo;)).toBe(2) }) test(&rsquo;expect to return -1 if not in array&rsquo;, () =&gt; { expect(func(stringArr, &lsquo;Zoft&rsquo;)).toBe(-1) }) } })
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/test/binarysearch.test_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-</li>
-<li>
-<ul>
-<li>All elements before index <code>k</code> are smaller than the <code>k</code>th element
-*</li>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/binarysearch.test_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>import { binarySearchIterative, binarySearchRecursive } from &lsquo;../BinarySearch&rsquo;</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/test/binarysearch.test_js_/">Read more →</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/test/exponentialsearch.test_js_/"></a>
+        </h1>
+
+        <div class="post-meta">
+          
+
+        </div>
+
+        
+
+        
+
+
+
+        <div class="post-content">
+          
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="import { exponentialSearch } from &lsquo;../ExponentialSearch&rsquo;
+test(&lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is 6 where the value = 78&rsquo;, () =&gt; { const arr = [2, 3, 4, 10, 40, 65, 78, 100] const value = 78 const result = exponentialSearch(arr, arr.length, value) expect(result).toEqual(6) })
+test(&lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is -1 where the value = 178&rsquo;, () =&gt; { const arr = [2, 3, 4, 10, 40, 65, 78, 100] const value = 178 const result = exponentialSearch(arr, arr.length, value) expect(result).toEqual(-1) })
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/test/exponentialsearch.test_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="import { exponentialSearch } from &lsquo;../ExponentialSearch&rsquo;
+test(&lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is 6 where the value = 78&rsquo;, () =&gt; { const arr = [2, 3, 4, 10, 40, 65, 78, 100] const value = 78 const result = exponentialSearch(arr, arr.length, value) expect(result).toEqual(6) })
+test(&lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is -1 where the value = 178&rsquo;, () =&gt; { const arr = [2, 3, 4, 10, 40, 65, 78, 100] const value = 178 const result = exponentialSearch(arr, arr.length, value) expect(result).toEqual(-1) })
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/test/exponentialsearch.test_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-</li>
-<li><a href="http://en.wikipedia.org/wiki/Quickselect">Reference</a>
-*/
-export function quickSelectSearch (array, k) {
-if (!array || array.length &lt;= k) {
-throw new Error(&lsquo;Invalid arguments&rsquo;)
-}</li>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/exponentialsearch.test_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>import { exponentialSearch } from &lsquo;../ExponentialSearch&rsquo;</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/test/exponentialsearch.test_js_/">Read more →</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/test/fibonaccisearch.test_js_/"></a>
+        </h1>
+
+        <div class="post-meta">
+          
+
+        </div>
+
+        
+
+        
+
+
+
+        <div class="post-content">
+          
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="import { fibonacciSearch } from &lsquo;../FibonacciSearch&rsquo;
+test(&lsquo;fibonacciSearch([10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100], 90, arr.length) =&gt; 9&rsquo;, () =&gt; { const arr = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100] const target = 90 const res = fibonacciSearch(arr, target, arr.length) expect(res).toEqual(9) })
+test(&lsquo;fibonacciSearch([1, 11, 55, 56, 78, 82, 104], 104, arr.length) =&gt; 6&rsquo;, () =&gt; { const arr = [1, 11, 55, 56, 78, 82, 104] const target = 104 const res = fibonacciSearch(arr, target, arr.length) expect(res).toEqual(6) })
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="import { fibonacciSearch } from &lsquo;../FibonacciSearch&rsquo;
+test(&lsquo;fibonacciSearch([10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100], 90, arr.length) =&gt; 9&rsquo;, () =&gt; { const arr = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100] const target = 90 const res = fibonacciSearch(arr, target, arr.length) expect(res).toEqual(9) })
+test(&lsquo;fibonacciSearch([1, 11, 55, 56, 78, 82, 104], 104, arr.length) =&gt; 6&rsquo;, () =&gt; { const arr = [1, 11, 55, 56, 78, 82, 104] const target = 104 const res = fibonacciSearch(arr, target, arr.length) expect(res).toEqual(6) })
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-<p>let from = 0
-let to = array.length - 1
-while (from &lt; to) {
-let left = from
-let right = to
-const pivot = array[Math.ceil((left + right) * 0.5)]</p>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>import { fibonacciSearch } from &lsquo;../FibonacciSearch&rsquo;</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/quickselectsearch_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/test/fibonaccisearch.test_js_/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/slidingwindow_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/test/interpolationsearch.test_js_/"></a>
         </h1>
 
         <div class="post-meta">
@@ -238,65 +1160,188 @@ const pivot = array[Math.ceil((left + right) * 0.5)]</p>
 
         <div class="post-content">
           
-            <p>/**</p>
-<ul>
-<li>Sliding Window:</li>
-<li>This pattern involve creating a window which can either be</li>
-<li>an array or numbers from one position to another.
-*</li>
-<li>Depending on a certain condition, the window either increases</li>
-<li>or closes (and a new window is created).
-*</li>
-<li>Very useful for keeping track of a subset of data in an</li>
-<li>array/string etc.
-*</li>
-<li>Time Complexity: Best - O(n);
-*</li>
-<li>Examples:</li>
-<li>maxSubarraySum([1,2,5,2,8,1,5],2) // returns 10</li>
-<li>maxSubarraySum([1,2,5,2,8,1,5],15) // returns null</li>
-<li>maxSubarraySum([5,2,6,9],3) // returns 17</li>
-<li>@param {[Int]} arr - An array of integers on which we will perform the test.</li>
-<li>@param {Int} num - An integer that displays the size of the window you want to check.</li>
-<li>@returns {Int / Null} - Returns a total of N consecutive numbers or null
-*/</li>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="import { interpolationSearch } from &lsquo;../InterpolationSearch&rsquo;
+test(&lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 144) =&gt; -1&rsquo;, () =&gt; { const array = [2, 6, 8, 14, 122, 169] const key = 144 const res = interpolationSearch(array, key) expect(res).toEqual(-1) })
+test(&lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 122) =&gt; 4&rsquo;, () =&gt; { const array = [2, 6, 8, 14, 122, 169] const key = 122 const res = interpolationSearch(array, key) expect(res).toEqual(4) })
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/test/interpolationsearch.test_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="import { interpolationSearch } from &lsquo;../InterpolationSearch&rsquo;
+test(&lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 144) =&gt; -1&rsquo;, () =&gt; { const array = [2, 6, 8, 14, 122, 169] const key = 144 const res = interpolationSearch(array, key) expect(res).toEqual(-1) })
+test(&lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 122) =&gt; 4&rsquo;, () =&gt; { const array = [2, 6, 8, 14, 122, 169] const key = 122 const res = interpolationSearch(array, key) expect(res).toEqual(4) })
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/test/interpolationsearch.test_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-<p>function slidingWindow (arr, num) {
-// Edge Case:
-// If the length of the array shorter than the window size (num) return null.
-if (arr.length &lt; num) return null
-// The highest amount of consecutive numbers
-let maxSum = 0
-// Temp amount of consecutive numbers - For comparative purposes
-let tempSum = 0
-// loop over the array {num} times and save their total amount in {maxSum}
-for (let i = 0; i &lt; num; i++) {
-maxSum += arr[i]
-}
-// initialize {tempSum} to {maxSum}.
-tempSum = maxSum
-// loop over the array n times
-for (let i = num; i &lt; arr.length; i++) {
-// Add the next num in the array and remove the first one
-tempSum = tempSum - arr[i - num] + arr[i]
-// save the largest number between {maxNum} and {tempNum} in maxSum.
-maxSum = Math.max(maxSum, tempSum)
-}
-return maxSum
-}</p>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/interpolationsearch.test_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>import { interpolationSearch } from &lsquo;../InterpolationSearch&rsquo;</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/slidingwindow_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/test/interpolationsearch.test_js_/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/stringsearch_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/test/jumpsearch.test_js_/"></a>
         </h1>
 
         <div class="post-meta">
@@ -312,54 +1357,188 @@ return maxSum
 
         <div class="post-content">
           
-            <p>/*</p>
-<ul>
-<li>String Search
-*/</li>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="import { jumpSearch } from &lsquo;../JumpSearch&rsquo;
+test(&lsquo;jumpSearch([0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90], 77) =&gt; 10&rsquo;, () =&gt; { const arr = [0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90] const res = jumpSearch(arr, 77) expect(res).toEqual(10) })
+test(&lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 4) =&gt; -1&rsquo;, () =&gt; { const arr = [11, 12, 15, 65, 78, 90] const res = jumpSearch(arr, 4) expect(res).toEqual(-1) })
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/test/jumpsearch.test_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="import { jumpSearch } from &lsquo;../JumpSearch&rsquo;
+test(&lsquo;jumpSearch([0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90], 77) =&gt; 10&rsquo;, () =&gt; { const arr = [0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90] const res = jumpSearch(arr, 77) expect(res).toEqual(10) })
+test(&lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 4) =&gt; -1&rsquo;, () =&gt; { const arr = [11, 12, 15, 65, 78, 90] const res = jumpSearch(arr, 4) expect(res).toEqual(-1) })
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/test/jumpsearch.test_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-<p>function makeTable (str) {
-// create a table of size equal to the length of <code>str</code>
-// table[i] will store the prefix of the longest prefix of the substring str[0..i]
-const table = new Array(str.length)
-let maxPrefix = 0
-// the longest prefix of the substring str[0] has length
-table[0] = 0</p>
-<p>// for the substrings the following substrings, we have two cases
-for (let i = 1; i &lt; str.length; i++) {
-// case 1. the current character doesn&rsquo;t match the last character of the longest prefix
-while (maxPrefix &gt; 0 &amp;&amp; str.charAt(i) !== str.charAt(maxPrefix)) {
-// if that is the case, we have to backtrack, and try find a character  that will be equal to the current character
-// if we reach 0, then we couldn&rsquo;t find a character
-maxPrefix = table[maxPrefix - 1]
-}
-// case 2. The last character of the longest prefix matches the current character in <code>str</code>
-if (str.charAt(maxPrefix) === str.charAt(i)) {
-// if that is the case, we know that the longest prefix at position i has one more character.
-// for example consider <code>.</code> be any character not contained in the set [a.c]
-// str = abc&hellip;.abc
-// consider <code>i</code> to be the last character <code>c</code> in <code>str</code>
-// maxPrefix = will be 2 (the first <code>c</code> in <code>str</code>)
-// maxPrefix now will be 3
-maxPrefix++
-// so the max prefix for table[9] is 3
-}
-table[i] = maxPrefix
-}
-return table
-}</p>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/jumpsearch.test_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>import { jumpSearch } from &lsquo;../JumpSearch&rsquo;</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/stringsearch_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/test/jumpsearch.test_js_/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/ternarysearch_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/test/slidingwindow.test_js_/"></a>
         </h1>
 
         <div class="post-meta">
@@ -375,38 +1554,190 @@ return table
 
         <div class="post-content">
           
-            <p>/* Ternary search is similar to binary search but it divide the sorted array</p>
-<ul>
-<li>into three parts and determine which part the key lies in. The array will</li>
-<li>be divided into three intervals by using two middle points, mid1 and mid2.</li>
-<li>The value of the key will first compared with the two mid points, the value</li>
-<li>will be returned if there is a match. Then, if the value of the key is less</li>
-<li>than mid1, narrow the interval to the first part. Else, if the value of the</li>
-<li>key is greater than mid2, narrow the interval to the third part. Otherwise,</li>
-<li>narrow the interval to the middle part. Repeat the steps until the value is</li>
-<li>found or the interval is empty(value not found after checking all elements).
-*</li>
-<li>Reference: <a href="https://www.geeksforgeeks.org/ternary-search/">https://www.geeksforgeeks.org/ternary-search/</a>
-*/</li>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="import { slidingWindow } from &lsquo;../SlidingWindow&rsquo;
+test(&rsquo;expect to return the largest sum of sequence in the array&rsquo;, () =&gt; { const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 2) expect(sum).toBe(10) })
+test(&rsquo;expect to return the largest sum of sequence in the array&rsquo;, () =&gt; { const sum = slidingWindow([5, 2, 6, 9], 3) expect(sum).toBe(17) })
+test(&rsquo;expect to return null when the sequence size is larger then the array length&rsquo;, () =&gt; { const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 15) expect(sum).toBe(null) })
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/test/slidingwindow.test_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="import { slidingWindow } from &lsquo;../SlidingWindow&rsquo;
+test(&rsquo;expect to return the largest sum of sequence in the array&rsquo;, () =&gt; { const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 2) expect(sum).toBe(10) })
+test(&rsquo;expect to return the largest sum of sequence in the array&rsquo;, () =&gt; { const sum = slidingWindow([5, 2, 6, 9], 3) expect(sum).toBe(17) })
+test(&rsquo;expect to return null when the sequence size is larger then the array length&rsquo;, () =&gt; { const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 15) expect(sum).toBe(null) })
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/test/slidingwindow.test_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
 </ul>
-<p>function ternarySearchRecursive (arr, key, low = 0, high = arr.length - 1) {
-if (high &gt;= low) {
-// find the mid1 and mid2
-const mid1 = Math.floor(low + (high - low) / 3)
-const mid2 = Math.floor(high - (high - low) / 3)</p>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/slidingwindow.test_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>import { slidingWindow } from &lsquo;../SlidingWindow&rsquo;</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/ternarysearch_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/test/slidingwindow.test_js_/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/binarysearch.test_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/test/ternarysearch.test_js_/"></a>
         </h1>
 
         <div class="post-meta">
@@ -422,66 +1753,190 @@ const mid2 = Math.floor(high - (high - low) / 3)</p>
 
         <div class="post-content">
           
-            <p>import { binarySearchIterative, binarySearchRecursive } from &lsquo;../BinarySearch&rsquo;</p>
-<p>const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const stringArr = [
-&lsquo;Alpha&rsquo;,
-&lsquo;Bravo&rsquo;,
-&lsquo;Charlie&rsquo;,
-&lsquo;Delta&rsquo;,
-&lsquo;Echo&rsquo;,
-&lsquo;Foxtrot&rsquo;,
-&lsquo;Golf&rsquo;,
-&lsquo;Hotel&rsquo;,
-&lsquo;India&rsquo;,
-&lsquo;Juliet&rsquo;,
-&lsquo;Kilo&rsquo;,
-&lsquo;Lima&rsquo;,
-&lsquo;Mike&rsquo;,
-&lsquo;November&rsquo;,
-&lsquo;Oscar&rsquo;,
-&lsquo;Papa&rsquo;,
-&lsquo;Quebec&rsquo;,
-&lsquo;Romeo&rsquo;,
-&lsquo;Sierra&rsquo;,
-&lsquo;Tango&rsquo;,
-&lsquo;Uniform&rsquo;,
-&lsquo;Victor&rsquo;,
-&lsquo;Whiskey&rsquo;,
-&lsquo;X-Ray&rsquo;,
-&lsquo;Yankee&rsquo;,
-&lsquo;Zulu&rsquo;
-]</p>
-<p>describe(&lsquo;Binary Search&rsquo;, () =&gt; {
-const funcs = [binarySearchIterative, binarySearchRecursive]
-for (const func of funcs) {
-test(&rsquo;expect to return the index of the item in the array&rsquo;, () =&gt; {
-expect(func(arr, 3)).toBe(2)
-})
-test(&rsquo;expect to return -1 if not in array&rsquo;, () =&gt; {
-expect(func(arr, 11)).toBe(-1)
-})
-test(&rsquo;expect to return the index of the item in the array&rsquo;, () =&gt; {
-expect(func(stringArr, &lsquo;Charlie&rsquo;)).toBe(2)
-})
-test(&rsquo;expect to return -1 if not in array&rsquo;, () =&gt; {
-expect(func(stringArr, &lsquo;Zoft&rsquo;)).toBe(-1)
-})
-}
-})</p>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="import { ternarySearchRecursive, ternarySearchIterative } from &lsquo;../TernarySearch&rsquo;
+test(&lsquo;should return the index of a number in an array of numbers:&rsquo;, () =&gt; { const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3) expect(indexNumber).toBe(2) })
+test(&lsquo;should return the index of a number in an array of numbers:&rsquo;, () =&gt; { const indexNumber = ternarySearchIterative([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8) expect(indexNumber).toBe(7) })
+test(&lsquo;should return the index of a number in an array of numbers:&rsquo;, () =&gt; { const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0) expect(indexNumber).toBe(-1) })
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/test/ternarysearch.test_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="import { ternarySearchRecursive, ternarySearchIterative } from &lsquo;../TernarySearch&rsquo;
+test(&lsquo;should return the index of a number in an array of numbers:&rsquo;, () =&gt; { const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3) expect(indexNumber).toBe(2) })
+test(&lsquo;should return the index of a number in an array of numbers:&rsquo;, () =&gt; { const indexNumber = ternarySearchIterative([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8) expect(indexNumber).toBe(7) })
+test(&lsquo;should return the index of a number in an array of numbers:&rsquo;, () =&gt; { const indexNumber = ternarySearchRecursive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0) expect(indexNumber).toBe(-1) })
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/test/ternarysearch.test_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/ternarysearch.test_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
+
+
+
+  
+
+  <div class="post-content"><div>
+        <p>import { ternarySearchRecursive, ternarySearchIterative } from &lsquo;../TernarySearch&rsquo;</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/test/binarysearch.test_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/test/ternarysearch.test_js_/">Read more →</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/exponentialsearch.test_js_/"></a>
+          <a href="//localhost:1313/posts/algorithm/searchalgorithm/test/unionfind.test_js_/"></a>
         </h1>
 
         <div class="post-meta">
@@ -497,187 +1952,189 @@ expect(func(stringArr, &lsquo;Zoft&rsquo;)).toBe(-1)
 
         <div class="post-content">
           
-            <p>import { exponentialSearch } from &lsquo;../ExponentialSearch&rsquo;</p>
-<p>test(&lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is 6 where the value = 78&rsquo;, () =&gt; {
-const arr = [2, 3, 4, 10, 40, 65, 78, 100]
-const value = 78
-const result = exponentialSearch(arr, arr.length, value)
-expect(result).toEqual(6)
-})</p>
-<p>test(&lsquo;The Exponential Search of the Array [2, 3, 4, 10, 40, 65, 78, 100] is -1 where the value = 178&rsquo;, () =&gt; {
-const arr = [2, 3, 4, 10, 40, 65, 78, 100]
-const value = 178
-const result = exponentialSearch(arr, arr.length, value)
-expect(result).toEqual(-1)
-})</p>
-          
-        </div>
+            <!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Cuneyt Yildirim Site</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="import { UnionFind } from &lsquo;../UnionFind&rsquo;
+const uf = new UnionFind(5)
+test(&lsquo;should expose .size():&rsquo;, () =&gt; { const size = uf.size() expect(size).toBe(5) })
+test(&lsquo;should do .union(num1, num2):&rsquo;, () =&gt; { uf.union(1, 2) uf.union(3, 4) uf.union(0, 4) expect(uf.connected(1, 2)).toBe(true) expect(uf.connected(1, 2)).toBe(true)
+expect(uf.connected(3, 4)).toBe(true) expect(uf.connected(3, 0)).toBe(true) expect(uf.connected(4, 0)).toBe(true)
+expect(uf.connected(1, 3)).toBe(false) expect(uf.connected(1, 4)).toBe(false) expect(uf.connected(1, 0)).toBe(false) expect(uf.connected(2, 3)).toBe(false) expect(uf.connected(2, 4)).toBe(false) expect(uf.connected(2, 0)).toBe(false) })
+test(&rsquo;.count(), should return the number of disparate groups:&rsquo;, () =&gt; { expect(uf.count()).toBe(2) })
+" />
+<meta name="keywords" content="" />
 
-        
-          <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/test/exponentialsearch.test_js_/">Read more →</a>
-          </div>
-        
-      </article>
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/algorithms/searchalgorithm/test/unionfind.test_js_/" />
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="//localhost:1313/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="//localhost:1313/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="import { UnionFind } from &lsquo;../UnionFind&rsquo;
+const uf = new UnionFind(5)
+test(&lsquo;should expose .size():&rsquo;, () =&gt; { const size = uf.size() expect(size).toBe(5) })
+test(&lsquo;should do .union(num1, num2):&rsquo;, () =&gt; { uf.union(1, 2) uf.union(3, 4) uf.union(0, 4) expect(uf.connected(1, 2)).toBe(true) expect(uf.connected(1, 2)).toBe(true)
+expect(uf.connected(3, 4)).toBe(true) expect(uf.connected(3, 0)).toBe(true) expect(uf.connected(4, 0)).toBe(true)
+expect(uf.connected(1, 3)).toBe(false) expect(uf.connected(1, 4)).toBe(false) expect(uf.connected(1, 0)).toBe(false) expect(uf.connected(2, 3)).toBe(false) expect(uf.connected(2, 4)).toBe(false) expect(uf.connected(2, 0)).toBe(false) })
+test(&rsquo;.count(), should return the number of disparate groups:&rsquo;, () =&gt; { expect(uf.count()).toBe(2) })
+" />
+<meta property="og:url" content="//localhost:1313/posts/algorithms/searchalgorithm/test/unionfind.test_js_/" />
+<meta property="og:site_name" content="Cuneyt Yildirim Site" />
+
+  
+    <meta property="og:image" content="//localhost:1313/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</head>
+<body class="orange">
+
+
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cuneyt Yildirim
+  </div>
+</a>
+
+    </div>
     
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/"></a>
-        </h1>
-
-        <div class="post-meta">
-          
-
-        </div>
-
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
         
-
+          <li><a href="/about">About</a></li>
         
-
-
-
-        <div class="post-content">
-          
-            <p>import { fibonacciSearch } from &lsquo;../FibonacciSearch&rsquo;</p>
-<p>test(&lsquo;fibonacciSearch([10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100], 90, arr.length) =&gt; 9&rsquo;, () =&gt; {
-const arr = [10, 22, 35, 40, 45, 50, 80, 82, 85, 90, 100]
-const target = 90
-const res = fibonacciSearch(arr, target, arr.length)
-expect(res).toEqual(9)
-})</p>
-<p>test(&lsquo;fibonacciSearch([1, 11, 55, 56, 78, 82, 104], 104, arr.length) =&gt; 6&rsquo;, () =&gt; {
-const arr = [1, 11, 55, 56, 78, 82, 104]
-const target = 104
-const res = fibonacciSearch(arr, target, arr.length)
-expect(res).toEqual(6)
-})</p>
-          
-        </div>
-
+      
         
-          <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/">Read more →</a>
-          </div>
+          <li><a href="/posts">Posts</a></li>
         
-      </article>
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
     
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/interpolationsearch.test_js_/"></a>
-        </h1>
-
-        <div class="post-meta">
-          
-
-        </div>
-
-        
-
-        
-
-
-
-        <div class="post-content">
-          
-            <p>import { interpolationSearch } from &lsquo;../InterpolationSearch&rsquo;</p>
-<p>test(&lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 144) =&gt; -1&rsquo;, () =&gt; {
-const array = [2, 6, 8, 14, 122, 169]
-const key = 144
-const res = interpolationSearch(array, key)
-expect(res).toEqual(-1)
-})</p>
-<p>test(&lsquo;interpolationSearch([2, 6, 8, 14, 122, 169], 122) =&gt; 4&rsquo;, () =&gt; {
-const array = [2, 6, 8, 14, 122, 169]
-const key = 122
-const res = interpolationSearch(array, key)
-expect(res).toEqual(4)
-})</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/test/interpolationsearch.test_js_/">Read more →</a>
-          </div>
-        
-      </article>
     
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/jumpsearch.test_js_/"></a>
-        </h1>
-
-        <div class="post-meta">
-          
-
-        </div>
-
-        
-
-        
-
-
-
-        <div class="post-content">
-          
-            <p>import { jumpSearch } from &lsquo;../JumpSearch&rsquo;</p>
-<p>test(&lsquo;jumpSearch([0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90], 77) =&gt; 10&rsquo;, () =&gt; {
-const arr = [0, 0, 4, 7, 10, 23, 34, 40, 55, 68, 77, 90]
-const res = jumpSearch(arr, 77)
-expect(res).toEqual(10)
-})</p>
-<p>test(&lsquo;jumpSearch([11, 12, 15, 65, 78, 90], 4) =&gt; -1&rsquo;, () =&gt; {
-const arr = [11, 12, 15, 65, 78, 90]
-const res = jumpSearch(arr, 4)
-expect(res).toEqual(-1)
-})</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/test/jumpsearch.test_js_/">Read more →</a>
-          </div>
-        
-      </article>
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
     
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/slidingwindow.test_js_/"></a>
-        </h1>
-
-        <div class="post-meta">
-          
-
-        </div>
-
+      
+      
         
-
+          <li><a href="/about" >About</a></li>
         
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/algorithms/searchalgorithm/test/unionfind.test_js_/"></a>
+  </h1>
+  <div class="post-meta">
+    
+</div>
+
+  
+  
 
 
 
-        <div class="post-content">
-          
-            <p>import { slidingWindow } from &lsquo;../SlidingWindow&rsquo;</p>
-<p>test(&rsquo;expect to return the largest sum of sequence in the array&rsquo;, () =&gt; {
-const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 2)
-expect(sum).toBe(10)
-})</p>
-<p>test(&rsquo;expect to return the largest sum of sequence in the array&rsquo;, () =&gt; {
-const sum = slidingWindow([5, 2, 6, 9], 3)
-expect(sum).toBe(17)
-})</p>
-<p>test(&rsquo;expect to return null when the sequence size is larger then the array length&rsquo;, () =&gt; {
-const sum = slidingWindow([1, 2, 5, 2, 8, 1, 5], 15)
-expect(sum).toBe(null)
-})</p>
+  
+
+  <div class="post-content"><div>
+        <p>import { UnionFind } from &lsquo;../UnionFind&rsquo;</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button" href="/posts/algorithms/searchalgorithm/test/slidingwindow.test_js_/">Read more →</a>
+            <a class="read-more button" href="/posts/algorithm/searchalgorithm/test/unionfind.test_js_/">Read more →</a>
           </div>
         
       </article>

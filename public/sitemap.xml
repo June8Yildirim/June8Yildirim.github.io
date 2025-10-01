@@ -5,16 +5,16 @@
     <loc>//localhost:1313/tags/algorithm/</loc>
     <lastmod>2025-01-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>//localhost:1313/algorithms/</loc>
     <lastmod>2025-01-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2025-01-12T15:50:48-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/sorting/</loc>
     <lastmod>2025-01-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/sorting/</loc>
+    <loc>//localhost:1313/algorithms/sorting/</loc>
     <lastmod>2025-01-12T15:50:48-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
@@ -26,81 +26,138 @@
     <loc>//localhost:1313/posts/</loc>
     <lastmod>2025-01-12T02:38:44-05:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/showcase/</loc>
+    <lastmod>2025-01-12T02:38:44-05:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/showcase/languages/typescript/initial/</loc>
     <lastmod>2025-01-12T02:38:44-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/binary-search/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/binary-search/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/bubblesort/</loc>
+    <loc>//localhost:1313/tags/bubblesort/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/heapsort/</loc>
+    <loc>//localhost:1313/algorithms/bubblesort/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/exponential-search/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/exponential-search/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/fibonaccisearch/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/insertionsort/</loc>
+    <loc>//localhost:1313/algorithms/heapsort/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/mergesort/</loc>
+    <loc>//localhost:1313/algorithms/insertionsort/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/quicksort/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/interpolationsearch/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/radixsort/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/jumpsearch/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/recursivebubblesort/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/linear-search/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/selectionsort/</loc>
+    <loc>//localhost:1313/algorithms/mergesort/</loc>
     <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/binarysearch_js_/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/quickselectsearch/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/exponentialsearch_js_/</loc>
+    <loc>//localhost:1313/algorithms/quicksort/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/fibonaccisearch_js_/</loc>
+    <loc>//localhost:1313/algorithms/radixsort/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/interpolationsearch_js_/</loc>
+    <loc>//localhost:1313/algorithms/recursivebubblesort/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/jumpsearch_js_/</loc>
+    <loc>//localhost:1313/algorithms/selectionsort/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/linear-search/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/slidingwindow/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/linearsearch_js_/</loc>
+    <loc>//localhost:1313/tags/sorting-algorithms/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/quickselectsearch_js_/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/stringsearch/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/slidingwindow_js_/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/ternarysearch/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/stringsearch_js_/</loc>
+    <loc>//localhost:1313/algorithms/searchalgorithm/unionfind/</loc>
+    <lastmod>2024-12-12T15:50:48-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/ternarysearch_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/bubblesort/</loc>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/test/binarysearch.test_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/heapsort/</loc>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/test/exponentialsearch.test_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/insertionsort/</loc>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/test/fibonaccisearch.test_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/mergesort/</loc>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/test/interpolationsearch.test_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/quicksort/</loc>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/test/jumpsearch.test_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/radixsort/</loc>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/test/slidingwindow.test_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/recursivebubblesort/</loc>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/test/ternarysearch.test_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/binary-search/</loc>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/test/unionfind.test_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/binarysearch_js_/</loc>
   </url><url>
-    <loc>//localhost:1313/showcase/algorithms/searchalgorithm/unionfind_js_/</loc>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/exponential-search/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/exponentialsearch_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/fibonaccisearch_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/floyd-cycle-detection-algorithm-to-find-duplicate-number/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/interpolationsearch_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/jumpsearch_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/linear-search/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/linearsearch_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/quickselectsearch_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/slidingwindow_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/stringsearch_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/ternarysearch_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/test/binarysearch.test_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/test/exponentialsearch.test_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/test/fibonaccisearch.test_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/test/interpolationsearch.test_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/test/jumpsearch.test_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/test/slidingwindow.test_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/test/ternarysearch.test_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/test/unionfind.test_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/searchalgorithm/unionfind_js_/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/selectionsort/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/algorithm/sorting/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url>

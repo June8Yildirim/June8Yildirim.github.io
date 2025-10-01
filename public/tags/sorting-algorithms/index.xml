@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 12 Dec 2024 15:50:48 -0500</lastBuildDate><atom:link href="//localhost:1313/tags/sorting-algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recursive Bubble Sort</title>
-      <link>//localhost:1313/showcase/algorithms/recursivebubblesort/</link>
+      <link>//localhost:1313/algorithms/recursivebubblesort/</link>
       <pubDate>Thu, 12 Dec 2024 15:50:48 -0500</pubDate>
       
-      <guid>//localhost:1313/showcase/algorithms/recursivebubblesort/</guid>
+      <guid>//localhost:1313/algorithms/recursivebubblesort/</guid>
       <description>&lt;h1 id=&#34;recursive-bubble-sort&#34;&gt;Recursive Bubble Sort&lt;/h1&gt;
 &lt;p&gt;Bubble Sort is one of the simplest sorting algorithms that compares two elements at a time and swaps them if they are in the wrong order. This process is repeated until the entire sequence is in order.&lt;/p&gt;</description>
       <content>&lt;h1 id=&#34;recursive-bubble-sort&#34;&gt;Recursive Bubble Sort&lt;/h1&gt;
