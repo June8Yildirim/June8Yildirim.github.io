@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/professionalblog/tags/%23course/</loc>
+    <loc>http://localhost:1313/tags/%23course/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/tags/%23notes/</loc>
+    <loc>http://localhost:1313/tags/%23notes/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/tags/%23undefined/</loc>
+    <loc>http://localhost:1313/tags/%23undefined/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/tags/blog/</loc>
+    <loc>http://localhost:1313/tags/blog/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/blogs/</loc>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/blogs/testnote/</loc>
+    <loc>http://localhost:1313/blogs/testnote/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/bubble-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/bubble-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/counting-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/counting-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/heap-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/heap-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/insertion-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/insertion-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/merge-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/merge-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/quick-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/quick-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/radix-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/radix-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/recursive-bubble-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/recursive-bubble-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/selection-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/selection-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/sorting-algorithms/shell-sort/</loc>
+    <loc>http://localhost:1313/posts/sorting-algorithms/shell-sort/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/tags/journey/</loc>
+    <loc>http://localhost:1313/tags/journey/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-11-16T02:58:05-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/professionalblog/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

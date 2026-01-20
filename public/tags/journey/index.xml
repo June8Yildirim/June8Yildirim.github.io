@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Journey on Cuneyt Yildirim Site</title>
-    <link>http://localhost:1313/professionalblog/tags/journey/</link>
+    <link>http://localhost:1313/tags/journey/</link>
     <description>Recent content in Journey on Cuneyt Yildirim Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Nov 2025 02:58:05 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/professionalblog/tags/journey/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/journey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/blogs/testnote/</link>
+      <link>http://localhost:1313/blogs/testnote/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/blogs/testnote/</guid>
+      <guid>http://localhost:1313/blogs/testnote/</guid>
       <description>&lt;h2 id=&#34;testnote&#34;&gt;TestNote&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *This is test page&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/bubble-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/bubble-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/bubble-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/bubble-sort/</guid>
       <description>&lt;h2 id=&#34;bubble-sort&#34;&gt;Bubble Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Bubble Sort&lt;/p&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an unsorted array of n elements, write a function to sort the array&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;select the first element of the array&lt;/li&gt;&#xA;&lt;li&gt;compare it with its next element&lt;/li&gt;&#xA;&lt;li&gt;if it is larger than the next element then swap them&lt;/li&gt;&#xA;&lt;li&gt;else do nothing&lt;/li&gt;&#xA;&lt;li&gt;keep doing this for every index of the array&lt;/li&gt;&#xA;&lt;li&gt;repeat the above process n times.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;code&gt;O(n^2)&lt;/code&gt; Worst case performance&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/counting-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/counting-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/counting-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/counting-sort/</guid>
       <description>&lt;h2 id=&#34;counting-sort&#34;&gt;Counting Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Counting Sort&lt;/p&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an unsorted array of &lt;code&gt;n&lt;/code&gt; elements, write a function to sort the array.&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Find out the maximum element (let&amp;rsquo;s call it &lt;code&gt;max&lt;/code&gt;) from the given array.&lt;/li&gt;&#xA;&lt;li&gt;Initialize an array of length &lt;code&gt;max+1&lt;/code&gt; with all elements set to 0 to store the array&amp;rsquo;s count.&lt;/li&gt;&#xA;&lt;li&gt;Store the count of each element at their respective index in the array&amp;rsquo;s count.&lt;/li&gt;&#xA;&lt;li&gt;Store cumulative sum of the elements of the count array. It helps in placing the elements into the correct index of the sorted array.&lt;/li&gt;&#xA;&lt;li&gt;Find the index of each element of the original array in the array&amp;rsquo;s count. This gives the cumulative count.&lt;/li&gt;&#xA;&lt;li&gt;Place the element at the index calculated and decrease its count by one.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;code&gt;O(n+k)&lt;/code&gt;: where &lt;code&gt;k&lt;/code&gt; is the range of the non-negative key values.&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/heap-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/heap-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/heap-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/heap-sort/</guid>
       <description>&lt;h2 id=&#34;heap-sort&#34;&gt;Heap Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Heap Sort&lt;/p&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an unsorted array of n elements, write a function to sort the array&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build a max heap from the input data.&lt;/li&gt;&#xA;&lt;li&gt;At this point, the largest item is stored at the root of the heap. Replace it with the last item of the heap followed by reducing the size of heap by 1. Finally, heapify the root of tree.&lt;/li&gt;&#xA;&lt;li&gt;Repeat above steps while size of heap is greater than 1.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;code&gt;O(n log n)&lt;/code&gt; Worst case performance&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/insertion-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/insertion-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/insertion-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/insertion-sort/</guid>
       <description>&lt;h2 id=&#34;insertion-sort&#34;&gt;Insertion Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Insertion Sort&lt;/p&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an array of n elements, write a function to sort the array in increasing order.&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Define a &amp;ldquo;key&amp;rdquo; index, the subarray to the left of which is sorted.&lt;/li&gt;&#xA;&lt;li&gt;Initiate &amp;ldquo;key&amp;rdquo; as 1, ie. the second element of array(as there is only one element to left of the second element, which can be considered as sorted array with one element).&lt;/li&gt;&#xA;&lt;li&gt;If value of element at (key - 1) position is less than value of element at (key) position; increment &amp;ldquo;key&amp;rdquo;.&lt;/li&gt;&#xA;&lt;li&gt;Else move elements of sorted subarray that are greater than value of element at &amp;ldquo;key&amp;rdquo; to one position ahead of their current position. Put the value of element at &amp;ldquo;key&amp;rdquo; in the newly created void.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;О(n^2)&lt;/code&gt; comparisons, &lt;code&gt;О(n^2)&lt;/code&gt; swaps &amp;ndash; Worst Case&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/merge-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/merge-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/merge-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/merge-sort/</guid>
       <description>&lt;h2 id=&#34;merge-sort&#34;&gt;Merge Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Merge Sort (Divide and Conquer Algorithm)&lt;/p&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an array of n elements, write a function to sort the array&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Find a mid point and divide the array into to halves based on the mid point&lt;/li&gt;&#xA;&lt;li&gt;Recursively call the merge sort function for both the halves&lt;/li&gt;&#xA;&lt;li&gt;Merge the two sorted halves to get the sorted array&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Best case - O(n log n)&#xA;Average - O(n log n)&#xA;Worst case - O(n log n)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;space-complexity&#34;&gt;Space Complexity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;code&gt;O(n)&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/quick-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/quick-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/quick-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/quick-sort/</guid>
       <description>&lt;h2 id=&#34;quick-sort&#34;&gt;Quick Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Quick Sort&lt;/p&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an unsorted array of n elements, write a function to sort the array&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Make the right-most index value pivot&lt;/li&gt;&#xA;&lt;li&gt;partition the array using pivot value&lt;/li&gt;&#xA;&lt;li&gt;quicksort left partition recursively&lt;/li&gt;&#xA;&lt;li&gt;quicksort right partition recursively&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;O(n^2)&lt;/code&gt; Worst case performance&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;O(n log n)&lt;/code&gt; Best-case performance&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;O(n log n)&lt;/code&gt; Average performance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;space-complexity&#34;&gt;Space Complexity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;code&gt;O(log n)&lt;/code&gt; Worst case&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/radix-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/radix-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/radix-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/radix-sort/</guid>
       <description>&lt;h2 id=&#34;radix-sort&#34;&gt;Radix Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Radix Sort&lt;/p&gt;&#xA;&lt;p&gt;The lower bound for Comparison based sorting algorithm (Merge Sort, Heap Sort, Quick-Sort .. etc) is &lt;code&gt;Ω(nlogn)&lt;/code&gt;, i.e., they cannot do better than &lt;code&gt;nlogn&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Counting sort is a linear time sorting algorithm that sort in &lt;code&gt;O(n+k)&lt;/code&gt; time when elements are in the range from 1 to k.&lt;/p&gt;&#xA;&lt;p&gt;What if the elements are in the range from 1 to n2? We can’t use counting sort because counting sort will take &lt;code&gt;O(n2)&lt;/code&gt; which is worse than comparison-based sorting algorithms. Can we sort such an array in linear time?&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/recursive-bubble-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/recursive-bubble-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/recursive-bubble-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/recursive-bubble-sort/</guid>
       <description>&lt;h2 id=&#34;recursive-bubble-sort&#34;&gt;Recursive Bubble Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Recursive Bubble Sort&lt;/p&gt;&#xA;&lt;p&gt;Bubble Sort is one of the simplest sorting algorithms that compares two elements at a time and swaps them if they are in the wrong order. This process is repeated until the entire sequence is in order.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Time Complexity: &lt;code&gt;O(n ^ 2)&lt;/code&gt; for average case; &lt;code&gt;O(n)&lt;/code&gt; for best case.&lt;/li&gt;&#xA;&lt;li&gt;Space Complexity: &lt;code&gt;O(n)&lt;/code&gt;; note that iterative bubble sort has space complexity as &lt;code&gt;O(1)&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;p&gt;Base case: If the size of the array is 1, return.&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/selection-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/selection-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/selection-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/selection-sort/</guid>
       <description>&lt;h2 id=&#34;selection-sort&#34;&gt;Selection Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Selection Sort&lt;/p&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an unsorted array of n elements, write a function to sort the array&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;select the smallest element from the array&lt;/li&gt;&#xA;&lt;li&gt;put it at the beginning of the array&lt;/li&gt;&#xA;&lt;li&gt;then select the smallest array from the remaining unsorted list&lt;/li&gt;&#xA;&lt;li&gt;append it to the sorted array at the beginning&lt;/li&gt;&#xA;&lt;li&gt;keep doing this for every element of the array&lt;/li&gt;&#xA;&lt;li&gt;repeat the above process n times&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;p&gt;&lt;code&gt;O(n^2)&lt;/code&gt; Worst case performance&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Journal</title>
-      <link>http://localhost:1313/professionalblog/posts/sorting-algorithms/shell-sort/</link>
+      <link>http://localhost:1313/posts/sorting-algorithms/shell-sort/</link>
       <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
-      <guid>http://localhost:1313/professionalblog/posts/sorting-algorithms/shell-sort/</guid>
+      <guid>http://localhost:1313/posts/sorting-algorithms/shell-sort/</guid>
       <description>&lt;h2 id=&#34;shell-sort&#34;&gt;Shell Sort&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Posted  2025-11-16&lt;/em&gt; | *By : Cuneyt Yildirim *# Shell Sort&lt;/p&gt;&#xA;&lt;h4 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h4&gt;&#xA;&lt;p&gt;Given an unsorted array of n elements, write a function to sort the array&lt;/p&gt;&#xA;&lt;h4 id=&#34;approach&#34;&gt;Approach&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;start with the initial gap, g&lt;/li&gt;&#xA;&lt;li&gt;go through the first (n - g) elements in the array&lt;/li&gt;&#xA;&lt;li&gt;compare the element with the next element that is g distance away&lt;/li&gt;&#xA;&lt;li&gt;swap the two elements if the first element is bigger&lt;/li&gt;&#xA;&lt;li&gt;decrease the gap and repeat until gap = 1&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h4&gt;&#xA;&lt;p&gt;Time complexity is dependent on the gap sequences.&#xA;Below time complexities are based on the gap sequences of n/2^k.&lt;/p&gt;</description>
     </item>
   </channel>

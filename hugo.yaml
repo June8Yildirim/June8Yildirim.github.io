@@ -302,13 +302,13 @@ params:
       - title: "Bachelor of Computer Science"
         school:
           name: "University of Concordia"
-          url: "https://example.org"
+          url: https://www.concordia.ca/"
         date: "2025 - 2029"
         # GPA: "3.8 out of 5.0"
-        content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        # content: |-
+        #   Extracurricular Activities
+        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
 
       - title: "Diplome d'études collégiales in Computer Science"
         school:
@@ -316,14 +316,14 @@ params:
           url: "https://www.dawsoncollege.qc.ca"
         date: "2020 - 2024"
         # GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        # content: |-
+        #   I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+        #   - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+        #   - Face mask detection using a single convolutional neural network.
+        #
+        #   Extracurricular Activities
+        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
         featuredLink:
           enable: false
           name: "My academic record"
@@ -334,14 +334,14 @@ params:
           url: "https://www.lbpce.ca/pec.html"
         date: "2018 - 2020"
         # GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        # content: |-
+        #   I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+        #   - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+        #   - Face mask detection using a single convolutional neural network.
+        #
+        #   Extracurricular Activities
+        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
         featuredLink:
           enable: false
           name: "My academic record"
@@ -352,14 +352,14 @@ params:
           url: "https://example.org"
         date: "2020 - 2024"
         # GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        # content: |-
+        #   I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+        #   - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+        #   - Face mask detection using a single convolutional neural network.
+        #
+        #   Extracurricular Activities
+        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
         featuredLink:
           enable: false
           name: "My academic record"
@@ -368,7 +368,7 @@ params:
       - title: "High School"
         school:
           name: "Ataturk Nursing High School"
-          url: "https://example.org"
+          url: ""
         # GPA: "4.2 out of 5.0"
         featuredLink:
           enable: false
@@ -402,11 +402,11 @@ params:
     # title: "Custom Name"
     items:
       - title: SaveEasy
-        content: A financial tracking application that provides to clients their financial status and application also able to create a report given time with their receipts to make it easy to provide a financial report to the accountant. Application also able to generate a chart to display based on the purchasing category.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+        content: Engineered an AI-powered receipt processing pipeline using [OpenAI/Gemini] and OCR, achieving a 98.5% extraction accuracy rate for key financial fields (Total, Tax, Vendor, Date). Architected a high-performance reporting engine capable of generating accountant-ready PDF/CSV reports in under 1.5 seconds, even for datasets exceeding 500+ transactions. Implemented robust data security by securing connection strings through environment variables and applying Row-Level Security (RLS) to ensure users can only access their own financial records. Apple and Google Play Store.",
+        image: /img/SaveEasyMain.png
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
         badges:
           - "React-Native"
           - ".NET"
@@ -423,14 +423,11 @@ params:
             url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
       - title: EasyDriver
-        content: |
-          The application provides a business owner to find a extra worker in their rush hours. Like restaurant owner finds easily a driver and kitchen worker.
-          Clients connect with FCM services so they can easily communicate and interact.
-          The system includes 3 applications that 2 mobile apps (Driver and Business) one for the web application for Admin users.
+        content: Architected a 3-tier application ecosystem (Driver App, Business App, and Web Admin) using React Native/Expo and Spring Boot, enabling seamless job matching for 100+ concurrent users during peak rush hours. Engineered a real-time communication layer using Firebase Cloud Messaging (FCM), achieving a 99.9% notification delivery rate and reducing worker response times by 70% (from minutes to seconds). Developed a high-performance backend with Spring Boot and Maven, implementing RESTful APIs optimized for mobile clients with TanStack Query to ensure data consistency and offline caching.  Optimized mission-critical SQL Server queries for real-time driver availability, reducing database search latency by 45% through the implementation of Stored Procedures and Non-Clustered Indexes.
         image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+        # featured:
+        #   name: Demo
+        #   link: https://django-converter.herokuapp.com
         badges:
           - "TypeScript"
           - "Spring-Boot"
@@ -439,54 +436,74 @@ params:
           - "TanStackQuery"
           - "MSSQL"
           - "Axios"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+        # links:
+        #   - icon: fab fa-github
+        # url: https://github.com/gurusabarish/converter
 
-      - title: Hotel Management System Project
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "TypeScript"
-          - "TailwindCss"
-          - "React-Native"
-          - "Leaflet"
-          - "Docker"
-          - "MongoDB"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
-
+      # - title: Hotel Management System Project
+      #   content: A clean and simple Hugo template for personal portfolio and blog.
+      #   image: /images/projects/profile2.jpg
+      #   # featured:
+      #   #   name: Demo V2
+      #   #   link: https://hugo-profile-2.netlify.app
+      #   badges:
+      #     - "TypeScript"
+      #     - "TailwindCss"
+      #     - "React-Native"
+      #     - "Leaflet"
+      #     - "Docker"
+      #     - "MongoDB"
+      # links:
+      #   - icon: fab fa-github
+      #     url: https://github.com/gurusabarish/HugoProfileV2
       - title: Assignment Management
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+        content: Architected a native iOS academic ecosystem using SwiftUI and CoreData, implementing a multi-view organization system that allows students to filter assignments by Date, Priority, Subject, and Completion status. Engineered a seamless cross-device synchronization layer using NSPersistentCloudKitContainer, ensuring real-time data continuity and conflict resolution across all user devices signed into iCloud. Developed a high-visibility productivity suite by integrating WidgetKit for 'at-a-glance' home screen tracking and a custom Local Notification system that proactively alerts users to upcoming deadlines. Secured sensitive student data by implementing a local authentication system using Keychain Services for token storage and CryptoKit for salted password hashing. A clean and simple Hugo template for personal portfolio and blog.
+        image: /img/AssignmentScreen.png
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "SwiftUI"
+          - "SwiftData"
+          - "CoreData"
+          - "ICloudDatabase"
+          - "Vision"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
+
+      - title: Habit Management
+        content: Designed a versatile habit-tracking engine supporting six distinct data types (Boolean, Numeric, Duration, Checklist, Streak, Periodic) to accommodate diverse user goals and measurable behavioral changes. Integrated a sophisticated mood-correlation system featuring 20 distinct emotional states, allowing users to visualize the relationship between mental well-being and habit consistency through interactive charts. Implemented an advanced visual analytics dashboard using the Swift Charts framework, providing users with heatmaps, trend lines, and completion rate statistics across weekly, monthly, and yearly intervals. Leveraged SwiftData and CloudKit to build a modern, reactive persistence layer that automates data synchronization while maintaining a zero-latency, offline-first user experience. A clean and simple Hugo template for personal portfolio and blog.
+        image: /img/HabitMain.png
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
         badges:
           - "SwiftUI"
           - "SwiftData"
           - "IOS"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+          - "ICloudDatabase"
+          - "Vision"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
 
-      - title: Habit Management
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: Online Tutor Management
+        content: Designed a versatile habit-tracking engine supporting six distinct data types (Boolean, Numeric, Duration, Checklist, Streak, Periodic) to accommodate diverse user goals and measurable behavioral changes. Integrated a sophisticated mood-correlation system featuring 20 distinct emotional states, allowing users to visualize the relationship between mental well-being and habit consistency through interactive charts. Implemented an advanced visual analytics dashboard using the Swift Charts framework, providing users with heatmaps, trend lines, and completion rate statistics across weekly, monthly, and yearly intervals. Leveraged SwiftData and CloudKit to build a modern, reactive persistence layer that automates data synchronization while maintaining a zero-latency, offline-first user experience. A clean and simple Hugo template for personal portfolio and blog.
+        image: /img/TuttorMain.png
         featured:
           name: Demo V2
           link: https://hugo-profile-2.netlify.app
         badges:
-          - "SwiftUI"
-          - "CoreData"
-          - "IOS"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+          - "ReactNative"
+          - "FireBase"
+          - "GoogleAuth"
+          - "FireStore"
+          - "FCM"
+          - "Android, IOS, Web"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
