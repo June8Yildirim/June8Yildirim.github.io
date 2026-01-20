@@ -1,0 +1,19 @@
+<!-- Bootstrap JS -->
+{{ if not .Site.Params.useBootstrapCDN }}
+<script src="{{ "bootstrap-5/js/bootstrap.bundle.min.js" | relURL }}"></script>
+{{ else }}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+{{ end }}
+
+<!-- Search JS -->
+{{ if not .Site.Params.navbar.disableSearch }}
+<script src="{{ "js/search.js" | relURL }}"></script>
+{{ end }}
+
+<!-- Theme JS if exists -->
+{{ $jsPath := "js/main.js" }}
+{{ if fileExists (add "static/" $jsPath) }}
+<script src="{{ $jsPath | relURL }}"></script>
+{{ end }}
+<!-- Theme toggle script -->
+{{ partial "scripts.html" . }}

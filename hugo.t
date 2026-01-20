@@ -1,0 +1,51 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Cuneyt Yildirim Site'
+theme = "re-terminal"
+
+[params]
+# dir name of your main content (default is `content/posts`).
+# the list of set content will show up on your index page (baseurl).
+contentTypeName = "posts"
+
+# ["orange", "blue", "red", "green", "pink"]
+themeColor = "orange"
+
+# if you set this to 0, only submenu trigger will be visible
+showMenuItems = 3
+
+[languages]
+[languages.en.params]
+languageName = "English"
+title = "Cuneyt Yildirim"
+subtitle = "A simple, retro theme for Hugo"
+owner = ""
+keywords = ""
+copyright = ""
+menuMore = "Show more"
+readMore = "Read more"
+readOtherPosts = "Read other posts"
+newerPosts = "Newer posts"
+olderPosts = "Older posts"
+missingContentMessage = "Page not found..."
+missingBackButtonLabel = "Back to home page"
+minuteReadingTime = "min read"
+words = "words"
+
+[languages.en.params.logo]
+logoText = "Cuneyt Yildirim"
+logoHomeLink = "/"
+
+[languages.en.menu]
+[[languages.en.menu.main]]
+identifier = "algorithms"
+name = "Algorithms"
+url = "/algorithms"
+[[languages.en.menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts"
+[[languages.en.menu.main]]
+identifier = "showcase"
+name = "Showcase"
+url = "/showcase"

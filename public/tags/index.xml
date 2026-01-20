@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Cuneyt Yildirim Site</title>
+    <link>http://localhost:1313/professionalblog/tags/</link>
+    <description>Recent content in Tags on Cuneyt Yildirim Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Nov 2025 02:58:05 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/professionalblog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#Course</title>
+      <link>http://localhost:1313/professionalblog/tags/%23course/</link>
+      <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
+      <guid>http://localhost:1313/professionalblog/tags/%23course/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>#Notes</title>
+      <link>http://localhost:1313/professionalblog/tags/%23notes/</link>
+      <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
+      <guid>http://localhost:1313/professionalblog/tags/%23notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>#Undefined</title>
+      <link>http://localhost:1313/professionalblog/tags/%23undefined/</link>
+      <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
+      <guid>http://localhost:1313/professionalblog/tags/%23undefined/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blog</title>
+      <link>http://localhost:1313/professionalblog/tags/blog/</link>
+      <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
+      <guid>http://localhost:1313/professionalblog/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Journey</title>
+      <link>http://localhost:1313/professionalblog/tags/journey/</link>
+      <pubDate>Sun, 16 Nov 2025 02:58:05 -0500</pubDate>
+      <guid>http://localhost:1313/professionalblog/tags/journey/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

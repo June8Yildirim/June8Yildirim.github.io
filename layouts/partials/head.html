@@ -1,0 +1,137 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    {{ $title := print .Title " | " .Site.Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+    
+    <!-- Favicon -->
+    {{ with .Site.Params.favicon }}
+    <link rel="icon" type="image/png" href="{{ . | relURL }}">
+    {{ end }}
+    
+    <!-- Meta -->
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    
+    <!-- Bootstrap CSS -->
+    {{ if not .Site.Params.useBootstrapCDN }}
+    <link rel="stylesheet" href="{{ "bootstrap-5/css/bootstrap.min.css" | relURL }}">
+    {{ else }}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    {{ end }}
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ "css/theme.css" | relURL }}" media="all">
+    <link rel="stylesheet" href="{{ "css/font.css" | relURL }}" media="all">
+    <link rel="stylesheet" href="{{ "css/header.css" | relURL }}" media="all">
+    <link rel="stylesheet" href="{{ "css/footer.css" | relURL }}" media="all">
+    <!-- <link rel="stylesheet" href="{{ "css/projects.css" | relURL }}" media="all"> -->
+    
+    {{ if .IsHome }}
+    <link rel="stylesheet" href="{{ "css/index.css" | relURL }}" media="all">
+        <link rel="stylesheet" href="{{ "css/projects.css" | relURL }}" media="all">
+    {{ end }}
+    
+    {{ if .IsPage }}
+    <link rel="stylesheet" href="{{ "css/single.css" | relURL }}" media="all">
+    {{ end }}
+    
+    {{ if eq .Section "posts" }}
+    <link rel="stylesheet" href="{{ "css/list.css" | relURL }}" media="all">
+    {{ end }}
+    
+    {{ if eq .Title "Gallery" }}
+    <link rel="stylesheet" href="{{ "css/gallery.css" | relURL }}" media="all">
+    <link rel="stylesheet" href="{{ "viewer/viewer.min.css" | relURL }}" media="all">
+    {{ end }}
+    
+    {{ if eq .Title "Projects" }}
+    <link rel="stylesheet" href="{{ "css/projects.css" | relURL }}" media="all">
+    {{ end }}
+    
+    {{ if eq .Title "About" }}
+    <link rel="stylesheet" href="{{ "css/about.css" | relURL }}" media="all">
+    {{ end }}
+  <!-- Dark theme support -->
+<style>
+    :root {
+        --text-color: {{ .Site.Params.color.textColor | default "#343a40" }};
+        --text-secondary-color: {{ .Site.Params.color.secondaryTextColor | default "#6c757d" }};
+        --text-link-color: {{ .Site.Params.color.textLinkColor | default (.Site.Params.color.primaryColor | default "#007bff") }};
+        --background-color: {{ .Site.Params.color.backgroundColor | default "#eaedf0" }};
+        --secondary-background-color: {{ .Site.Params.color.secondaryBackgroundColor | default "#64ffda1a" }};
+        --primary-color: {{ .Site.Params.color.primaryColor | default "#007bff" }};
+        --secondary-color: {{ .Site.Params.color.secondaryColor | default "#f8f9fa" }};
+
+        /* dark mode colors */
+        --text-color-dark: {{ .Site.Params.color.darkmode.textColor | default "#e4e6eb" }};
+        --text-secondary-color-dark: {{ .Site.Params.color.darkmode.secondaryTextColor | default "#b0b3b8" }};
+        --text-link-color-dark: {{ .Site.Params.color.darkmode.textLinkColor | default (.Site.Params.color.darkmode.primaryColor | default "#ffffff") }};
+        --background-color-dark: {{ .Site.Params.color.darkmode.backgroundColor | default "#18191a" }};
+        --secondary-background-color-dark: {{ .Site.Params.color.darkmode.secondaryBackgroundColor | default "#212529" }};
+        --primary-color-dark: {{ .Site.Params.color.darkmode.primaryColor | default "#ffffff" }};
+        --secondary-color-dark: {{ .Site.Params.color.darkmode.secondaryColor | default "#212529" }};
+    }
+    body {
+        font-size: {{ .Site.Params.font.fontSize | default "1rem" }};
+        font-weight: {{ .Site.Params.font.fontWeight | default "400" }};
+        line-height: {{ .Site.Params.font.lineHeight | default "1.5" }};
+        text-align: {{ .Site.Params.font.textAlign | default "left" }};
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+    <!-- <style> -->
+    <!--     [data-bs-theme="dark"] { -->
+    <!--         color-scheme: dark; -->
+    <!--     } -->
+    <!---->
+    <!--     [data-bs-theme="dark"] body { -->
+    <!--         background-color: #18191a; -->
+    <!--         color: #e4e6eb; -->
+    <!--     } -->
+    <!---->
+    <!--     [data-bs-theme="dark"] .navbar, -->
+    <!--     [data-bs-theme="dark"] .footer { -->
+    <!--         background-color: #242526 !important; -->
+    <!--     } -->
+    <!---->
+    <!--     [data-bs-theme="dark"] a { -->
+    <!--         color: #2d9cdb; -->
+    <!--     } -->
+    <!---->
+    <!--     [data-bs-theme="dark"] .card, -->
+    <!--     [data-bs-theme="dark"] .section { -->
+    <!--         background-color: #242526; -->
+    <!--         color: #e4e6eb; -->
+    <!--     } -->
+    <!-- </style> -->
+</head>

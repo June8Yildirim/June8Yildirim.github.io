@@ -1,0 +1,545 @@
+baseURL: "https://cuneyt_yildirim.gitlab.io/professionalblog/"
+languageCode: "en-us"
+title: "Cuneyt Yildirim Site"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+#services:
+#googleAnalytics:
+#id: G-MEASUREMENT_ID
+#disqus:
+#shortname: your-disqus-shortname
+
+pagination:
+  pagerSize:
+    3
+
+    # Color mode - options: auto, light, dark
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /posts # Added /professionalblog/ prefix
+      # url: /posts
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Gallery posts
+      url: /gallery # Added /professionalblog/ prefix
+      # url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/img/hacker.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: dark
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: true
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  # theme:
+  #   disableThemeToggle: true
+  #   defaultTheme: dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Profile" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Cuneyt."
+    subtitle: "I build things for the web"
+    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://example.com
+        - icon: fab fa-x-twitter
+          url: https://example.com
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+
+      I am currently working on a project that will be used to help people find the best way to get around the city.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Java"
+        - "Python"
+        - "Spring-Root"
+        - "Golang"
+        - "SQL"
+        - "NOSQL"
+        - "JavaScript"
+        - "TypeScript"
+        - "React"
+        - "React-Native"
+        - "Docker"
+        - "Git"
+        - "RestAPI"
+        - "GraphQL"
+        - "NodeJS"
+        - "C#"
+        - "Agile-Development"
+        - "HTML"
+        - "CSS"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - company: "Turina Technologies"
+        companyUrl: "https://turinatech.ca"
+        jobs:
+          - name: "Lead Full-Stack Developer"
+            date: "Jul 2024 - Sep 2025"
+            content: |
+              - Technologies: ReactJs, TailwindCss, React-Native, Expo, Docker, Git, Spring Boot, Jira, Firebase, .NET, Agile Dev.
+              - I worked as a lead Full-Stack developer at [turinatech.ca](https://turinatech.ca) in Montreal, QC. I am working on a project that will be used to help people find the best way to get around the city.
+              - Written the code to fix an existing issue, implemented new features, and added unit test cases.
+              - Participating in daily meetings with team members and checking the daily progress of our implementation.
+              - Creating tasks and user stories, and following up on these tasks' progress and team members' development.
+              - Created a mobile application and implemented IOS and Android features and diﬀerences are added.
+              - Collaborated with the QA team in daily meetings and updated code based on their daily test reports.
+              - After the assigned test’s implementation is completed, a new pull request and PR are approved and merged into the main branch, so Incorporated with other developers.
+              - Helped improve the Figma design and gave UI/UX design teams more feedback.
+            info:
+              content: Worked as a Lead Full-Stack Developer
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-react
+                  url: https://react.dev/
+                  tooltip: Example tooltip content
+                # - icon: fab fa-x-twitter
+                #   url: https://example.com
+                # tooltip: Example tooltip content
+              # customIcons:
+              #   - icon: /fav.png
+              #     url: "https://example.com"
+              #     tooltip: Example tooltip content
+          - name: "Full-Stack Developer"
+            date: "Jul 2024 - Sep 2025"
+            content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
+
+      - company: "Dawson College"
+        companyUrl: "www.dawsoncollege.qc.ca"
+        jobs:
+          - name: "Computer Technician"
+            date: "Aug 2024 - Nov 2024"
+            info:
+              content: I worked as a Computer Technician for less than one year in Dawson College.
+            content: |
+              - I worked as a Computer Technician at [example org.](https://example.com) in Montreal, QC. 
+               - Fixed broken computers, printers or other devices.
+               - Deployed new Windows, MacOS or IOS based on the school security restrictions.
+               - Installed, configured, and upgraded software applications and operating systems.
+               - Troubleshooted and resolved software issues, including operating system errors and application crashes.
+               - Performed regular maintenance on computer systems to ensure operated efficiently.
+               - Troubleshoot hardware and software issues, including operating systems, applications, and network connectivity.
+               - Install, configure, and maintain IT equipment such as workstations, printers, and network devices in clinics and head office locations.
+               - Assist in setting up and managing user accounts, passwords, and permissions in accordance with IT policies.
+
+      - company: "Saadat Development"
+        companyUrl: "https://example.com"
+        jobs:
+          - name: "Junior Software Developer"
+            date: "Jan 2020 - Aug 2020"
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-react
+                  url: https://react.dev/
+              #   - icon: fab fa-x-twitter
+              #     url: https://example.com
+              # customIcons:
+              #   - icon: /fav.png
+              #     url: "https://example.com"
+            content: |
+              - Technologies: ReactJs, TailwindCss, React-Query, Socket.IO, JWT, React-Router, Docker, Git, Jotai.
+              - Written the code to fix an existing issue or implemented 24 new features.
+              - Created 60 new test cases with Jest and React-Testing Library.
+              - Conducted a thorough review of the code base, creating a report to document and address any errors found,
+              - ensuring high code quality.
+              - Executed and managed global state to ensure data consistency across the application with Jotai.
+              - Enforced React-Query to handle integrated front-end components with RESTful APIs and data fetching, caching, and error handling.
+
+      - company: "Dawson College"
+        companyUrl: "www.dawsoncollege.qc.ca"
+        jobs:
+          - name: "Computer Technician"
+            date: "Oct 2023 - Dec 2023"
+            content: |
+              - Fixed broken computers, printers or other devices.
+              - Deployed new Windows, MacOS or IOS based on the school security restrictions.
+              - Installed, configured, and upgraded software applications and operating systems.
+              - Troubleshooted and resolved software issues, including operating system errors and application crashes.
+
+      - company: "LB Pearson"
+        companyUrl: "www.lbpsb.qc.ca"
+        jobs:
+          - name: "Computer Technician"
+            date: "Nov 2019 - Feb 2020"
+            content: |
+              - Answered the school administration's and teachers' requests regarding computer or technical questions and suggestions.
+              - Repaired malfunctioning computers, printers, smart-boards, projections or other devices..
+              - Documented troubleshooting steps and solutions for future reference.
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor of Computer Science"
+        school:
+          name: "University of Concordia"
+          url: "https://example.org"
+        date: "2025 - 2029"
+        # GPA: "3.8 out of 5.0"
+        content: |-
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+
+      - title: "Diplome d'études collégiales in Computer Science"
+        school:
+          name: "Dawson College"
+          url: "https://www.dawsoncollege.qc.ca"
+        date: "2020 - 2024"
+        # GPA: "3.9 out of 5.0"
+        content: |-
+          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+          - Face mask detection using a single convolutional neural network.
+
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+      - title: "Diplôme d'études professionnelles in Computer Support"
+        school:
+          name: "Lester B.Pearson"
+          url: "https://www.lbpce.ca/pec.html"
+        date: "2018 - 2020"
+        # GPA: "3.9 out of 5.0"
+        content: |-
+          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+          - Face mask detection using a single convolutional neural network.
+
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+      - title: "DEC in Computer Science"
+        school:
+          name: "Dawson College"
+          url: "https://example.org"
+        date: "2020 - 2024"
+        # GPA: "3.9 out of 5.0"
+        content: |-
+          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+          - Face mask detection using a single convolutional neural network.
+
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+      - title: "High School"
+        school:
+          name: "Ataturk Nursing High School"
+          url: "https://example.org"
+        # GPA: "4.2 out of 5.0"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+        image: /images/achievement.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievement.jpg
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievement.jpg
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: SaveEasy
+        content: A financial tracking application that provides to clients their financial status and application also able to create a report given time with their receipts to make it easy to provide a financial report to the accountant. Application also able to generate a chart to display based on the purchasing category.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        badges:
+          - "React-Native"
+          - ".NET"
+          - "TypeScript"
+          - "Docker"
+          - "Expo"
+          - "MSSQL"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          # - icon: fab fa-github
+          #   url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: EasyDriver
+        content: |
+          The application provides a business owner to find a extra worker in their rush hours. Like restaurant owner finds easily a driver and kitchen worker.
+          Clients connect with FCM services so they can easily communicate and interact.
+          The system includes 3 applications that 2 mobile apps (Driver and Business) one for the web application for Admin users.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        badges:
+          - "TypeScript"
+          - "Spring-Boot"
+          - "Docker"
+          - "Agile"
+          - "TanStackQuery"
+          - "MSSQL"
+          - "Axios"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hotel Management System Project
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "TypeScript"
+          - "TailwindCss"
+          - "React-Native"
+          - "Leaflet"
+          - "Docker"
+          - "MongoDB"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+      - title: Assignment Management
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "SwiftUI"
+          - "SwiftData"
+          - "IOS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+      - title: Habit Management
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        badges:
+          - "SwiftUI"
+          - "CoreData"
+          - "IOS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    # btnLink: mailto: yildirim.cuneyt.it@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
