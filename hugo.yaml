@@ -166,7 +166,14 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+                  Full-stack JavaScript/Java Developer skilled in building responsive
+            web and mobile applications. Frontend expertise in React Native and
+            SwiftUI for cross-platform development. Backend proficiency with
+            Java Spring Boot, Node.js, and RESTful API design. Experience with
+            database systems (SQL/NoSQL), cloud services (AWS/Azure), and DevOps
+            tools (Docker, Git, CI/CD). Successfully delivered full-stack
+            projects, including QC election tracking systems and e-commerce
+            platforms.
 
       I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
@@ -560,3 +567,4 @@ params:
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>
+
