@@ -165,8 +165,14 @@ params:
     enable: true
     title: "About Me"
     image: "/images/me.png"
-    content: |- Full-stack JavaScript/Java Developer skilled in building responsive web and mobile applications. Frontend expertise in React Native and SwiftUI for cross-platform development. Backend proficiency with Java Spring Boot, Node.js, and RESTful API design. Experience with database systems (SQL/NoSQL), cloud services (AWS/Azure), and DevOps tools (Docker, Git, CI/CD). Successfully delivered full-stack projects, including QC election tracking systems and e-commerce platforms.
-
+# The text must start on a new, indented line
+    content: |-
+      Full-stack JavaScript/Java Developer skilled in building responsive web and mobile 
+      applications. Frontend expertise in React Native and SwiftUI for cross-platform 
+      development. Backend proficiency with Java Spring Boot, Node.js, and RESTful API 
+      design. Experience with database systems (SQL/NoSQL), cloud services (AWS/Azure), 
+      and DevOps tools (Docker, Git, CI/CD). Successfully delivered full-stack projects, 
+      including QC election tracking systems and e-commerce platforms.
       I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
       enable: true
@@ -559,5 +565,6 @@ params:
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>
+
 
 
